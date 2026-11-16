@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Tarifs et frais",
+    "title": "Liste de prix",
     "breadcrumb": "Tarifs",
-    "summary": "Aucun coût initial. Nous ne facturons des frais de succès que lorsque nous récupérons une indemnisation pour vous.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "La vérification d'éligibilité et l'utilisation de notre site sont gratuites. Si vous nous mandatez pour poursuivre une indemnisation, nos frais ne s'appliquent que lorsque votre réclamation aboutit, conformément à notre <noWinNoFeeAgreement>Accord No win, no fee</noWinNoFeeAgreement>.",
-    "noWinNoFeeAgreement": "Accord No win, no fee",
-    "successFeeTitle": "Frais de succès",
-    "successFeeDescription": "Lorsque nous récupérons une indemnisation en votre nom, nous déduisons des honoraires de succès avant de vous transférer le solde. Vous recevez au moins 70 % du montant récupéré avant ajustements de TVA.",
-    "tableCompensationRecovered": "Indemnisation récupérée",
-    "tableSuccessFee": "Frais de succès",
-    "tierUpTo220": "Jusqu'à €250",
-    "tier221to350": "€251–€400",
-    "tier351to520": "€401–€600",
-    "fee25Vat": "30 % + TVA",
-    "uk261Title": "Montants d'indemnisation (UK261)",
-    "uk261Intro": "Pour les vols du Royaume-Uni, l'indemnisation fixe au titre du UK261 dépend de la distance du vol:",
-    "ec261Title": "Montants d'indemnisation (CE 261/2004)"
+    "summary": "Aucun coût initial. Nos frais ne s'appliquent que lorsque l'indemnisation est récupérée.",
+    "general": {
+      "title": "1. Dispositions générales",
+      "body": "La présente liste de prix fait partie intégrante des conditions générales de Compensall, où chaque terme en majuscules est défini. Elle s'applique aux demandes d'indemnisation au titre du règlement (CE) n° 261/2004 et des autres règlements applicables en matière de droits des passagers aériens. Si Compensall fournit des services supplémentaires, les montants correspondants sont convenus séparément."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Si aucune indemnisation n'est obtenue de la compagnie aérienne, Compensall ne facture rien pour le traitement de votre demande."
+    },
+    "received": {
+      "title": "3. Nos frais lorsque nous recevons l'indemnisation de la compagnie aérienne"
+    },
+    "service": {
+      "title": "3.1 Frais de service",
+      "body": "Lorsque votre demande aboutit et que nous recevons l'indemnisation de la compagnie aérienne, nous déduisons nos frais avant de vous transférer le reste. Nos frais sont de 30 % de l'indemnisation, plus la TVA et des frais de traitement."
+    },
+    "litigation": {
+      "title": "3.2 Frais de contentieux",
+      "body": "Si un règlement amiable avec la compagnie aérienne ne peut être obtenu, la demande passe en contentieux. Le contentieux entraîne des coûts supplémentaires, tels que les frais de justice, les traductions, les avocats indépendants et le travail administratif. Des frais de succès supplémentaires de 20 % s'appliquent, dus uniquement si l'affaire aboutit. Les frais sont alors de 50 % de l'indemnisation, plus la TVA et les frais de traitement."
+    },
+    "handling": {
+      "title": "3.3 Frais de traitement",
+      "body": "Les frais de traitement s'appliquent lorsque nous vous versons votre indemnisation et dépendent du montant transféré :",
+      "bands": [
+        "jusqu'à 99,99 € : pas de frais de traitement",
+        "100 € à 199,99 € : 15 €",
+        "200 € à 599,99 € : 25 €",
+        "600 € ou plus : 40 €"
+      ],
+      "vatNote": "La TVA s'ajoute aux frais de traitement."
+    },
+    "examples": {
+      "title": "3.4 Exemples par passager",
+      "intro": "Tous les frais ci-dessous incluent la TVA et les frais de traitement.",
+      "columns": [
+        "Indemnisation",
+        "Distance du vol",
+        "Nos frais",
+        "Vous recevez",
+        "Nos frais avec contentieux",
+        "Vous recevez avec contentieux"
+      ],
+      "rows": [
+        [
+          "€250",
+          "jusqu'à 1 500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1 500 km à 3 500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "plus de 3 500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Si la compagnie aérienne vous paie directement",
+      "body": "Si la compagnie aérienne vous verse l'indemnisation directement, nos frais sont de 30 % de l'indemnisation, plus la TVA. Aucuns frais de traitement ne s'appliquent. Vous devez nous en informer et payer nos frais dans les 10 jours suivant la réception de l'indemnisation (clause 3.11 des conditions générales). Nous vous enverrons nos coordonnées bancaires par e-mail.",
+      "body2": "Si nos frais restent impayés 45 jours après notre première demande de paiement écrite, le dossier passe en contentieux pour le recouvrement du montant impayé et les frais deviennent 50 % de l'indemnisation, plus la TVA (clause 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Demandes impliquant une autre société",
+      "items": [
+        "Si, après avoir signé avec Compensall, vous poursuivez la même demande par l'intermédiaire d'une autre société, d'un agent ou d'un avocat, ou directement auprès de la compagnie aérienne, nos frais de 30 % plus TVA s'appliquent à toute indemnisation obtenue (clause 1.11(a)).",
+        "Si vous aviez déjà mandaté une autre société, un agent ou un avocat pour la même demande avant de signer avec Compensall et que vous ne nous l'avez pas dit, un montant fixe de 50 € par passager s'applique (clause 1.11(b)).",
+        "Si une procédure judiciaire a déjà été engagée par un avocat indépendant et qu'il apparaît que la même demande a aussi été poursuivie ailleurs, vous devez rembourser les coûts réellement engagés, tels que les frais de justice, les dépens mis à la charge de la compagnie, les honoraires d'avocat, les intérêts et les frais administratifs (clause 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Paiement de votre indemnisation",
+      "items": [
+        "Les paiements sont effectués par virement bancaire. Les paiements en espèces et par chèque ne sont pas disponibles.",
+        "Les paiements hors SEPA (devise autre que l'euro, PayPal, Western Union, etc.) ont des frais de 10 €.",
+        "Si un virement échoue pour une raison qui vous est imputable, comme des coordonnées bancaires erronées, nous le renouvellerons en déduisant les frais bancaires et des frais administratifs de 10 €.",
+        "Pour les réservations partagées, nous pouvons virer tous les paiements sur un seul compte si les autres passagers (mineurs exclus) l'autorisent, afin de réduire les coûts."
+      ]
+    },
+    "vat": {
+      "title": "7. Taxe sur la valeur ajoutée (TVA)",
+      "body": "La TVA est facturée au taux portugais en vigueur, actuellement 23 %."
+    },
+    "unclaimed": {
+      "title": "8. Paiements non réclamés",
+      "body": "Si, après au moins quatre notifications par e-mail indiquant que votre indemnisation a été reçue, vous ne fournissez pas de coordonnées bancaires valides ou un autre moyen de paiement dans un délai de trois (3) mois, Compensall peut conserver le montant, comme prévu à la clause 3.3 des conditions générales."
+    },
+    "records": {
+      "title": "9. Conservation des documents financiers",
+      "body": "Nous conservons les relevés d'opérations bancaires et les autres documents liés à votre demande pendant la durée exigée par la loi, y compris les règles fiscales et comptables. Pendant cette période, ces documents ne peuvent pas être supprimés, même à votre demande, car nous sommes légalement tenus de les conserver."
+    }
   },
   "cta": {
     "title": "Vérification sécurisée. Accompagnement humain.",
@@ -836,8 +924,8 @@
       "description": "Découvrez quand le UK261 et le règlement européen CE 261/2004 vous donnent droit à jusqu'à €600 pour les retards, annulations, refus d'embarquement, correspondances manquées et grèves de compagnies aériennes."
     },
     "prices": {
-      "title": "Tarifs, frais et No win, no fee",
-      "description": "Compensall ne facture des frais que si votre réclamation aboutit. Consultez notre structure de frais de succès et les montants d'indemnisation UK261 et CE 261 que les passagers peuvent recevoir."
+      "title": "Liste de prix",
+      "description": "Liste de prix Compensall : no win, no fee, frais de service de 30 % plus TVA, 50 % si le dossier va au contentieux, et frais de traitement."
     },
     "blog": {
       "title": "Guides d'indemnisation de vol et droits des passagers",

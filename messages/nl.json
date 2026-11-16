@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Prijzen en fees",
+    "title": "Prijslijst",
     "breadcrumb": "Prijzen",
-    "summary": "Geen voorafkosten. Een succesfee geldt alleen als wij compensatie voor u innen.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "De toetsing van het recht en het gebruik van de website zijn gratis. Als u ons met de afdwinging belast, geldt onze fee alleen bij een geslaagde claim, zoals beschreven in de <noWinNoFeeAgreement>overeenkomst No win, no fee</noWinNoFeeAgreement>.",
-    "noWinNoFeeAgreement": "Overeenkomst No win, no fee",
-    "successFeeTitle": "Succesfee",
-    "successFeeDescription": "Als wij compensatie voor u innen, trekken wij een succesfee af voordat wij het restant overmaken. U ontvangt minstens 70 % van het geïnde bedrag vóór btw-aanpassingen.",
-    "tableCompensationRecovered": "Geïnde compensatie",
-    "tableSuccessFee": "Succesfee",
-    "tierUpTo220": "Tot 220 £ / 250 €",
-    "tier221to350": "221–350 £ / 251–400 €",
-    "tier351to520": "351–520 £ / 401–600 €",
-    "fee25Vat": "30 % + btw",
-    "uk261Title": "Compensatiebedragen (UK261)",
-    "uk261Intro": "Bij vluchten uit het Verenigd Koninkrijk hangt de vaste compensatie volgens UK261 af van de vliegafstand:",
-    "ec261Title": "Compensatiebedragen (EG 261/2004)"
+    "summary": "Geen kosten vooraf. Onze vergoeding geldt alleen wanneer compensatie wordt verkregen.",
+    "general": {
+      "title": "1. Algemene bepalingen",
+      "body": "Deze prijslijst maakt integraal deel uit van de algemene voorwaarden van Compensall, waarin elke term met een hoofdletter is gedefinieerd. Zij geldt voor vorderingen tot compensatie op grond van Verordening (EG) nr. 261/2004 en andere toepasselijke regels over de rechten van luchtreizigers. Als Compensall aanvullende diensten verleent, worden de bijbehorende bedragen afzonderlijk overeengekomen."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Als er geen compensatie van de luchtvaartmaatschappij wordt verkregen, rekent Compensall niets voor de behandeling van uw vordering."
+    },
+    "received": {
+      "title": "3. Onze vergoedingen wanneer wij de compensatie van de luchtvaartmaatschappij ontvangen"
+    },
+    "service": {
+      "title": "3.1 Servicevergoeding",
+      "body": "Als uw vordering slaagt en wij de compensatie van de luchtvaartmaatschappij ontvangen, houden wij onze vergoeding in voordat wij de rest aan u overmaken. Onze vergoeding is 30% van de compensatie, plus btw en administratiekosten."
+    },
+    "litigation": {
+      "title": "3.2 Procesvergoeding",
+      "body": "Als geen minnelijke regeling met de luchtvaartmaatschappij kan worden bereikt, gaat de vordering naar een procedure. Een procedure brengt extra kosten mee, zoals griffierechten, vertalingen, onafhankelijke advocaten en administratief werk. Er geldt een extra succesvergoeding van 20%, alleen verschuldigd als de zaak slaagt. De vergoeding is dan 50% van de compensatie, plus btw en de administratiekosten."
+    },
+    "handling": {
+      "title": "3.3 Administratiekosten",
+      "body": "De administratiekosten gelden wanneer wij uw compensatie aan u overmaken en hangen af van het overgemaakte bedrag:",
+      "bands": [
+        "tot € 99,99: geen administratiekosten",
+        "€ 100 tot € 199,99: € 15",
+        "€ 200 tot € 599,99: € 25",
+        "€ 600 of meer: € 40"
+      ],
+      "vatNote": "Over de administratiekosten wordt btw berekend."
+    },
+    "examples": {
+      "title": "3.4 Voorbeelden per passagier",
+      "intro": "Alle onderstaande vergoedingen zijn inclusief btw en administratiekosten.",
+      "columns": [
+        "Compensatie",
+        "Vluchtafstand",
+        "Onze vergoeding",
+        "U ontvangt",
+        "Onze vergoeding met procedure",
+        "U ontvangt met procedure"
+      ],
+      "rows": [
+        [
+          "€250",
+          "tot 1.500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1.500 km tot 3.500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "meer dan 3.500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Als de luchtvaartmaatschappij rechtstreeks aan u betaalt",
+      "body": "Als de luchtvaartmaatschappij de compensatie rechtstreeks aan u betaalt, is onze vergoeding 30% van de compensatie, plus btw. Er gelden geen administratiekosten. U moet ons informeren en onze vergoeding binnen 10 dagen na ontvangst van de compensatie betalen (artikel 3.11 van de algemene voorwaarden). Wij sturen u onze bankgegevens per e-mail.",
+      "body2": "Als onze vergoeding 45 dagen na ons eerste schriftelijke betalingsverzoek onbetaald blijft, gaat de vordering naar een procedure voor invordering van het openstaande bedrag en wordt de vergoeding 50% van de compensatie, plus btw (artikel 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Vorderingen waarbij een ander bedrijf betrokken is",
+      "items": [
+        "Als u na ondertekening met Compensall dezelfde vordering nastreeft via een ander bedrijf, een tussenpersoon of een advocaat, of rechtstreeks bij de luchtvaartmaatschappij, geldt onze vergoeding van 30% plus btw voor elke verkregen compensatie (artikel 1.11(a)).",
+        "Als u vóór de ondertekening met Compensall al een ander bedrijf, een tussenpersoon of een advocaat voor dezelfde vordering had ingeschakeld en ons dat niet hebt verteld, geldt een vast bedrag van € 50 per passagier (artikel 1.11(b)).",
+        "Als al een gerechtelijke procedure via een onafhankelijke advocaat is gestart en blijkt dat dezelfde vordering ook elders is nagestreefd, moet u de werkelijk gemaakte kosten vergoeden, zoals griffierechten, aan de luchtvaartmaatschappij toegewezen kosten, advocaatkosten, rente en administratieve kosten (artikel 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Betaling van uw compensatie",
+      "items": [
+        "Betalingen gebeuren per bankoverschrijving. Contante betalingen en cheques zijn niet mogelijk.",
+        "Betalingen buiten SEPA (andere valuta dan de euro, PayPal, Western Union, enz.) kosten € 10.",
+        "Als een overschrijving mislukt door een oorzaak die u kunt worden toegerekend, zoals onjuiste bankgegevens, herhalen wij die en brengen wij bankkosten plus € 10 administratiekosten in mindering.",
+        "Bij gedeelde boekingen kunnen wij alle betalingen naar één rekening overmaken als de andere passagiers (minderjarigen uitgezonderd) dat toestaan, om de kosten te beperken."
+      ]
+    },
+    "vat": {
+      "title": "7. Belasting over de toegevoegde waarde (btw)",
+      "body": "Btw wordt berekend tegen het geldende Portugese tarief, momenteel 23%."
+    },
+    "unclaimed": {
+      "title": "8. Niet-opgevraagde betalingen",
+      "body": "Als u na ten minste vier e-mailberichten dat uw compensatie is ontvangen, binnen drie (3) maanden geen geldige bankgegevens of een andere betaalwijze opgeeft, kan Compensall het bedrag inhouden, zoals bepaald in artikel 3.3 van de algemene voorwaarden."
+    },
+    "records": {
+      "title": "9. Bewaring van financiële bescheiden",
+      "body": "Wij bewaren bankafschriften en andere documenten over uw vordering gedurende de wettelijk vereiste periode, met inbegrip van fiscale en boekhoudkundige regels. In die periode kunnen deze bescheiden niet worden verwijderd, ook niet op uw verzoek, omdat wij wettelijk verplicht zijn ze te bewaren."
+    }
   },
   "cta": {
     "title": "Veilige claimtoetsing. Menselijk begeleid.",
@@ -836,8 +924,8 @@
       "description": "Wanneer UK261 en Verordening (EG) nr. 261/2004 u tot 520 £ of 600 € geven bij vertraging, annulering, instapweigering, gemiste aansluiting en staking."
     },
     "prices": {
-      "title": "Prijzen, fees en No win, no fee",
-      "description": "Compensall werkt volgens No win, no fee. Bekijk de succesfee en de compensatiebedragen volgens UK261 en EG 261."
+      "title": "Prijslijst",
+      "description": "Prijslijst van Compensall: no win, no fee, 30% servicevergoeding plus btw, 50% als de zaak naar een procedure gaat, en administratiekosten."
     },
     "blog": {
       "title": "Gidsen over vluchtcompensatie en passagiersrechten",

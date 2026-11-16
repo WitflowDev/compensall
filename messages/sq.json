@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Çmimet dhe tarifat",
+    "title": "Lista e çmimeve",
     "breadcrumb": "Çmimet",
-    "summary": "Pa kosto paraprake. Tarifa e suksesit merret vetëm kur rikuperojmë kompensimin për ty.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "Kontrolli i të drejtës dhe përdorimi i faqes janë falas. Nëse na emëron të ndjekim kompensimin, tarifa jonë vlen vetëm kur kërkesa del me sukses, sipas <noWinNoFeeAgreement>Marrëveshjes No win, no fee</noWinNoFeeAgreement>.",
-    "noWinNoFeeAgreement": "Marrëveshja No win, no fee",
-    "successFeeTitle": "Tarifa e suksesit",
-    "successFeeDescription": "Kur rikuperojmë kompensimin në emrin tënd, zbresim një tarifë suksesi para se t’ia transferojmë bilancin. Ti merr të paktën 70% të shumës së rikuperuar, para rregullimeve të TVSH-së.",
-    "tableCompensationRecovered": "Kompensimi i rikuperuar",
-    "tableSuccessFee": "Tarifa e suksesit",
-    "tierUpTo220": "Deri në 220 £ / 250 €",
-    "tier221to350": "221–350 £ / 251–400 €",
-    "tier351to520": "351–520 £ / 401–600 €",
-    "fee25Vat": "30% + TVSH",
-    "uk261Title": "Shumat e kompensimit (UK261)",
-    "uk261Intro": "Për fluturimet nga MB, kompensimi fiks i UK261 varet nga distanca e fluturimit:",
-    "ec261Title": "Shumat e kompensimit (261/2004/KE)"
+    "summary": "Pa kosto paraprake. Tarifa jonë zbatohet vetëm kur merret kompensimi.",
+    "general": {
+      "title": "1. Dispozita të përgjithshme",
+      "body": "Kjo listë çmimesh është pjesë përbërëse e Kushteve të Compensall, ku përcaktohet çdo term me shkronja të mëdha. Ajo zbatohet për kërkesat e kompensimit sipas Rregullores (KE) nr. 261/2004 dhe rregulloreve të tjera të zbatueshme për të drejtat e pasagjerëve ajrorë. Nëse Compensall ofron shërbime shtesë, shumat përkatëse bien dakord veçmas."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Nëse nga kompania ajrore nuk merret kompensim, Compensall nuk ngarkon asgjë për trajtimin e kërkesës."
+    },
+    "received": {
+      "title": "3. Tarifat tona kur e marrim kompensimin nga kompania ajrore"
+    },
+    "service": {
+      "title": "3.1 Tarifa e shërbimit",
+      "body": "Kur kërkesa ka sukses dhe e marrim kompensimin nga kompania ajrore, e zbresim tarifën para se të të transferojmë pjesën tjetër. Tarifa jonë është 30% e kompensimit, plus TVSH dhe një tarifë përpunimi."
+    },
+    "litigation": {
+      "title": "3.2 Tarifa e gjyqit",
+      "body": "Nëse nuk arrihet një marrëveshje miqësore me kompaninë ajrore, kërkesa shkon në gjyq. Gjyqi sjell kosto shtesë, si tarifa gjyqësore, përkthime, avokatë të pavarur dhe punë administrative. Zbatohet një tarifë shtesë suksesi prej 20%, e pagueshme vetëm nëse çështja ka sukses. Tarifa bëhet atëherë 50% e kompensimit, plus TVSH dhe tarifa e përpunimit."
+    },
+    "handling": {
+      "title": "3.3 Tarifa e përpunimit",
+      "body": "Tarifa e përpunimit zbatohet kur ta transferojmë kompensimin dhe varet nga shuma e transferuar:",
+      "bands": [
+        "deri në 99,99 €: pa tarifë përpunimi",
+        "100 € deri në 199,99 €: 15 €",
+        "200 € deri në 599,99 €: 25 €",
+        "600 € ose më shumë: 40 €"
+      ],
+      "vatNote": "TVSH-ja i shtohet tarifës së përpunimit."
+    },
+    "examples": {
+      "title": "3.4 Shembuj për pasagjer",
+      "intro": "Të gjitha tarifat më poshtë përfshijnë TVSH-në dhe tarifën e përpunimit.",
+      "columns": [
+        "Kompensimi",
+        "Distanca e fluturimit",
+        "Tarifa jonë",
+        "Merr",
+        "Tarifa jonë me gjyq",
+        "Merr me gjyq"
+      ],
+      "rows": [
+        [
+          "€250",
+          "deri në 1 500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1 500 km deri në 3 500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "mbi 3 500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Nëse kompania ajrore të paguan drejtpërdrejt",
+      "body": "Nëse kompania ajrore ta paguan kompensimin drejtpërdrejt, tarifa jonë është 30% e kompensimit, plus TVSH. Nuk zbatohet tarifë përpunimi. Duhet të na njoftojë dhe ta paguajë tarifën brenda 10 ditëve nga marrja e kompensimit (neni 3.11 i Kushteve). Të dërgojmë të dhënat bankare me email.",
+      "body2": "Nëse tarifa mbetet e papaguar 45 ditë pas kërkesës sonë të parë me shkrim për pagesë, kërkesa shkon në gjyq për rikuperimin e shumës së papaguar dhe tarifa bëhet 50% e kompensimit, plus TVSH (neni 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Kërkesa që përfshijnë një kompani tjetër",
+      "items": [
+        "Nëse, pas nënshkrimit me Compensall, e ndjek të njëjtën kërkesë përmes një kompanie, agjenti ose avokati tjetër, ose drejtpërdrejt me kompaninë ajrore, tarifa jonë prej 30% plus TVSH zbatohet për çdo kompensim të fituar (neni 1.11(a)).",
+        "Nëse kishe angazhuar tashmë një kompani, agjent ose avokat tjetër për të njëjtën kërkesë para nënshkrimit me Compensall dhe nuk na e the, zbatohet një shumë fikse prej 50 € për pasagjer (neni 1.11(b)).",
+        "Nëse një procedurë gjyqësore ka filluar tashmë përmes një avokati të pavarur dhe del se e njëjta kërkesë është ndjekur edhe diku tjetër, duhet të rimbursojë kostot e kryera realisht, si tarifat gjyqësore, kostot e dhëna kompanisë ajrore, honoraret e avokatëve, interesin dhe kostot administrative (neni 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Pagesa e kompensimit",
+      "items": [
+        "Pagesat bëhen me transfertë bankare. Pagesat në para të gatshme dhe me çek nuk ofrohen.",
+        "Pagesat jashtë SEPA-s (monedhë jo euro, PayPal, Western Union etj.) kanë një tarifë prej 10 €.",
+        "Nëse një transfertë dështon për një arsye që të atribuohet, si të dhëna bankare të gabuara, e përsërisim duke zbritur tarifat bankare plus një tarifë administrative prej 10 €.",
+        "Për rezervime të përbashkëta, mund t'i transferojmë të gjitha pagesat në një llogari të vetme nëse pasagjerët e tjerë (të miturit përjashtohen) e autorizojnë, për të ulur kostot."
+      ]
+    },
+    "vat": {
+      "title": "7. Tatimi mbi vlerën e shtuar (TVSH)",
+      "body": "TVSH-ja llogaritet me normën portugeze në fuqi, aktualisht 23%."
+    },
+    "unclaimed": {
+      "title": "8. Pagesat e pakërkuara",
+      "body": "Nëse, pas të paktën katër njoftimeve me email se kompensimi është marrë, nuk jep të dhëna bankare të vlefshme ose një mënyrë tjetër pagese brenda tre (3) muajve, Compensall mund ta mbajë shumën, siç parashikohet në nenin 3.3 të Kushteve."
+    },
+    "records": {
+      "title": "9. Ruajtja e të dhënave financiare",
+      "body": "I ruajmë regjistrimet e transaksioneve bankare dhe dokumentet e tjera të lidhura me kërkesën për periudhën e kërkuar me ligj, përfshirë rregullat tatimore dhe kontabël. Gjatë asaj periudhe, këto regjistrime nuk mund të fshihen, as me kërkesën tënde, sepse jemi të detyruar me ligj t'i ruajmë."
+    }
   },
   "cta": {
     "title": "Kontroll i sigurt i kërkesës. Me njerëz.",
@@ -836,8 +924,8 @@
       "description": "Mëso kur UK261 dhe Rregullorja (KE) nr. 261/2004 të japin deri në 520 £ ose 600 € për vonesa, anulime, refuzim imbarkimi, lidhje të humbura dhe greva."
     },
     "prices": {
-      "title": "Çmimet, tarifat dhe No win, no fee",
-      "description": "Compensall punon No win, no fee. Shiko strukturën e tarifës së suksesit dhe shumat UK261 e KE 261."
+      "title": "Lista e çmimeve",
+      "description": "Lista e çmimeve e Compensall: no win, no fee, tarifë shërbimi 30% plus TVSH, 50% nëse çështja shkon në gjyq, dhe tarifë përpunimi."
     },
     "blog": {
       "title": "Udhëzues kompensimi fluturimi dhe të drejta pasagjeri",

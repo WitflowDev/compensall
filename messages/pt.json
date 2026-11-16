@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Preços e taxas",
+    "title": "Lista de preços",
     "breadcrumb": "Preços",
-    "summary": "Sem custos iniciais. Só cobramos uma taxa de sucesso quando recuperamos compensação para si.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "Verificar a elegibilidade e utilizar o nosso site é gratuito. Se nos nomear para prosseguir a compensação, a nossa taxa aplica-se apenas quando o seu pedido for bem-sucedido, conforme estabelecido no nosso <noWinNoFeeAgreement>Acordo No win, no fee</noWinNoFeeAgreement>.",
-    "noWinNoFeeAgreement": "Acordo No win, no fee",
-    "successFeeTitle": "Taxa de sucesso",
-    "successFeeDescription": "Quando recuperamos compensação em seu nome, deduzimos uma taxa de sucesso antes de transferir o saldo para si. Recebe pelo menos 70% do montante recuperado antes de ajustes de IVA.",
-    "tableCompensationRecovered": "Compensação recuperada",
-    "tableSuccessFee": "Taxa de sucesso",
-    "tierUpTo220": "Até 250€",
-    "tier221to350": "251€–400€",
-    "tier351to520": "401€–600€",
-    "fee25Vat": "30% + IVA",
-    "uk261Title": "Montantes de compensação (UK261)",
-    "uk261Intro": "Para voos do Reino Unido, a compensação fixa ao abrigo do UK261 depende da distância do voo:",
-    "ec261Title": "Montantes de compensação (EC 261/2004)"
+    "summary": "Sem custos iniciais. A nossa taxa aplica-se apenas quando a compensação é recuperada.",
+    "general": {
+      "title": "1. Disposições gerais",
+      "body": "A presente Lista de preços faz parte integrante dos Termos e Condições da Compensall, onde todos os termos em maiúsculas são definidos. Aplica-se a pedidos de compensação ao abrigo do Regulamento (CE) n.º 261/2004 e de outros regulamentos aplicáveis em matéria de direitos dos passageiros aéreos. Se a Compensall prestar serviços adicionais, os respetivos montantes são acordados em separado."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Se não for obtida qualquer compensação da companhia aérea, a Compensall não cobra nada pelo tratamento do seu pedido."
+    },
+    "received": {
+      "title": "3. As nossas taxas quando recebemos a compensação da companhia aérea"
+    },
+    "service": {
+      "title": "3.1 Taxa de serviço",
+      "body": "Quando o seu pedido tem êxito e recebemos a compensação da companhia aérea, deduzimos a nossa taxa antes de lhe transferir o restante. A nossa taxa é de 30% da compensação, acrescida de IVA e de uma taxa de processamento."
+    },
+    "litigation": {
+      "title": "3.2 Taxa de contencioso",
+      "body": "Se não for possível um acordo amigável com a companhia aérea, o pedido segue para contencioso. Como o contencioso implica custos adicionais, tais como custas judiciais, traduções, advogados independentes e trabalho administrativo, aplica-se uma taxa adicional de sucesso de 20%, devida apenas se o caso tiver êxito. A taxa passa então a ser de 50% da compensação, acrescida de IVA e da taxa de processamento."
+    },
+    "handling": {
+      "title": "3.3 Taxa de processamento",
+      "body": "A taxa de processamento aplica-se quando lhe transferimos a compensação e depende do montante transferido:",
+      "bands": [
+        "até €99,99: sem taxa de processamento",
+        "€100 a €199,99: €15",
+        "€200 a €599,99: €25",
+        "€600 ou mais: €40"
+      ],
+      "vatNote": "Ao valor da taxa de processamento acresce IVA."
+    },
+    "examples": {
+      "title": "3.4 Exemplos por passageiro",
+      "intro": "Todas as taxas abaixo incluem IVA e a taxa de processamento.",
+      "columns": [
+        "Compensação",
+        "Distância do voo",
+        "A nossa taxa",
+        "Recebe",
+        "A nossa taxa com contencioso",
+        "Recebe com contencioso"
+      ],
+      "rows": [
+        [
+          "€250",
+          "até 1 500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1 500 km a 3 500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "mais de 3 500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Se a companhia aérea lhe pagar diretamente",
+      "body": "Se a companhia aérea lhe pagar a compensação diretamente, a nossa taxa é de 30% da compensação, acrescida de IVA. Não se aplica taxa de processamento. Deve informar-nos e pagar a nossa taxa no prazo de 10 dias após receber a compensação (cláusula 3.11 dos Termos e Condições). Enviaremos os nossos dados bancários por e-mail.",
+      "body2": "Se a nossa taxa continuar por pagar 45 dias após o primeiro pedido de pagamento por escrito, o pedido segue para contencioso para recuperação do montante em dívida e a taxa passa a ser de 50% da compensação, acrescida de IVA (cláusula 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Pedidos que envolvam outra empresa",
+      "items": [
+        "Se, depois de assinar com a Compensall, prosseguir o mesmo pedido através de outra empresa, agente ou advogado, ou diretamente com a companhia aérea, a nossa taxa de 30% acrescida de IVA aplica-se a qualquer compensação obtida (cláusula 1.11(a)).",
+        "Se já tinha contratado outra empresa, agente ou advogado para o mesmo pedido antes de assinar com a Compensall e não nos informou, aplica-se um montante fixo de €50 por passageiro (cláusula 1.11(b)).",
+        "Se já tiver sido iniciado um processo judicial através de um advogado independente e se verificar que o mesmo pedido foi também prosseguido noutro lado, deve reembolsar os custos efetivamente incorridos, tais como custas judiciais, custas atribuídas à companhia aérea, honorários de advogados, juros e custos administrativos (cláusula 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Pagamento da sua compensação",
+      "items": [
+        "Os pagamentos são feitos por transferência bancária. Não estão disponíveis pagamentos em numerário nem por cheque.",
+        "Os pagamentos fora do SEPA (moeda que não seja o euro, PayPal, Western Union, etc.) têm uma taxa de €10.",
+        "Se uma transferência falhar por motivo que lhe seja imputável, como dados bancários incorretos, repetimo-la, deduzindo quaisquer encargos bancários e uma taxa administrativa de €10.",
+        "Em reservas partilhadas, podemos transferir todos os pagamentos para uma única conta se os outros passageiros (excluindo menores) o autorizarem, para reduzir custos."
+      ]
+    },
+    "vat": {
+      "title": "7. Imposto sobre o Valor Acrescentado (IVA)",
+      "body": "O IVA é cobrado à taxa portuguesa em vigor, atualmente 23%."
+    },
+    "unclaimed": {
+      "title": "8. Pagamentos não reclamados",
+      "body": "Se, após pelo menos quatro notificações por e-mail de que a sua compensação foi recebida, não fornecer dados bancários válidos ou um meio de pagamento alternativo no prazo de três (3) meses, a Compensall pode reter o montante, nos termos da cláusula 3.3 dos Termos e Condições."
+    },
+    "records": {
+      "title": "9. Conservação de registos financeiros",
+      "body": "Conservamos os registos de transações bancárias e outros documentos relacionados com o seu pedido pelo período exigido por lei, incluindo as regras fiscais e contabilísticas. Durante esse período, estes registos não podem ser apagados, mesmo a seu pedido, porque estamos legalmente obrigados a conservá-los."
+    }
   },
   "cta": {
     "title": "Verificação segura do pedido. Com apoio humano.",
@@ -836,8 +924,8 @@
       "description": "Saiba quando o UK261 e o Regulamento da UE EC 261/2004 lhe conferem até 600€ por atrasos, cancelamentos, embarque recusado, ligações perdidas e greves de companhias aéreas."
     },
     "prices": {
-      "title": "Preços, taxas e No win, no fee",
-      "description": "A Compensall só cobra se o seu pedido for bem-sucedido. Consulte a nossa estrutura de taxas de sucesso e os montantes de compensação UK261 e EC 261 que os passageiros podem receber."
+      "title": "Lista de preços",
+      "description": "Lista de preços da Compensall: no win, no fee, taxa de serviço de 30% mais IVA, 50% se o pedido seguir para contencioso, e taxa de processamento."
     },
     "blog": {
       "title": "Guias de compensação de voo e direitos dos passageiros",

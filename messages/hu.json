@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Árak és díjak",
+    "title": "Árlista",
     "breadcrumb": "Árak",
-    "summary": "Nincs előzetes költség. Sikerdíjat csak akkor számítunk fel, ha megszerezzük a kártérítést.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "A jogosultság ellenőrzése és a weboldal használata ingyenes. Ha megbízol minket a kártérítés érvényesítésével, a díjunk csak akkor jár, ha a kárigényed sikeres — a <noWinNoFeeAgreement>No win, no fee megállapodás</noWinNoFeeAgreement> szerint.",
-    "noWinNoFeeAgreement": "No win, no fee megállapodás",
-    "successFeeTitle": "Sikerdíj",
-    "successFeeDescription": "Ha a nevedben megszerezzük a kártérítést, a sikerdíjat levonjuk, mielőtt az egyenleget átutaljuk. Az áfa-korrekciók előtt a megtérült összeg legalább 70%-át kapod meg.",
-    "tableCompensationRecovered": "Megszerzett kártérítés",
-    "tableSuccessFee": "Sikerdíj",
-    "tierUpTo220": "220 £ / 250 €-ig",
-    "tier221to350": "221–350 £ / 251–400 €",
-    "tier351to520": "351–520 £ / 401–600 €",
-    "fee25Vat": "30% + áfa",
-    "uk261Title": "Kártérítési összegek (UK261)",
-    "uk261Intro": "Az Egyesült Királyság járatainál a UK261 szerinti fix kártérítés a távolságtól függ:",
-    "ec261Title": "Kártérítési összegek (261/2004/EK)"
+    "summary": "Nincs előzetes költség. A díjunk csak akkor jár, ha a kártérítést megszerezzük.",
+    "general": {
+      "title": "1. Általános rendelkezések",
+      "body": "Ez az árlista a Compensall általános szerződési feltételeinek elválaszthatatlan része, amelyben minden nagybetűs fogalom meg van határozva. A 261/2004/EK rendelet és az egyéb alkalmazandó légi utasjogi szabályok szerinti kártérítési igényekre vonatkozik. Ha a Compensall további szolgáltatást nyújt, a megfelelő összegeket külön állapítják meg."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Ha a légitársaságtól nem jár kártérítés, a Compensall az igény kezeléséért semmit nem számít fel."
+    },
+    "received": {
+      "title": "3. Díjaink, amikor a kártérítést a légitársaságtól kapjuk meg"
+    },
+    "service": {
+      "title": "3.1 Szolgáltatási díj",
+      "body": "Ha az igény sikeres, és a kártérítést a légitársaságtól megkapjuk, a díjunkat levonjuk, mielőtt a többit átutalnánk. A díjunk a kártérítés 30%-a, plusz áfa és kezelési díj."
+    },
+    "litigation": {
+      "title": "3.2 Peres díj",
+      "body": "Ha a légitársasággal nem jön létre egyezség, az igény peres útra terelődik. A per további költségekkel jár, például illetékkel, fordítással, független ügyvédekkel és adminisztrációval. További, sikerhez kötött 20%-os díj jár, amely csak a per sikeressége esetén fizetendő. A díj ekkor a kártérítés 50%-a, plusz áfa és a kezelési díj."
+    },
+    "handling": {
+      "title": "3.3 Kezelési díj",
+      "body": "A kezelési díj akkor jár, amikor a kártérítést átutaljuk, és az átutalt összegtől függ:",
+      "bands": [
+        "99,99 €-ig: nincs kezelési díj",
+        "100 €-tól 199,99 €-ig: 15 €",
+        "200 €-tól 599,99 €-ig: 25 €",
+        "600 € vagy több: 40 €"
+      ],
+      "vatNote": "A kezelési díjra áfa kerül."
+    },
+    "examples": {
+      "title": "3.4 Példák utasonként",
+      "intro": "Az alábbi díjak tartalmazzák az áfát és a kezelési díjat.",
+      "columns": [
+        "Kártérítés",
+        "A járat távolsága",
+        "A díjunk",
+        "Ennyit kapsz",
+        "A díjunk perrel",
+        "Ennyit kapsz perrel"
+      ],
+      "rows": [
+        [
+          "€250",
+          "legfeljebb 1 500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1 500 km és 3 500 km között",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "3 500 km felett",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Ha a légitársaság közvetlenül neked fizet",
+      "body": "Ha a légitársaság a kártérítést közvetlenül neked fizeti ki, a díjunk a kártérítés 30%-a, plusz áfa. Kezelési díj nem jár. Tájékoztatnod kell minket, és a díjat a kártérítés kézhezvételétől számított 10 napon belül meg kell fizetned (az általános szerződési feltételek 3.11. pontja). A banki adatainkat e-mailben küldjük el.",
+      "body2": "Ha a díj az első írásbeli fizetési felszólításunk után 45 nappal is rendezetlen, az igény a tartozás behajtása miatt peres útra terelődik, és a díj a kártérítés 50%-a lesz, plusz áfa (3.12. pont)."
+    },
+    "otherCompany": {
+      "title": "5. Más céggel érintett igények",
+      "items": [
+        "Ha a Compensall-lal kötött megállapodás után ugyanazt az igényt más cégen, ügynökön vagy ügyvéden keresztül, illetve közvetlenül a légitársaságnál érvényesíted, a megszerzett kártérítésre a 30%-os díjunk plusz áfa vonatkozik (1.11(a) pont).",
+        "Ha a Compensall-lal kötött megállapodás előtt ugyanarra az igényre már más céget, ügynököt vagy ügyvédet bíztál meg, és ezt nem mondtad el, utasonként 50 € fix összeg jár (1.11(b) pont).",
+        "Ha független ügyvéd útján már eljárás indult, és kiderül, hogy ugyanazt az igényt máshol is érvényesítették, meg kell térítened a ténylegesen felmerült költségeket, például az illetéket, a légitársaságnak megítélt költségeket, az ügyvédi díjat, a kamatot és az adminisztratív költségeket (1.11(c) pont)."
+      ]
+    },
+    "payment": {
+      "title": "6. A kártérítés kifizetése",
+      "items": [
+        "A kifizetés banki átutalással történik. Készpénzes és csekkes fizetés nem lehetséges.",
+        "A SEPA-n kívüli fizetés (nem euró, PayPal, Western Union stb.) díja 10 €.",
+        "Ha az átutalás neked felróható okból hiúsul meg, például hibás banki adatok miatt, megismételjük, és levonjuk a banki költségeket, valamint 10 € adminisztratív díjat.",
+        "Közös foglalásnál minden kifizetést egy számlára utalhatunk, ha a többi utas (a kiskorúak kivételével) ezt engedélyezi, a költségek csökkentése érdekében."
+      ]
+    },
+    "vat": {
+      "title": "7. Általános forgalmi adó (áfa)",
+      "body": "Az áfát a hatályos portugál kulcs szerint számítjuk fel, jelenleg 23%."
+    },
+    "unclaimed": {
+      "title": "8. Át nem vett kifizetések",
+      "body": "Ha legalább négy e-mailes értesítés után, hogy a kártérítés megérkezett, három (3) hónapon belül nem adsz meg érvényes banki adatot vagy más fizetési módot, a Compensall az összeget visszatarthatja, az általános szerződési feltételek 3.3. pontja szerint."
+    },
+    "records": {
+      "title": "9. A pénzügyi iratok megőrzése",
+      "body": "A banki tranzakciók nyilvántartását és az igénnyel kapcsolatos egyéb iratokat a jogszabályban előírt ideig őrizzük, beleértve az adó- és számviteli szabályokat. Ebben az időszakban ezek az iratok a kérésedre sem törölhetők, mert a megőrzésük jogszabályi kötelezettség."
+    }
   },
   "cta": {
     "title": "Biztonságos kárigény-ellenőrzés. Emberi háttérrel.",
@@ -836,8 +924,8 @@
       "description": "Tudd meg, mikor jár akár 520 £ vagy 600 € a UK261 és a 261/2004/EK rendelet alapján késés, törlés, beszállásmegtagadás, elmulasztott csatlakozás és légitársasági sztrájk esetén."
     },
     "prices": {
-      "title": "Árak, díjak és No win, no fee",
-      "description": "A Compensall No win, no fee alapon dolgozik. Nézd meg a sikerdíj-struktúrát, valamint a UK261 és az EK 261 szerinti összegeket."
+      "title": "Árlista",
+      "description": "A Compensall árlistája: no win, no fee, 30%-os szolgáltatási díj áfával, 50% peres eljárás esetén, és kezelési díj."
     },
     "blog": {
       "title": "Járatkártérítési útmutatók és utasjogok",

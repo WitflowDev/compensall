@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Prețuri și comisioane",
+    "title": "Listă de prețuri",
     "breadcrumb": "Prețuri",
-    "summary": "Fără cost inițial. Percepem un comision de succes doar când recuperăm despăgubirea pentru tine.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "Verificarea dreptului și folosirea site-ului sunt gratuite. Dacă ne însărcinezi să cerem despăgubirea, comisionul nostru se aplică doar dacă cererea reușește, conform <noWinNoFeeAgreement>Acordului No win, no fee</noWinNoFeeAgreement>.",
-    "noWinNoFeeAgreement": "Acordul No win, no fee",
-    "successFeeTitle": "Comisionul de succes",
-    "successFeeDescription": "Când recuperăm despăgubirea în numele tău, reținem un comision de succes înainte să-ți transferăm restul. Primești cel puțin 70 % din suma recuperată, înainte de ajustări de TVA.",
-    "tableCompensationRecovered": "Despăgubire recuperată",
-    "tableSuccessFee": "Comision de succes",
-    "tierUpTo220": "Până la 220 £ / 250 €",
-    "tier221to350": "221–350 £ / 251–400 €",
-    "tier351to520": "351–520 £ / 401–600 €",
-    "fee25Vat": "30 % + TVA",
-    "uk261Title": "Sume de despăgubire (UK261)",
-    "uk261Intro": "La zborurile din Regatul Unit, despăgubirea fixă UK261 depinde de distanța zborului:",
-    "ec261Title": "Sume de despăgubire (CE 261/2004)"
+    "summary": "Fără cost inițial. Taxa noastră se aplică doar când se obține compensația.",
+    "general": {
+      "title": "1. Dispoziții generale",
+      "body": "Această listă de prețuri face parte integrantă din Termenii și condițiile Compensall, unde este definit fiecare termen scris cu majuscule. Se aplică cererilor de compensație în temeiul Regulamentului (CE) nr. 261/2004 și al altor regulamente aplicabile privind drepturile pasagerilor aerieni. Dacă Compensall prestează servicii suplimentare, sumele corespunzătoare se stabilesc separat."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Dacă nu se obține nicio compensație de la compania aeriană, Compensall nu percepe nimic pentru soluționarea cererii."
+    },
+    "received": {
+      "title": "3. Taxele noastre când primim compensația de la compania aeriană"
+    },
+    "service": {
+      "title": "3.1 Taxa de serviciu",
+      "body": "Când cererea are succes și primim compensația de la compania aeriană, reținem taxa înainte de a vă transfera restul. Taxa noastră este de 30% din compensație, plus TVA și o taxă de procesare."
+    },
+    "litigation": {
+      "title": "3.2 Taxa de litigiu",
+      "body": "Dacă nu se poate ajunge la o înțelegere amiabilă cu compania aeriană, cererea intră în litigiu. Litigiul implică costuri suplimentare, cum ar fi taxe judiciare, traduceri, avocați independenți și muncă administrativă. Se aplică o taxă suplimentară de succes de 20%, datorată doar dacă dosarul are câștig de cauză. Taxa devine atunci 50% din compensație, plus TVA și taxa de procesare."
+    },
+    "handling": {
+      "title": "3.3 Taxa de procesare",
+      "body": "Taxa de procesare se aplică când vă transferăm compensația și depinde de suma transferată:",
+      "bands": [
+        "până la 99,99 €: fără taxă de procesare",
+        "100 € până la 199,99 €: 15 €",
+        "200 € până la 599,99 €: 25 €",
+        "600 € sau mai mult: 40 €"
+      ],
+      "vatNote": "La taxa de procesare se adaugă TVA."
+    },
+    "examples": {
+      "title": "3.4 Exemple per pasager",
+      "intro": "Toate taxele de mai jos includ TVA și taxa de procesare.",
+      "columns": [
+        "Compensație",
+        "Distanța zborului",
+        "Taxa noastră",
+        "Primiți",
+        "Taxa noastră cu litigiu",
+        "Primiți cu litigiu"
+      ],
+      "rows": [
+        [
+          "€250",
+          "până la 1.500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1.500 km până la 3.500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "peste 3.500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Dacă compania aeriană vă plătește direct",
+      "body": "Dacă compania aeriană vă plătește compensația direct, taxa noastră este de 30% din compensație, plus TVA. Nu se aplică taxă de procesare. Trebuie să ne informați și să plătiți taxa în termen de 10 zile de la primirea compensației (clauza 3.11 din Termeni și condiții). Vă vom trimite datele bancare prin e-mail.",
+      "body2": "Dacă taxa rămâne neplătită la 45 de zile după prima noastră cerere scrisă de plată, cererea intră în litigiu pentru recuperarea sumei neplătite, iar taxa devine 50% din compensație, plus TVA (clauza 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Cereri care implică o altă societate",
+      "items": [
+        "Dacă, după semnarea cu Compensall, urmăriți aceeași cerere prin altă societate, agent sau avocat, ori direct la compania aeriană, taxa noastră de 30% plus TVA se aplică oricărei compensații obținute (clauza 1.11(a)).",
+        "Dacă angajaseți deja o altă societate, un agent sau un avocat pentru aceeași cerere înainte de a semna cu Compensall și nu ne-ați spus, se aplică o sumă fixă de 50 € per pasager (clauza 1.11(b)).",
+        "Dacă a fost deja început un proces printr-un avocat independent și reiese că aceeași cerere a fost urmărită și în altă parte, trebuie să rambursați costurile efectiv suportate, cum ar fi taxe judiciare, cheltuieli acordate companiei aeriene, onorarii de avocat, dobânzi și costuri administrative (clauza 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Plata compensației",
+      "items": [
+        "Plățile se fac prin transfer bancar. Plățile în numerar și prin cec nu sunt disponibile.",
+        "Plățile în afara SEPA (altă monedă decât euro, PayPal, Western Union etc.) au o taxă de 10 €.",
+        "Dacă un transfer eșuează dintr-un motiv care vă este imputabil, cum ar fi date bancare greșite, îl vom relua, reținând comisioanele bancare și o taxă administrativă de 10 €.",
+        "Pentru rezervări comune, putem transfera toate plățile într-un singur cont dacă ceilalți pasageri (minorii excluși) autorizează acest lucru, pentru a reduce costurile."
+      ]
+    },
+    "vat": {
+      "title": "7. Taxa pe valoarea adăugată (TVA)",
+      "body": "TVA se percepe la cota portugheză în vigoare, în prezent 23%."
+    },
+    "unclaimed": {
+      "title": "8. Plăți nerevendicate",
+      "body": "Dacă, după cel puțin patru notificări prin e-mail că a fost primită compensația, nu furnizați date bancare valide sau o altă metodă de plată în termen de trei (3) luni, Compensall poate reține suma, astfel cum este prevăzut la clauza 3.3 din Termeni și condiții."
+    },
+    "records": {
+      "title": "9. Păstrarea evidențelor financiare",
+      "body": "Păstrăm evidențele tranzacțiilor bancare și celelalte documente legate de cerere pe perioada impusă de lege, inclusiv regulile fiscale și contabile. În această perioadă, evidențele nu pot fi șterse, nici la cererea dvs., deoarece suntem obligați legal să le păstrăm."
+    }
   },
   "cta": {
     "title": "Verificare sigură. Cu sprijin uman.",
@@ -836,8 +924,8 @@
       "description": "Află când UK261 și Regulamentul CE 261/2004 îți dau dreptul la până la 520 £ sau 600 € pentru întârzieri, anulări, refuz la îmbarcare, corespondențe ratate și greve."
     },
     "prices": {
-      "title": "Prețuri, comisioane și No win, no fee",
-      "description": "Compensall lucrează cu No win, no fee. Consultă comisionul de succes și sumele UK261 și CE 261 care ți se pot cuveni."
+      "title": "Listă de prețuri",
+      "description": "Lista de prețuri Compensall: no win, no fee, taxă de serviciu de 30% plus TVA, 50% dacă dosarul ajunge în litigiu și taxă de procesare."
     },
     "blog": {
       "title": "Ghiduri de despăgubire a zborurilor și drepturi ale pasagerului",

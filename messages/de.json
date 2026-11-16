@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Preise und Gebühren",
+    "title": "Preisliste",
     "breadcrumb": "Preise",
-    "summary": "Keine Vorabkosten. Eine Erfolgsgebühr fällt nur an, wenn wir Entschädigung für Sie einholen.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "Die Prüfung der Berechtigung und die Nutzung der Website sind kostenlos. Wenn Sie uns mit der Durchsetzung beauftragen, gilt unsere Gebühr nur bei erfolgreichem Anspruch, wie in der <noWinNoFeeAgreement>Vereinbarung No win, no fee</noWinNoFeeAgreement> beschrieben.",
-    "noWinNoFeeAgreement": "Vereinbarung No win, no fee",
-    "successFeeTitle": "Erfolgsgebühr",
-    "successFeeDescription": "Wenn wir Entschädigung für Sie einholen, ziehen wir eine Erfolgsgebühr ab, bevor wir den Rest überweisen. Sie erhalten mindestens 70 % des eingezogenen Betrags vor MwSt.-Anpassungen.",
-    "tableCompensationRecovered": "Eingezogene Entschädigung",
-    "tableSuccessFee": "Erfolgsgebühr",
-    "tierUpTo220": "Bis 220 £ / 250 €",
-    "tier221to350": "221–350 £ / 251–400 €",
-    "tier351to520": "351–520 £ / 401–600 €",
-    "fee25Vat": "30 % + MwSt.",
-    "uk261Title": "Entschädigungsbeträge (UK261)",
-    "uk261Intro": "Bei Flügen aus dem Vereinigten Königreich hängt die feste Entschädigung nach UK261 von der Flugstrecke ab:",
-    "ec261Title": "Entschädigungsbeträge (EG 261/2004)"
+    "summary": "Keine Kosten im Voraus. Unsere Gebühr fällt nur an, wenn eine Entschädigung erzielt wird.",
+    "general": {
+      "title": "1. Allgemeine Bestimmungen",
+      "body": "Diese Preisliste ist Bestandteil der Allgemeinen Geschäftsbedingungen von Compensall, in denen jeder großgeschriebene Begriff definiert ist. Sie gilt für Entschädigungsansprüche nach der Verordnung (EG) Nr. 261/2004 und anderen anwendbaren Vorschriften über Fluggastrechte. Erbringt Compensall zusätzliche Leistungen, werden die entsprechenden Beträge gesondert vereinbart."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Wird von der Fluggesellschaft keine Entschädigung erlangt, berechnet Compensall für die Bearbeitung Ihres Anspruchs nichts."
+    },
+    "received": {
+      "title": "3. Unsere Gebühren, wenn wir die Entschädigung von der Fluggesellschaft erhalten"
+    },
+    "service": {
+      "title": "3.1 Servicegebühr",
+      "body": "Ist Ihr Anspruch erfolgreich und erhalten wir die Entschädigung von der Fluggesellschaft, ziehen wir unsere Gebühr ab, bevor wir Ihnen den Rest überweisen. Unsere Gebühr beträgt 30 % der Entschädigung zuzüglich MwSt. und einer Bearbeitungsgebühr."
+    },
+    "litigation": {
+      "title": "3.2 Prozessgebühr",
+      "body": "Kann mit der Fluggesellschaft keine gütliche Einigung erzielt werden, geht der Anspruch in ein Gerichtsverfahren. Ein Gerichtsverfahren verursacht zusätzliche Kosten, etwa Gerichtsgebühren, Übersetzungen, unabhängige Anwälte und Verwaltungsaufwand. Es fällt eine zusätzliche erfolgsabhängige Gebühr von 20 % an, die nur bei Erfolg des Verfahrens zu zahlen ist. Die Gebühr beträgt dann 50 % der Entschädigung zuzüglich MwSt. und der Bearbeitungsgebühr."
+    },
+    "handling": {
+      "title": "3.3 Bearbeitungsgebühr",
+      "body": "Die Bearbeitungsgebühr fällt an, wenn wir Ihnen Ihre Entschädigung überweisen, und richtet sich nach dem überwiesenen Betrag:",
+      "bands": [
+        "bis 99,99 €: keine Bearbeitungsgebühr",
+        "100 € bis 199,99 €: 15 €",
+        "200 € bis 599,99 €: 25 €",
+        "600 € oder mehr: 40 €"
+      ],
+      "vatNote": "Auf die Bearbeitungsgebühr wird MwSt. erhoben."
+    },
+    "examples": {
+      "title": "3.4 Beispiele pro Fluggast",
+      "intro": "Alle nachstehenden Gebühren enthalten die MwSt. und die Bearbeitungsgebühr.",
+      "columns": [
+        "Entschädigung",
+        "Flugstrecke",
+        "Unsere Gebühr",
+        "Sie erhalten",
+        "Unsere Gebühr mit Verfahren",
+        "Sie erhalten mit Verfahren"
+      ],
+      "rows": [
+        [
+          "€250",
+          "bis 1.500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1.500 km bis 3.500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "über 3.500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Wenn die Fluggesellschaft direkt an Sie zahlt",
+      "body": "Zahlt die Fluggesellschaft die Entschädigung direkt an Sie, beträgt unsere Gebühr 30 % der Entschädigung zuzüglich MwSt. Eine Bearbeitungsgebühr fällt nicht an. Sie müssen uns informieren und unsere Gebühr innerhalb von 10 Tagen nach Erhalt der Entschädigung zahlen (Ziffer 3.11 der Allgemeinen Geschäftsbedingungen). Wir senden Ihnen unsere Bankverbindung per E-Mail.",
+      "body2": "Bleibt unsere Gebühr 45 Tage nach unserer ersten schriftlichen Zahlungsaufforderung unbezahlt, geht der Anspruch zur Beitreibung des offenen Betrags in ein Verfahren über und die Gebühr beträgt 50 % der Entschädigung zuzüglich MwSt. (Ziffer 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Ansprüche unter Beteiligung eines anderen Unternehmens",
+      "items": [
+        "Wenn Sie denselben Anspruch nach der Unterzeichnung mit Compensall über ein anderes Unternehmen, einen Vermittler oder Anwalt oder direkt bei der Fluggesellschaft verfolgen, gilt unsere Gebühr von 30 % zuzüglich MwSt. für jede erlangte Entschädigung (Ziffer 1.11(a)).",
+        "Wenn Sie vor der Unterzeichnung mit Compensall bereits ein anderes Unternehmen, einen Vermittler oder Anwalt mit demselben Anspruch beauftragt hatten und uns dies nicht mitgeteilt haben, gilt ein fester Betrag von 50 € pro Fluggast (Ziffer 1.11(b)).",
+        "Wenn bereits ein Gerichtsverfahren über einen unabhängigen Anwalt eingeleitet wurde und sich herausstellt, dass derselbe Anspruch auch anderweitig verfolgt wurde, müssen Sie die tatsächlich entstandenen Kosten erstatten, etwa Gerichtsgebühren, der Fluggesellschaft auferlegte Kosten, Anwaltsgebühren, Zinsen und Verwaltungskosten (Ziffer 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Auszahlung Ihrer Entschädigung",
+      "items": [
+        "Zahlungen erfolgen per Banküberweisung. Bar- und Scheckzahlungen sind nicht möglich.",
+        "Zahlungen außerhalb des SEPA-Raums (Nicht-Euro-Währung, PayPal, Western Union usw.) kosten 10 €.",
+        "Scheitert eine Überweisung aus einem von Ihnen zu vertretenden Grund, etwa falsche Bankdaten, wiederholen wir sie und ziehen Bankspesen sowie eine Verwaltungsgebühr von 10 € ab.",
+        "Bei gemeinsamen Buchungen können wir alle Zahlungen auf ein Konto überweisen, wenn die anderen Fluggäste (Minderjährige ausgenommen) dies genehmigen, um Kosten zu senken."
+      ]
+    },
+    "vat": {
+      "title": "7. Mehrwertsteuer (MwSt.)",
+      "body": "Die MwSt. wird zum geltenden portugiesischen Satz berechnet, derzeit 23 %."
+    },
+    "unclaimed": {
+      "title": "8. Nicht abgerufene Zahlungen",
+      "body": "Wenn Sie nach mindestens vier E-Mail-Mitteilungen, dass Ihre Entschädigung eingegangen ist, innerhalb von drei (3) Monaten keine gültigen Bankdaten oder eine andere Zahlungsmethode angeben, kann Compensall den Betrag einbehalten, wie in Ziffer 3.3 der Allgemeinen Geschäftsbedingungen vorgesehen."
+    },
+    "records": {
+      "title": "9. Aufbewahrung von Finanzunterlagen",
+      "body": "Wir bewahren Kontobewegungen und andere Unterlagen zu Ihrem Anspruch für den gesetzlich vorgeschriebenen Zeitraum auf, einschließlich der steuer- und buchhalterischen Vorschriften. In diesem Zeitraum können diese Unterlagen nicht gelöscht werden, auch nicht auf Ihren Wunsch, weil wir gesetzlich zu ihrer Aufbewahrung verpflichtet sind."
+    }
   },
   "cta": {
     "title": "Sichere Anspruchsprüfung. Menschlich begleitet.",
@@ -836,8 +924,8 @@
       "description": "Wann UK261 und die Verordnung (EG) Nr. 261/2004 Ihnen bis zu 520 £ oder 600 € bei Verspätung, Annullierung, Nichtbeförderung, verpasstem Anschluss und Streik zustehen."
     },
     "prices": {
-      "title": "Preise, Gebühren und No win, no fee",
-      "description": "Compensall arbeitet nach No win, no fee. Sehen Sie die Erfolgsgebühr sowie die Entschädigungsbeträge nach UK261 und EG 261."
+      "title": "Preisliste",
+      "description": "Preisliste von Compensall: No win, no fee, 30 % Servicegebühr zuzüglich MwSt., 50 % bei einem Gerichtsverfahren und eine Bearbeitungsgebühr."
     },
     "blog": {
       "title": "Ratgeber zu Flugentschädigung und Fluggastrechten",

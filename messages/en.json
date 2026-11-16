@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Prices and fees",
+    "title": "Price List",
     "breadcrumb": "Prices",
-    "summary": "No upfront cost. We only charge a success fee when we recover compensation for you.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "Checking eligibility and using our website is free. If you appoint us to pursue compensation, our fee applies only when your claim is successful, as set out in our <noWinNoFeeAgreement>No win, no fee Agreement</noWinNoFeeAgreement>.",
-    "noWinNoFeeAgreement": "No win, no fee Agreement",
-    "successFeeTitle": "Success fee",
-    "successFeeDescription": "When we recover compensation on your behalf, we deduct a success fee before transferring the balance to you. You receive at least 70% of the recovered amount before VAT adjustments.",
-    "tableCompensationRecovered": "Compensation recovered",
-    "tableSuccessFee": "Success fee",
-    "tierUpTo220": "Up to £220 / €250",
-    "tier221to350": "£221–£350 / €251–€400",
-    "tier351to520": "£351–£520 / €401–€600",
-    "fee25Vat": "30% + VAT",
-    "uk261Title": "Compensation amounts (UK261)",
-    "uk261Intro": "For UK flights, fixed compensation under UK261 depends on flight distance:",
-    "ec261Title": "Compensation amounts (EC 261/2004)"
+    "summary": "No upfront cost. Our fee applies only when compensation is recovered.",
+    "general": {
+      "title": "1. General provisions",
+      "body": "This Price List forms an integral part of Compensall's Terms and Conditions, where every capitalised term is defined. It applies to claims for compensation under Regulation (EC) No 261/2004 and other applicable air passenger rights regulations. If Compensall provides additional services, the corresponding amounts are agreed separately."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "If no compensation is obtained from the airline, Compensall charges nothing for handling your claim."
+    },
+    "received": {
+      "title": "3. Our fees when we receive the compensation from the airline"
+    },
+    "service": {
+      "title": "3.1 Service fee",
+      "body": "When your claim succeeds and we receive the compensation from the airline, we deduct our fee before transferring the rest to you. Our fee is 30% of the compensation, plus VAT and a handling fee."
+    },
+    "litigation": {
+      "title": "3.2 Litigation fee",
+      "body": "If an amicable settlement with the airline cannot be reached, the claim goes to litigation. Because litigation involves additional costs, such as court fees, translations, independent lawyers and administrative work, an additional success-based fee of 20% applies, payable only if the case succeeds. The fee is then 50% of the compensation, plus VAT and the handling fee."
+    },
+    "handling": {
+      "title": "3.3 Handling fee",
+      "body": "The handling fee applies when we transfer your compensation to you and depends on the amount transferred:",
+      "bands": [
+        "up to €99.99: no handling fee",
+        "€100 to €199.99: €15",
+        "€200 to €599.99: €25",
+        "€600 or more: €40"
+      ],
+      "vatNote": "VAT is added to the handling fee."
+    },
+    "examples": {
+      "title": "3.4 Examples per passenger",
+      "intro": "All fees below include VAT and the handling fee.",
+      "columns": [
+        "Compensation",
+        "Flight distance",
+        "Our fee",
+        "You receive",
+        "Our fee with litigation",
+        "You receive with litigation"
+      ],
+      "rows": [
+        [
+          "€250",
+          "up to 1,500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "1,500 km to 3,500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "over 3,500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. If the airline pays you directly",
+      "body": "If the airline pays the compensation directly to you, our fee is 30% of the compensation, plus VAT. No handling fee applies. You must inform us and pay our fee within 10 days of receiving the compensation (clause 3.11 of the Terms and Conditions). We will send you our bank details by email.",
+      "body2": "If our fee remains unpaid 45 days after our first written payment request, the claim proceeds to litigation for the recovery of the unpaid amount and the fee becomes 50% of the compensation, plus VAT (clause 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Claims involving another company",
+      "items": [
+        "If, after signing with Compensall, you pursue the same claim through another company, agent or lawyer, or directly with the airline, our fee of 30% plus VAT applies to any compensation obtained (clause 1.11(a)).",
+        "If you had already engaged another company, agent or lawyer for the same claim before signing with Compensall and did not tell us, a fixed amount of €50 per passenger applies (clause 1.11(b)).",
+        "If legal proceedings have already been started through an independent lawyer and it emerges that the same claim was also pursued elsewhere, you must reimburse the costs actually incurred, such as court fees, costs awarded to the airline, lawyers' fees, interest and administrative costs (clause 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Payment of your compensation",
+      "items": [
+        "Payments are made by bank transfer. Cash and cheque payments are not available.",
+        "Payments outside SEPA (non-euro currency, PayPal, Western Union, etc.) have a €10 fee.",
+        "If a transfer fails for a reason attributable to you, such as wrong bank details, we will repeat it, deducting any bank charges plus a €10 administrative fee.",
+        "For shared bookings, we can transfer all payments to a single account if the other passengers (minors excluded) authorise it, to reduce costs."
+      ]
+    },
+    "vat": {
+      "title": "7. Value Added Tax (VAT)",
+      "body": "VAT is charged at the Portuguese rate in force, currently 23%."
+    },
+    "unclaimed": {
+      "title": "8. Unclaimed payments",
+      "body": "If, after at least four email notifications that your compensation has been received, you do not provide valid bank details or an alternative payment method within three (3) months, Compensall may retain the amount, as set out in clause 3.3 of the Terms and Conditions."
+    },
+    "records": {
+      "title": "9. Retention of financial records",
+      "body": "We keep bank transaction records and other documents related to your claim for the period required by law, including tax and accounting rules. During that period, these records cannot be deleted, even at your request, because we are legally required to keep them."
+    }
   },
   "cta": {
     "title": "Secure claim check. Human-backed.",
@@ -836,8 +924,8 @@
       "description": "Learn when UK261 and EU Regulation EC 261/2004 entitle you to up to £520 or €600 for delays, cancellations, denied boarding, missed connections, and airline strikes."
     },
     "prices": {
-      "title": "Prices, fees and No win, no fee",
-      "description": "Compensall works on a No win, no fee basis. See our success fee structure and the UK261 and EC 261 compensation amounts passengers may receive."
+      "title": "Price List",
+      "description": "Compensall Price List: no win, no fee, a 30% service fee plus VAT, a 50% fee if the claim goes to litigation, and the handling fee."
     },
     "blog": {
       "title": "Flight compensation guides and passenger rights",

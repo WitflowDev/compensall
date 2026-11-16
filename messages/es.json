@@ -708,23 +708,111 @@
     }
   },
   "prices": {
-    "title": "Precios y comisiones",
+    "title": "Lista de precios",
     "breadcrumb": "Precios",
-    "summary": "Sin coste inicial. Solo cobramos una comisión de éxito cuando recuperamos la compensación para ti.",
-    "noWinNoFeeIntro": "No win, no fee:",
-    "noWinNoFeeBody": "Comprobar si tienes derecho y usar la web es gratis. Si nos encargas reclamar la compensación, nuestra comisión solo se aplica si tu reclamación tiene éxito, según nuestro <noWinNoFeeAgreement>Acuerdo No win, no fee</noWinNoFeeAgreement>.",
-    "noWinNoFeeAgreement": "Acuerdo No win, no fee",
-    "successFeeTitle": "Comisión de éxito",
-    "successFeeDescription": "Cuando recuperamos la compensación en tu nombre, descontamos una comisión de éxito antes de transferirte el resto. Recibes al menos el 70 % del importe recuperado, antes de ajustes de IVA.",
-    "tableCompensationRecovered": "Compensación recuperada",
-    "tableSuccessFee": "Comisión de éxito",
-    "tierUpTo220": "Hasta 220 £ / 250 €",
-    "tier221to350": "221–350 £ / 251–400 €",
-    "tier351to520": "351–520 £ / 401–600 €",
-    "fee25Vat": "30 % + IVA",
-    "uk261Title": "Importes de compensación (UK261)",
-    "uk261Intro": "En los vuelos del Reino Unido, la compensación fija de UK261 depende de la distancia del vuelo:",
-    "ec261Title": "Importes de compensación (CE 261/2004)"
+    "summary": "Sin coste inicial. Nuestros honorarios solo se aplican cuando se recupera la compensación.",
+    "general": {
+      "title": "1. Disposiciones generales",
+      "body": "Esta lista de precios forma parte integrante de los Términos y Condiciones de Compensall, donde se define cada término en mayúsculas. Se aplica a las reclamaciones de compensación conforme al Reglamento (CE) n.º 261/2004 y a otros reglamentos aplicables de derechos de los pasajeros aéreos. Si Compensall presta servicios adicionales, los importes correspondientes se acuerdan por separado."
+    },
+    "noWin": {
+      "title": "2. No win, no fee",
+      "body": "Si no se obtiene compensación de la aerolínea, Compensall no cobra nada por gestionar tu reclamación."
+    },
+    "received": {
+      "title": "3. Nuestros honorarios cuando recibimos la compensación de la aerolínea"
+    },
+    "service": {
+      "title": "3.1 Honorarios de servicio",
+      "body": "Cuando tu reclamación tiene éxito y recibimos la compensación de la aerolínea, descontamos nuestros honorarios antes de transferirte el resto. Nuestros honorarios son el 30 % de la compensación, más el IVA y una comisión de gestión."
+    },
+    "litigation": {
+      "title": "3.2 Honorarios de litigio",
+      "body": "Si no se alcanza un acuerdo amistoso con la aerolínea, la reclamación pasa a litigio. El litigio implica costes adicionales, como tasas judiciales, traducciones, abogados independientes y trabajo administrativo. Se aplica un honorario adicional de éxito del 20 %, pagadero solo si el caso tiene éxito. Los honorarios pasan entonces a ser el 50 % de la compensación, más el IVA y la comisión de gestión."
+    },
+    "handling": {
+      "title": "3.3 Comisión de gestión",
+      "body": "La comisión de gestión se aplica cuando te transferimos la compensación y depende del importe transferido:",
+      "bands": [
+        "hasta 99,99 €: sin comisión de gestión",
+        "de 100 € a 199,99 €: 15 €",
+        "de 200 € a 599,99 €: 25 €",
+        "600 € o más: 40 €"
+      ],
+      "vatNote": "Al importe de la comisión de gestión se añade el IVA."
+    },
+    "examples": {
+      "title": "3.4 Ejemplos por pasajero",
+      "intro": "Todos los honorarios siguientes incluyen el IVA y la comisión de gestión.",
+      "columns": [
+        "Compensación",
+        "Distancia del vuelo",
+        "Nuestros honorarios",
+        "Recibes",
+        "Nuestros honorarios con litigio",
+        "Recibes con litigio"
+      ],
+      "rows": [
+        [
+          "€250",
+          "hasta 1.500 km",
+          "€110.70",
+          "€139.30",
+          "€153.75",
+          "€96.25"
+        ],
+        [
+          "€400",
+          "de 1.500 km a 3.500 km",
+          "€178.35",
+          "€221.65",
+          "€264.45",
+          "€135.55"
+        ],
+        [
+          "€600",
+          "más de 3.500 km",
+          "€252.15",
+          "€347.85",
+          "€399.75",
+          "€200.25"
+        ]
+      ]
+    },
+    "direct": {
+      "title": "4. Si la aerolínea te paga directamente",
+      "body": "Si la aerolínea te paga la compensación directamente, nuestros honorarios son el 30 % de la compensación, más el IVA. No se aplica comisión de gestión. Debes informarnos y pagar nuestros honorarios en un plazo de 10 días desde que recibas la compensación (cláusula 3.11 de los Términos y Condiciones). Te enviaremos nuestros datos bancarios por correo electrónico.",
+      "body2": "Si nuestros honorarios siguen impagados 45 días después de nuestra primera solicitud de pago por escrito, la reclamación pasa a litigio para recuperar el importe impagado y los honorarios pasan a ser el 50 % de la compensación, más el IVA (cláusula 3.12)."
+    },
+    "otherCompany": {
+      "title": "5. Reclamaciones que implican a otra empresa",
+      "items": [
+        "Si, después de firmar con Compensall, persigues la misma reclamación a través de otra empresa, agente o abogado, o directamente con la aerolínea, nuestros honorarios del 30 % más IVA se aplican a cualquier compensación obtenida (cláusula 1.11(a)).",
+        "Si ya habías contratado a otra empresa, agente o abogado para la misma reclamación antes de firmar con Compensall y no nos lo dijiste, se aplica un importe fijo de 50 € por pasajero (cláusula 1.11(b)).",
+        "Si ya se ha iniciado un procedimiento judicial a través de un abogado independiente y resulta que la misma reclamación también se persiguió en otro lugar, debes reembolsar los costes realmente incurridos, como tasas judiciales, costas a favor de la aerolínea, honorarios de abogados, intereses y costes administrativos (cláusula 1.11(c))."
+      ]
+    },
+    "payment": {
+      "title": "6. Pago de tu compensación",
+      "items": [
+        "Los pagos se hacen por transferencia bancaria. No están disponibles los pagos en efectivo ni por cheque.",
+        "Los pagos fuera de SEPA (moneda distinta del euro, PayPal, Western Union, etc.) tienen una comisión de 10 €.",
+        "Si una transferencia falla por una causa que te sea imputable, como datos bancarios incorrectos, la repetiremos descontando los gastos bancarios y una comisión administrativa de 10 €.",
+        "En reservas compartidas, podemos transferir todos los pagos a una sola cuenta si los demás pasajeros (menores excluidos) lo autorizan, para reducir costes."
+      ]
+    },
+    "vat": {
+      "title": "7. Impuesto sobre el Valor Añadido (IVA)",
+      "body": "El IVA se cobra al tipo portugués vigente, actualmente el 23 %."
+    },
+    "unclaimed": {
+      "title": "8. Pagos no reclamados",
+      "body": "Si, tras al menos cuatro avisos por correo electrónico de que tu compensación ha sido recibida, no facilitas datos bancarios válidos u otro medio de pago en un plazo de tres (3) meses, Compensall puede retener el importe, según la cláusula 3.3 de los Términos y Condiciones."
+    },
+    "records": {
+      "title": "9. Conservación de los registros financieros",
+      "body": "Conservamos los registros de operaciones bancarias y los demás documentos relacionados con tu reclamación durante el plazo exigido por la ley, incluidas las normas fiscales y contables. Durante ese plazo, estos registros no pueden eliminarse, ni siquiera a tu petición, porque estamos legalmente obligados a conservarlos."
+    }
   },
   "cta": {
     "title": "Comprobación segura. Con apoyo humano.",
@@ -836,8 +924,8 @@
       "description": "Descubre cuándo UK261 y el Reglamento CE 261/2004 te dan derecho a hasta 520 £ o 600 € por retrasos, cancelaciones, denegación de embarque, conexiones perdidas y huelgas."
     },
     "prices": {
-      "title": "Precios, comisiones y No win, no fee",
-      "description": "Compensall trabaja con No win, no fee. Consulta nuestra comisión de éxito y los importes de compensación de UK261 y CE 261 que pueden corresponderte."
+      "title": "Lista de precios",
+      "description": "Lista de precios de Compensall: no win, no fee, honorarios del 30 % más IVA, 50 % si el caso va a litigio, y comisión de gestión."
     },
     "blog": {
       "title": "Guías de compensación de vuelos y derechos del pasajero",
