@@ -77,7 +77,7 @@ export default function Step2Panel({
         />
       ) : null}
 
-      <div className="bg-[#f0f3fe] rounded-[13px] px-4 py-4 mb-4 max-w-sm">
+      <div className="bg-[#f0f3fe] rounded-[13px] px-4 py-4 mb-4">
         <p className="text-[#1f3664] text-sm sm:text-base leading-relaxed">
           <span className="font-bold">{tStep2("confirmPrompt")}</span>
           <br />

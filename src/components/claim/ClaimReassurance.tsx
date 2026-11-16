@@ -51,13 +51,13 @@ export default function ClaimReassurance() {
   const tStep2 = useTranslations("claim.step2");
 
   return (
-    <ul className="flex flex-row flex-wrap gap-x-5 gap-y-3 lg:flex-col lg:gap-5 lg:pt-2">
+    <ul className="flex flex-row flex-wrap justify-center gap-x-6 gap-y-3 xl:flex-col xl:items-stretch xl:justify-start xl:gap-5 xl:pt-1">
       {ITEMS.map((item) => (
-        <li key={item.key} className="flex items-center gap-2.5 min-w-0">
+        <li key={item.key} className="flex min-w-0 items-center gap-2.5">
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#e8efff] text-[#2669f3]">
             <item.Icon />
           </span>
-          <span className="text-sm font-bold text-[#1f3664] leading-snug">{tStep2(item.key)}</span>
+          <span className="min-w-0 text-sm font-bold leading-snug text-[#1f3664]">{tStep2(item.key)}</span>
         </li>
       ))}
     </ul>

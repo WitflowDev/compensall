@@ -244,7 +244,7 @@ export default function AirportSelect({
   const isField = variant === "field";
   const triggerClass = isField
     ? "w-full h-11 px-4 flex items-center text-left border border-[#d5e0f9] rounded-[10px] bg-white hover:border-[#2669f3] transition-colors disabled:cursor-not-allowed disabled:opacity-60"
-    : "w-full h-full min-h-[73px] px-4 sm:px-6 flex items-center justify-center text-center hover:bg-[#f8faff]/50 active:bg-[#e7eeff] transition-colors disabled:cursor-not-allowed disabled:hover:bg-transparent";
+    : "w-full h-full min-h-[73px] px-12 sm:px-14 flex items-center justify-center text-center hover:bg-[#f8faff]/50 active:bg-[#e7eeff] transition-colors disabled:cursor-not-allowed disabled:hover:bg-transparent";
   const triggerTextClass = isField
     ? "text-[#1f3664] text-sm truncate"
     : "text-[#1f3664] text-base sm:text-lg truncate";
@@ -253,7 +253,7 @@ export default function AirportSelect({
     : "text-[#1f3664] text-base sm:text-lg";
   const inputWrapClass = isField
     ? "w-full h-11 px-4 flex items-center border border-[#2669f3] rounded-[10px] bg-white"
-    : "w-full h-full min-h-[73px] px-4 sm:px-6 flex items-center";
+    : "w-full h-full min-h-[73px] px-12 sm:px-14 flex items-center";
   const inputClass = isField
     ? "w-full bg-transparent text-[#1f3664] text-sm outline-none placeholder:text-[#7b8094]"
     : "w-full bg-transparent text-[#1f3664] text-base sm:text-lg text-center outline-none placeholder:text-[#1f3664]";

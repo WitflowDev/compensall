@@ -98,7 +98,7 @@ function ClaimStepIndicator({
   ];
 
   return (
-    <div className="claim-stepper-steps">
+    <div className="claim-stepper-steps flex min-w-0 flex-wrap items-center justify-end gap-y-2">
       {steps.map((s, i) => {
         const isComplete = s.num < step;
         const isActive = s.num === step;
@@ -652,19 +652,19 @@ export default function HeroClaimForm() {
           : "rounded-[24px] xl:rounded-[32px] max-w-full lg:max-w-[960px] xl:max-w-[1100px] w-full"
       }`}
     >
-      <div className="claim-stepper sticky top-16 xl:top-[90px] z-20 flex items-center justify-between gap-3 sm:gap-4 px-6 sm:px-10 xl:px-14 pt-6 sm:pt-7 xl:pt-8 pb-3 sm:pb-4 bg-[#fefefe]">
+      <div className="claim-stepper sticky top-16 xl:top-[90px] z-20 flex min-w-0 flex-wrap items-center justify-between gap-x-3 gap-y-2 px-4 sm:px-6 xl:px-8 pt-6 sm:pt-7 xl:pt-8 pb-3 sm:pb-4 bg-[#fefefe]">
         <AssistantPill label={tCommon("assistantName")} />
         <ClaimStepIndicator step={step} onSelect={handleStepSelect} />
       </div>
 
       {stepHint && (
-        <p className="px-6 sm:px-10 xl:px-14 pb-3 text-sm text-[#1f3664] text-left" role="status">
+        <p className="px-4 sm:px-6 xl:px-8 pb-3 text-sm text-[#1f3664] text-left" role="status">
           {stepHint}
         </p>
       )}
 
       {resumeNotice && (
-        <p className="px-6 sm:px-10 xl:px-14 pb-3 text-sm text-[#1f3664] text-left">{resumeNotice}</p>
+        <p className="px-4 sm:px-6 xl:px-8 pb-3 text-sm text-[#1f3664] text-left">{resumeNotice}</p>
       )}
 
       {step === 1 && !isResuming && (
@@ -676,7 +676,7 @@ export default function HeroClaimForm() {
 
       {entryMode && (
         <div hidden={step === 1} className={step === 1 ? "hidden" : "px-4 pb-4 xl:px-6 xl:pb-6"}>
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-[200px_minmax(0,1fr)] lg:gap-8">
+          <div className="grid grid-cols-1 gap-5 xl:grid-cols-[240px_minmax(0,1fr)] xl:items-start xl:gap-8">
             <ClaimReassurance />
             <div hidden={step !== 2} className={step === 2 ? undefined : "hidden"}>
               <Step2Panel

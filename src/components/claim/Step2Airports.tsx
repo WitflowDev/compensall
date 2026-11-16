@@ -42,7 +42,7 @@ function AirportSelectPlaceholder({
         aria-labelledby={`${id}-label`}
         onClick={onActivate}
         onFocus={onActivate}
-        className="w-full h-full min-h-[73px] px-4 sm:px-6 flex items-center justify-center text-center hover:bg-[#f8faff]/50 transition-colors"
+        className="w-full h-full min-h-[73px] px-12 sm:px-14 flex items-center justify-center text-center hover:bg-[#f8faff]/50 transition-colors"
       >
         <span className="text-[#1f3664] text-base sm:text-lg">{placeholder}</span>
       </button>
@@ -146,7 +146,7 @@ export default function Step2Airports({ flight, onFlightChange }: Step2AirportsP
     <div className="mb-4">
       <p className="font-bold text-[#1f3664] text-sm sm:text-base">{tStep2("routeTitle")}</p>
       <div className="mt-3 flex flex-col gap-3">
-        <div className="flex items-stretch border-2 border-[#d5e0f9] rounded-[13px] bg-white min-h-[73px] min-w-0">
+        <div className="relative flex items-stretch border-2 border-[#d5e0f9] rounded-[13px] bg-white min-h-[73px] min-w-0">
           {airportField("route-departure", tStep1("departureAirport"), departure, arrival?.id, handleDepartureChange)}
           <button
             type="button"
@@ -154,7 +154,7 @@ export default function Step2Airports({ flight, onFlightChange }: Step2AirportsP
               setManualError(null);
               applyRoute(arrival, departure, hasConnection ? connection : null);
             }}
-            className="flex-shrink-0 self-center min-h-11 min-w-11 mr-2 flex items-center justify-center rounded-full hover:bg-[#f8faff] active:bg-[#e7eeff] transition-colors"
+            className="absolute right-2 top-1/2 z-10 flex min-h-11 min-w-11 -translate-y-1/2 items-center justify-center rounded-full hover:bg-[#f8faff] active:bg-[#e7eeff] transition-colors"
             aria-label={tStep1("swapAirports")}
             {...gtmId("claim_step2_swap_airports")}
           >
