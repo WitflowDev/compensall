@@ -13,6 +13,7 @@ import {
   isClaimResumeToken,
 } from "@/lib/claim-draft-token";
 import { supabaseRestUrl } from "@/lib/supabase-rest";
+import { matchAppLocale } from "@/i18n/routing";
 
 export { CLAIM_RESUME_EMAIL_IDLE_MS, CLAIM_RESUME_QUERY, isClaimResumeToken };
 export const CLAIM_DRAFT_TTL_MS = 30 * 24 * 60 * 60 * 1000;
@@ -149,7 +150,7 @@ export function isClaimDraftActive(draft: ClaimDraft, now = Date.now()): boolean
 }
 
 function claimResumeLocale(locale?: string | null): string {
-  return locale && /^[a-z]{2}$/i.test(locale) ? locale.toLowerCase() : "en";
+  return matchAppLocale(locale) ?? "en";
 }
 
 export function buildClaimResumeUrl(siteUrl: string, token: string, locale?: string | null): string {

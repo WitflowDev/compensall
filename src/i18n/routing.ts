@@ -4,6 +4,13 @@ import { createNavigation } from "next-intl/navigation";
 export const locales = ["en", "pt", "pt-BR", "fr", "es", "ro", "hu", "sq", "de", "nl"] as const;
 export type AppLocale = (typeof locales)[number];
 
+/** Known site locale, keeping the canonical spelling (`pt-BR`, not `pt-br`). */
+export function matchAppLocale(value: string | null | undefined): AppLocale | null {
+  const trimmed = value?.trim();
+  if (!trimmed) return null;
+  return locales.find((locale) => locale.toLowerCase() === trimmed.toLowerCase()) ?? null;
+}
+
 export function parseAppLocale(value: string | null | undefined): AppLocale {
   switch (value) {
     case "en":

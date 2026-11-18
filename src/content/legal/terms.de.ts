@@ -9,7 +9,7 @@ export const termsDe: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". Wir arbeiten No win, no fee: unsere rechtliche Unterstützung kostet Sie nichts, außer wenn wir Ihre Entschädigung erfolgreich einholen. Geht der Anspruch vor Gericht, gilt eine zusätzliche Erfolgsgebühr von 20 %, zahlbar nur bei Erfolg. Alle Gebühren stehen in der ",
+        text: ". Wir arbeiten No win, no fee: unser Service kostet Sie nichts, außer wenn Ihre Entschädigung eingezogen wird. Wenn wir Ihre Entschädigung einziehen, beträgt unsere Gebühr 30 % der Entschädigung zuzüglich MwSt. und einer Bearbeitungsgebühr. Geht der Anspruch vor Gericht, gilt eine zusätzliche Erfolgsgebühr von 20 %, sodass die Gebühr 50 % der Entschädigung zuzüglich MwSt. und der Bearbeitungsgebühr beträgt. Erhalten Sie die Entschädigung direkt von der Fluggesellschaft und zahlen unsere Gebühr nicht innerhalb von 45 Tagen nach unserer ersten Zahlungsaufforderung, beträgt die Gebühr 50 % der Entschädigung zuzüglich MwSt. Alle Gebühren stehen in der ",
       },
       { type: "link", href: "/prices", label: "Preisliste" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsDe: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", die durch die Annahme der Bedingungen durch den Kunden zustande kommt. Für die Rechtsdienstleistungen gilt der Vertrag, sobald der Kunde zusätzlich das Auftragsformular unterzeichnet hat.",
+                text: ", die durch die Annahme der Bedingungen durch den Kunden zustande kommt. Für die Anspruchsverwaltung gilt der Vertrag, sobald der Kunde zusätzlich das Auftragsformular unterzeichnet hat.",
+              },
+            ],
+            [
+              { type: "strong", text: "«Anspruchsverwaltung»:" },
+              {
+                type: "text",
+                text: " der von Compensall erbrachte Service, den Anspruch des Kunden bei der Fluggesellschaft einzureichen und weiterzuverfolgen und ihn erforderlichenfalls an einen unabhängigen Anwalt zu verweisen. Compensall ist keine Anwaltskanzlei und erbringt keine Rechtsdienstleistungen, keine Rechtsberatung und keine rechtliche Vertretung.",
               },
             ],
             [
@@ -101,7 +108,7 @@ export const termsDe: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " behält das ausschließliche Recht, den geeignetsten Weg festzulegen, ohne Begründungspflicht, wobei der Kunde informiert bleibt. Wegen des erheblichen Zeit- und Ressourcenaufwands gilt eine zusätzliche Erfolgsgebühr von 20 %, zahlbar nur bei Erfolg. Die Anwesenheit des Kunden vor Gericht ist nicht erforderlich; erwartet wird die Mitwirkung durch Unterlagen, Informationen oder Beweise.",
+                text: " behält das ausschließliche Recht, den geeignetsten Weg festzulegen, ohne Begründungspflicht, wobei der Kunde informiert bleibt. Wegen des erheblichen Zeit- und Ressourcenaufwands gilt eine zusätzliche Erfolgsgebühr von 20 % der Entschädigung, zahlbar nur bei Erfolg, sodass die im Falle eines Gerichtsverfahrens geschuldete Gesamtvergütung 50 % der Entschädigung zuzüglich MwSt. und gegebenenfalls der in der Preisliste angegebenen Bearbeitungsgebühr beträgt. Die Anwesenheit des Kunden vor Gericht ist nicht erforderlich; erwartet wird die Mitwirkung durch Unterlagen, Informationen oder Beweise. Zum Gerichtsverfahren gehört auch die Beitreibung offener Vergütung vom Kunden nach Ziffer 3.12.",
               },
             ],
             [
@@ -231,7 +238,7 @@ export const termsDe: LegalDocument = {
               { type: "strong", text: "1.9." },
               { type: "text", text: " Der Kunde stimmt außerdem zu, dass " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " ihn bei der Wahrnehmung seines Rechts unterstützt, seine Interessen bei der Einziehung der Flugentschädigung zu wahren." },
+              { type: "text", text: " ihn bei der Einziehung der Flugentschädigung unterstützt." },
             ],
             [
               { type: "strong", text: "1.10." },
@@ -242,16 +249,45 @@ export const termsDe: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " unverzüglich zu unterrichten. Solche Zahlungen gelten als Entschädigung und geben " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " das Recht, die Servicegebühr und die Gerichtsgebühr zu verlangen, wenn " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " bereits Klage erhoben hat, bevor der Kunde die Zahlung der Airline erhalten hat." },
+              {
+                type: "text",
+                text: " das Recht, die Servicegebühr sowie die Prozessgebühr zu verlangen, wenn bereits Klage erhoben worden war, bevor der Kunde die Zahlung der Airline erhalten hat, oder wenn die Vergütung nach Ziffer 3.12 unbezahlt bleibt.",
+              },
+            ],
+            [
+              { type: "strong", text: "1.11." },
+              {
+                type: "text",
+                text: " Der Kunde bestätigt, dass er vor Unterzeichnung des Auftragsformulars kein anderes Unternehmen, keinen Vermittler und keinen Anwalt beauftragt und den Anspruch keinem Dritten abgetreten hat, und zwar in Bezug auf denselben Anspruch, und verpflichtet sich, dies auch nach der Unterzeichnung nicht zu tun.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Beauftragt der Kunde nach Unterzeichnung des Auftragsformulars ein anderes Unternehmen, einen Vermittler oder einen Anwalt oder verfolgt er den Anspruch unmittelbar bei der Fluggesellschaft, jeweils in Bezug auf denselben Anspruch, bleibt er verpflichtet, Compensall die in der Preisliste angegebene Servicegebühr auf jede erlangte Entschädigung zuzüglich MwSt. zu zahlen sowie die Prozessgebühr, wenn bereits Klage erhoben worden war. Teilt der Kunde den erlangten Betrag nicht mit, wird die Gebühr nach dem Entschädigungsbetrag berechnet, den die Verordnung 261/2004 für den betreffenden Flug vorsieht. Die Gebühr ist innerhalb von 10 (zehn) Tagen nach Erhalt der Entschädigung durch den Kunden zu zahlen.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Hatte der Kunde vor Unterzeichnung des Auftragsformulars bereits ein anderes Unternehmen, einen Vermittler oder einen Anwalt beauftragt oder den Anspruch an einen Dritten abgetreten, jeweils in Bezug auf denselben Anspruch, und Compensall nicht informiert, kann Compensall den Vertrag beenden, und der Kunde zahlt Compensall einen Festbetrag von 50 € (fünfzig Euro) je Fluggast zur Deckung der Bearbeitungskosten des Anspruchs, es sei denn, der Kunde weist nach, dass diese Kosten niedriger waren. Erlangt Compensall dennoch die Entschädigung, gilt statt dieses Betrags die in der Preisliste angegebene Servicegebühr.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " In den in (a) und (b) beschriebenen Fällen erstattet der Kunde, wenn bereits ein Gerichtsverfahren über einen unabhängigen Anwalt eingeleitet worden war, außerdem alle dadurch tatsächlich entstandenen Kosten, einschließlich Gerichtsgebühren, der der Fluggesellschaft auferlegten Kosten, Anwaltsgebühren, Zinsen und angemessener Verwaltungskosten, wie von Compensall oder dem unabhängigen Anwalt belegt. Diese Kosten können dem Kunden unmittelbar von Compensall oder vom unabhängigen Anwalt in Rechnung gestellt werden.",
+              },
             ],
           ],
         },
       ],
     },
     {
-      title: "Artikel 2. Beschreibung der Rechtsdienstleistung",
+      title: "Artikel 2. Beschreibung der Anspruchsverwaltung",
       blocks: [
         {
           type: "list",
@@ -294,7 +330,7 @@ export const termsDe: LegalDocument = {
                 text: " der Einzug auf diesem Weg wirksamer oder schneller, ist ",
               },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " berechtigt, den Rechtsweg zu beschreiten, wodurch sich der Anteil der Entschädigung erhöht, der " },
+              { type: "text", text: " berechtigt, den Anspruch an einen unabhängigen Anwalt zu verweisen, damit dieser den Rechtsweg beschreitet, wodurch sich der Anteil der Entschädigung erhöht, der " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " zusteht, wie in der " },
               { type: "link", href: "/prices", label: "Preisliste" },
@@ -302,11 +338,11 @@ export const termsDe: LegalDocument = {
             ],
             [
               { type: "strong", text: "2.5." },
-              { type: "text", text: " Wird ein beauftragter Rechtsvertreter ins Verfahren einbezogen, stimmt der Kunde zu, " },
+              { type: "text", text: " Wird ein unabhängiger Anwalt in das Verfahren einbezogen, stimmt der Kunde zu, " },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " zu gestatten, dem Vertreter Zugang zu allen maßgeblichen Akteninformationen zu geben und den Vertreter zu ermächtigen, ",
+                text: " zu gestatten, dem Anwalt Zugang zu allen maßgeblichen Akteninformationen zu geben und den Anwalt zu ermächtigen, ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -320,18 +356,19 @@ export const termsDe: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " oder der beauftragte Vertreter fest, dass der Anspruch keine hinreichende Erfolgsaussicht hat, wird die Akte geschlossen und der Kunde unterrichtet.",
+                text: " oder der unabhängige Anwalt der Auffassung ist, dass der Anspruch voraussichtlich keinen Erfolg hat, wird die Akte geschlossen und der Kunde unterrichtet.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Leiten " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " oder der Vertreter ein Verfahren ein, trägt " },
+              {
+                type: "text",
+                text: " Wird ein Verfahren über einen unabhängigen Anwalt eingeleitet, trägt ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " die Kosten bei Unterliegen. Bei Obsiegen oder Vergleich trägt ",
+                text: " die Kosten bei Unterliegen, es sei denn, das Verfahren wird verloren oder zurückgenommen, weil der Kunde gegen die Ziffern 1.6, 1.7 oder 1.11 verstoßen hat; in diesem Fall gilt Ziffer 1.11(c). Bei Obsiegen oder Vergleich trägt ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " die Kosten, die die Airline nicht erstattet." },
@@ -368,7 +405,7 @@ export const termsDe: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " erbringt rechtliche Unterstützung unentgeltlich, außer wenn " },
+              { type: "text", text: " erbringt die Anspruchsverwaltung unentgeltlich, außer wenn " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " die Entschädigung erfolgreich einzieht. Bei Erfolg überweist " },
               { type: "brand", field: "brandName" },
@@ -463,6 +500,13 @@ export const termsDe: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " angegebene Konto oder auf jedes andere schriftlich mitgeteilte Konto." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Bleibt die nach Ziffer 3.11 oder Ziffer 1.11 geschuldete Vergütung 45 (fünfundvierzig) Tage nach der ersten schriftlichen Zahlungsaufforderung von Compensall unbezahlt, wird der Anspruch zur Beitreibung der offenen Vergütung gerichtlich verfolgt, und es gilt die Prozessgebühr. In diesem Fall beträgt die Compensall geschuldete Gesamtvergütung 50 % der Entschädigung zuzüglich MwSt.",
+              },
+            ],
           ],
         },
       ],
@@ -520,7 +564,7 @@ export const termsDe: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: " der Akten oder öffentlicher Flugdaten. Solche Nachrichten sollen den Kunden nur bei der Ausübung seiner Rechte unterstützen und fallen in das berechtigte Interesse von ",
+              text: " der Akten oder öffentlicher Flugdaten. Solche Nachrichten sollen den Kunden nur über seine Rechte als Fluggast informieren und fallen in das berechtigte Interesse von ",
             },
             { type: "brand", field: "brandName" },
             { type: "text", text: ", verbundene Leistungen zu erbringen." },
@@ -636,9 +680,10 @@ export const termsDe: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Beschränken oder verbieten nationale Gesetze die Abtretung von Ansprüchen, handelt " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " mit örtlichen Rechtsvertretern nach den geltenden lokalen Regeln." },
+              {
+                type: "text",
+                text: " Beschränken oder verbieten nationale Gesetze die Abtretung von Ansprüchen, wird der Anspruch in Zusammenarbeit mit unabhängigen örtlichen Anwälten nach den geltenden lokalen Regeln bearbeitet.",
+              },
             ],
             [
               { type: "strong", text: "6.8." },
@@ -680,5 +725,5 @@ export const termsDe: LegalDocument = {
       ],
     },
   ],
-  footer: "Dokumentversion 4.0. Letzte Aktualisierung: September 2026",
+  footer: "Dokumentversion 2.0. Letzte Aktualisierung: November 2026",
 };

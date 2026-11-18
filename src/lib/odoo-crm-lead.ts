@@ -9,6 +9,11 @@ import type {
   ClaimPassenger,
   ClaimVerification,
 } from "@/lib/claim-types";
+
+/** Helpdesk and CRM tag for a claim started on the Brazilian site. */
+export const BRAZIL_CLAIM_TAG = "BR";
+/** Average shown on the Brazilian site. One amount per case, in reais, not the European distance tariff. */
+export const BRAZIL_AVERAGE_COMPENSATION_BRL = 9000;
 import { estimateCompensationForFlight, euroAmountForDistanceBand } from "@/lib/compensation-estimate";
 import { isBrazilianLocale } from "@/lib/public-copy";
 import { lookupAirlineByCarrierCode } from "@/lib/lookup-airline";
@@ -280,6 +285,30 @@ function resolveAirlineName(flightNumber: string): string | undefined {
   return lookupAirlineByCarrierCode(two[1]) ?? two[1];
 }
 
+export function helpdeskClaimValue(
+  locale: string | null | undefined,
+  flight: ClaimFlightData,
+  passengerCount: number,
+): { amount: number; currencyCode: "BRL" | "EUR" } | null {
+  if (isBrazilianLocale(locale)) {
+    return { amount: BRAZIL_AVERAGE_COMPENSATION_BRL, currencyCode: "BRL" };
+  }
+
+  const estimate = estimateCompensationForFlight(flight, locale);
+  if (!estimate) return null;
+  return {
+    amount: passengerCount * euroAmountForDistanceBand(estimate.band),
+    currencyCode: "EUR",
+  };
+}
+
+export function claimTagNames(
+  locale: string | null | undefined,
+  base: Array<string | null | undefined>,
+): Array<string | null | undefined> {
+  return isBrazilianLocale(locale) ? [...base, BRAZIL_CLAIM_TAG] : base;
+}
+
 function buildHelpdeskTicketValues(input: OdooClaimLeadInput): Record<string, unknown> {
   const { firstName, lastName } = splitPassengerName(input.signedName || input.flight.passenger);
   const flightDate = toOdooDate(input.flight.date);
@@ -341,10 +370,9 @@ function buildHelpdeskTicketValues(input: OdooClaimLeadInput): Record<string, un
     values.x_studio_connecting_flights = input.flight.hadConnectingFlight;
   }
 
-  // Montante is always the euro band (220/350/520 GBP on the English form → 250/400/600 EUR).
-  const estimate = estimateCompensationForFlight(input.flight, input.locale);
-  if (estimate) {
-    values.x_studio_montante = passengerCount * euroAmountForDistanceBand(estimate.band);
+  const claimValue = helpdeskClaimValue(input.locale, input.flight, passengerCount);
+  if (claimValue) {
+    values.x_studio_montante = claimValue.amount;
   }
 
   const connectingLegs = (input.flight.connectingFlights ?? [])
@@ -649,9 +677,14 @@ async function syncHelpdeskTicket(
   Object.assign(values, utmIds);
   values.user_device = userDeviceFromUserAgent(input.userAgent);
 
-  if (estimateCompensationForFlight(input.flight, input.locale)) {
+  const claimValue = helpdeskClaimValue(
+    input.locale,
+    input.flight,
+    Number.parseInt(String(values.x_studio_number_of_passengers ?? "1"), 10) || 1,
+  );
+  if (claimValue) {
     try {
-      const currencyId = await odooFindCurrencyIdByCode("EUR");
+      const currencyId = await odooFindCurrencyIdByCode(claimValue.currencyCode);
       if (currencyId) {
         values.x_studio_currency_id = currencyId;
       }
@@ -673,12 +706,13 @@ async function syncHelpdeskTicket(
 
   const existingTicketId = await odooFindHelpdeskTicketByTrackingNumber(input.trackingNumber);
 
+  const ticketTags = claimTagNames(input.locale, [config.submittedTagName]);
   const ticket = existingTicketId
     ? await odooUpdateHelpdeskTicket(existingTicketId, values, {
-        extraTagNames: [config.submittedTagName],
+        extraTagNames: ticketTags,
       })
     : await odooCreateHelpdeskTicket(values, {
-        extraTagNames: [config.submittedTagName],
+        extraTagNames: ticketTags,
       });
 
   try {
@@ -719,16 +753,17 @@ export async function syncPartialClaimToOdoo(
     input.odooLeadId ??
     (await odooFindLeadBySessionId(input.formSessionId));
 
+  const leadTags = claimTagNames(input.locale, [config?.incompleteTagName]);
   if (existingLeadId) {
     return odooUpdateCrmLead(existingLeadId, values, {
       ...leadUtmOptions(input.attribution),
-      extraTagNames: [config?.incompleteTagName],
+      extraTagNames: leadTags,
     });
   }
 
   return odooCreateCrmLead(values, {
     ...leadUtmOptions(input.attribution),
-    extraTagNames: [config?.incompleteTagName],
+    extraTagNames: leadTags,
   });
 }
 

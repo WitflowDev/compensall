@@ -970,15 +970,32 @@ export async function odooFindCurrencyIdByCode(code: string): Promise<number | n
 
   try {
     const uid = await authenticate(config);
-    const matches = await executeKw<Array<{ id: number; name: string }>>(
+    const matches = await executeKw<Array<{ id: number; name: string; active?: boolean }>>(
       config,
       uid,
       "res.currency",
       "search_read",
       [[["name", "=", normalized]]],
-      { fields: ["id", "name"], limit: 1 },
+      { fields: ["id", "name", "active"], limit: 1, context: { active_test: false } },
     );
-    const id = matches[0]?.id ?? null;
+    let match = matches[0];
+    if (!match && normalized === "BRL") {
+      const createdId = await executeKw<number>(config, uid, "res.currency", "create", [
+        {
+          name: "BRL",
+          symbol: "R$",
+          rounding: 0.01,
+          decimal_places: 2,
+          position: "before",
+          active: true,
+        },
+      ]);
+      match = { id: createdId, name: "BRL", active: true };
+    }
+    if (match && match.active === false) {
+      await executeKw<boolean>(config, uid, "res.currency", "write", [[match.id], { active: true }]);
+    }
+    const id = match?.id ?? null;
     currencyIdCache.set(normalized, id);
     return id;
   } catch (error) {

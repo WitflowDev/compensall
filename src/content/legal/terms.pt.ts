@@ -9,7 +9,7 @@ export const termsPt: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". Trabalhamos numa base No win, no fee: a nossa assistência jurídica nada lhe custa, salvo se recuperarmos com sucesso a sua indemnização. Se a reclamação tiver de seguir para contencioso, aplica-se uma taxa adicional de 20% dependente do êxito, devida apenas em caso de resultado favorável. Todas as taxas constam da ",
+        text: ". Trabalhamos numa base No win, no fee: o nosso serviço nada lhe custa, salvo se a sua indemnização for recuperada. Quando recuperamos a sua indemnização, a nossa taxa é de 30% da indemnização, acrescida de IVA e de uma taxa de processamento. Se a reclamação tiver de seguir para contencioso, aplica-se uma taxa adicional de 20% dependente do êxito, pelo que a taxa passa a ser de 50% da indemnização, acrescida de IVA e da taxa de processamento. Se receber a indemnização diretamente da companhia aérea e não pagar a nossa taxa no prazo de 45 dias após o nosso primeiro pedido de pagamento, a taxa é de 50% da indemnização, acrescida de IVA. Todas as taxas constam da ",
       },
       { type: "link", href: "/prices", label: "Tabela de Preços" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsPt: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", constituído com a aceitação dos T&C pelo Cliente. Para a prestação dos Serviços de Assistência Jurídica, o Contrato considera-se válido a partir do momento em que o Cliente assina o Formulário de Cessão, para além de aceitar os presentes T&C.",
+                text: ", constituído com a aceitação dos T&C pelo Cliente. Para a prestação do Serviço de Gestão de Reclamações, o Contrato considera-se válido a partir do momento em que o Cliente assina o Formulário de Cessão, para além de aceitar os presentes T&C.",
+              },
+            ],
+            [
+              { type: "strong", text: '"Serviço de Gestão de Reclamações":' },
+              {
+                type: "text",
+                text: " o serviço prestado pela Compensall de apresentar e acompanhar a Reclamação do Cliente junto da companhia aérea e, quando necessário, de a remeter a um advogado independente. A Compensall não é um escritório de advogados e não presta serviços jurídicos, aconselhamento jurídico nem representação legal.",
               },
             ],
             [
@@ -104,7 +111,7 @@ export const termsPt: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " reserva-se o direito exclusivo de determinar a via mais adequada, sem obrigação de justificar as suas decisões, mantendo, porém, o Cliente informado ao longo do processo. Dado o tempo e os recursos significativos exigidos pelo contencioso, aplica-se uma taxa adicional de 20% dependente do êxito, devida apenas em caso de resultado favorável. Não será exigida a presença do Cliente em tribunal; espera-se, contudo, a sua colaboração no fornecimento de documentos, informações ou provas necessários ao processo.",
+                text: " reserva-se o direito exclusivo de determinar a via mais adequada, sem obrigação de justificar as suas decisões, mantendo, porém, o Cliente informado ao longo do processo. Dado o tempo e os recursos significativos exigidos pelo contencioso, aplica-se uma taxa adicional de êxito de 20% da Indemnização, devida apenas em caso de resultado favorável, pelo que a remuneração total devida em caso de contencioso é de 50% da Indemnização, acrescida de IVA e, quando aplicável, da taxa de processamento prevista na Tabela de Preços. Não será exigida a presença do Cliente em tribunal; espera-se, contudo, a sua colaboração no fornecimento de documentos, informações ou provas necessários ao processo. O contencioso inclui também a cobrança de remuneração em dívida do Cliente, nos termos da cláusula 3.12.",
               },
             ],
             [
@@ -248,7 +255,7 @@ export const termsPt: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " o assista no exercício do seu direito de defesa na cobrança da Indemnização.",
+                text: " o assista na cobrança da Indemnização.",
               },
             ],
             [
@@ -262,12 +269,35 @@ export const termsPt: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " o direito de cobrar a taxa de serviço e a taxa de contencioso, se a ",
+                text: " o direito de cobrar a taxa de serviço e a taxa de contencioso se já tiver sido intentada ação judicial antes de o Cliente ter recebido o pagamento da companhia aérea, ou se a remuneração permanecer em dívida nos termos da cláusula 3.12.",
               },
-              { type: "brand", field: "brandName" },
+            ],
+            [
+              { type: "strong", text: "1.11." },
               {
                 type: "text",
-                text: " tiver intentado ação judicial antes de o Cliente ter recebido o pagamento da companhia aérea.",
+                text: " O Cliente confirma que, antes de assinar o Formulário de Cessão, não contratou qualquer outra empresa, agente ou advogado, nem cedeu a Reclamação a terceiros, relativamente à mesma Reclamação, e compromete-se a não o fazer depois de o assinar.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Se, depois de assinar o Formulário de Cessão, o Cliente contratar outra empresa, agente ou advogado, ou prosseguir a Reclamação diretamente junto da companhia aérea, relativamente à mesma Reclamação, continua obrigado a pagar à Compensall a taxa de serviço prevista na Tabela de Preços sobre qualquer Indemnização obtida, acrescida de IVA, bem como a taxa de contencioso se já tiver sido intentada ação judicial. Se o Cliente não divulgar o montante obtido, a taxa é calculada sobre o montante de indemnização estabelecido pelo Regulamento 261/2004 para o voo em causa. A taxa é paga no prazo de 10 (dez) dias após o Cliente receber a Indemnização.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Se, antes de assinar o Formulário de Cessão, o Cliente já tinha contratado outra empresa, agente ou advogado, ou cedido a Reclamação a um terceiro, relativamente à mesma Reclamação, e não informou a Compensall, a Compensall pode resolver o Contrato e o Cliente paga à Compensall um montante fixo de 50 € (cinquenta euros) por passageiro para cobrir os custos de tratamento da Reclamação, salvo se o Cliente provar que esses custos foram inferiores. Se a Compensall ainda assim obtiver a Indemnização, aplica-se a taxa de serviço prevista na Tabela de Preços em vez desse montante.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " Nos casos descritos em (a) e (b), se já tiver sido iniciado um processo judicial através de um advogado independente, o Cliente reembolsa também todos os custos efetivamente incorridos em consequência, incluindo custas judiciais, custas atribuídas à companhia aérea, honorários de advogados, juros e custos administrativos razoáveis, conforme documentados pela Compensall ou pelo advogado independente. Estes custos podem ser faturados ao Cliente diretamente pela Compensall ou pelo advogado independente.",
               },
             ],
           ],
@@ -275,7 +305,7 @@ export const termsPt: LegalDocument = {
       ],
     },
     {
-      title: "Artigo 2.º Descrição do Serviço de Assistência Jurídica",
+      title: "Artigo 2.º Descrição do Serviço de Gestão de Reclamações",
       blocks: [
         {
           type: "list",
@@ -323,7 +353,7 @@ export const termsPt: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " tem o direito de recorrer a ação judicial, o que implicará o aumento da parte da Indemnização que lhe pertence, conforme especificado na ",
+                text: " tem o direito de remeter a Reclamação a um advogado independente para intentar ação judicial, o que implicará o aumento da parte da Indemnização que lhe pertence, conforme especificado na ",
               },
               { type: "link", href: "/prices", label: "Tabela de Preços" },
               { type: "text", text: "." },
@@ -332,12 +362,12 @@ export const termsPt: LegalDocument = {
               { type: "strong", text: "2.5." },
               {
                 type: "text",
-                text: " Se um representante legal contratado intervier no contencioso, o Cliente aceita autorizar a ",
+                text: " Se um advogado independente intervier no contencioso, o Cliente aceita autorizar a ",
               },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " a facultar-lhe acesso a toda a informação relevante do processo e permitir que esse representante mantenha a ",
+                text: " a facultar ao advogado acesso a toda a informação relevante do processo e permitir que o advogado mantenha a ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -351,18 +381,19 @@ export const termsPt: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " ou o representante legal contratado concluir que a reclamação não tem mérito suficiente, o processo será encerrado e o Cliente informado em conformidade.",
+                text: " ou o advogado independente considerar que a reclamação tem poucas probabilidades de êxito, o processo será encerrado e o Cliente informado em conformidade.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Se a " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " ou o representante legal contratado intentar ação judicial, a " },
+              {
+                type: "text",
+                text: " Se for intentada ação judicial através de um advogado independente, a ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " suportará os custos incorridos em caso de improcedência da ação. Em caso de procedência ou de acordo, a ",
+                text: " suportará os custos incorridos em caso de improcedência da ação, salvo se a ação for perdida ou retirada por incumprimento pelo Cliente das cláusulas 1.6, 1.7 ou 1.11, caso em que se aplica a cláusula 1.11(c). Em caso de procedência ou de acordo, a ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " suportará os custos não reembolsados pela companhia aérea." },
@@ -399,7 +430,7 @@ export const termsPt: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " A " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " presta assistência jurídica gratuitamente, exceto quando a " },
+              { type: "text", text: " presta o Serviço de Gestão de Reclamações gratuitamente, exceto quando a " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " obtém com sucesso a indemnização. Em caso de êxito, a " },
               { type: "brand", field: "brandName" },
@@ -545,6 +576,13 @@ export const termsPt: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: "." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Se a remuneração devida nos termos da cláusula 3.11 ou da cláusula 1.11 permanecer por pagar 45 (quarenta e cinco) dias após o primeiro pedido de pagamento por escrito da Compensall, a Reclamação segue para contencioso para cobrança da remuneração em dívida e aplica-se a taxa de contencioso. Nesse caso, a remuneração total devida à Compensall é de 50% da Indemnização, acrescida de IVA.",
+              },
+            ],
           ],
         },
       ],
@@ -608,7 +646,7 @@ export const termsPt: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: ", de dados de processos anteriores ou de informação de voos publicamente disponível. Estas mensagens destinam-se exclusivamente a auxiliar o Cliente no exercício dos seus direitos e consideram-se abrangidas pelo interesse legítimo da ",
+              text: ", de dados de processos anteriores ou de informação de voos publicamente disponível. Estas mensagens destinam-se exclusivamente a informar o Cliente sobre os seus direitos enquanto passageiro aéreo e consideram-se abrangidas pelo interesse legítimo da ",
             },
             { type: "brand", field: "brandName" },
             { type: "text", text: " na prestação de serviços relevantes e conexos." },
@@ -751,11 +789,9 @@ export const termsPt: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Sempre que a lei nacional restrinja ou proíba a cessão de créditos, a " },
-              { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " atuará em cooperação com representantes legais locais, em conformidade com a regulamentação local aplicável.",
+                text: " Sempre que a lei nacional restrinja ou proíba a cessão de créditos, a Reclamação será tratada em cooperação com advogados locais independentes, em conformidade com a regulamentação local aplicável.",
               },
             ],
             [
@@ -804,5 +840,5 @@ export const termsPt: LegalDocument = {
       ],
     },
   ],
-  footer: "Versão 4.0 do documento. Última atualização: setembro de 2026",
+  footer: "Versão 2.0 do documento. Última atualização: novembro de 2026",
 };

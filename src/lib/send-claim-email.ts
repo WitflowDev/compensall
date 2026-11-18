@@ -13,6 +13,7 @@ import {
 } from "@/lib/compensation-estimate";
 import type { OdooCrmLeadSummary } from "@/lib/odoo-client";
 import { isBrazilianLocale } from "@/lib/public-copy";
+import { matchAppLocale } from "@/i18n/routing";
 
 type ClaimEmailPayload = {
   trackingNumber: string;
@@ -67,7 +68,7 @@ export function buildTrackUrl(
   locale?: string | null,
 ): string {
   const base = siteUrl.replace(/\/$/, "");
-  const localeSegment = locale && /^[a-z]{2}$/i.test(locale) ? locale.toLowerCase() : "en";
+  const localeSegment = matchAppLocale(locale) ?? "en";
   return `${base}/${localeSegment}/track/${trackingNumber}`;
 }
 

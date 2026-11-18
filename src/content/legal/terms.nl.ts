@@ -9,7 +9,7 @@ export const termsNl: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". Wij werken No win, no fee: onze juridische ondersteuning kost u niets, behalve als wij uw compensatie succesvol innen. Gaat de claim naar de rechter, dan geldt een extra succesfee van 20 %, alleen verschuldigd bij succes. Alle fees staan in de ",
+        text: ". Wij werken No win, no fee: onze dienst kost u niets, behalve als uw compensatie wordt geïnd. Wanneer wij uw compensatie innen, bedraagt onze vergoeding 30 % van de compensatie, plus btw en administratiekosten. Gaat de claim naar de rechter, dan geldt een extra succesfee van 20 %, zodat de vergoeding 50 % van de compensatie bedraagt, plus btw en de administratiekosten. Ontvangt u de compensatie rechtstreeks van de airline en betaalt u onze vergoeding niet binnen 45 dagen na ons eerste betalingsverzoek, dan bedraagt de vergoeding 50 % van de compensatie, plus btw. Alle fees staan in de ",
       },
       { type: "link", href: "/prices", label: "prijslijst" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsNl: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", die tot stand komt door aanvaarding van de Voorwaarden door de Klant. Voor de juridische diensten geldt de Overeenkomst zodra de Klant daarnaast het Opdrachtformulier heeft ondertekend.",
+                text: ", die tot stand komt door aanvaarding van de Voorwaarden door de Klant. Voor het claimbeheer geldt de Overeenkomst zodra de Klant daarnaast het Opdrachtformulier heeft ondertekend.",
+              },
+            ],
+            [
+              { type: "strong", text: "«Claimbeheer»:" },
+              {
+                type: "text",
+                text: " de dienst van Compensall om de claim van de Klant bij de airline in te dienen en op te volgen en deze zo nodig naar een onafhankelijke advocaat te verwijzen. Compensall is geen advocatenkantoor en verleent geen juridische diensten, juridisch advies of juridische vertegenwoordiging.",
               },
             ],
             [
@@ -101,7 +108,7 @@ export const termsNl: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " behoudt het exclusieve recht de meest geschikte weg vast te stellen, zonder motiveringsplicht, waarbij de Klant geïnformeerd blijft. Vanwege de aanzienlijke tijds- en middeleninzet geldt een extra succesfee van 20 %, alleen verschuldigd bij succes. De aanwezigheid van de Klant in rechte is niet vereist; verwacht wordt medewerking door stukken, informatie of bewijs.",
+                text: " behoudt het exclusieve recht de meest geschikte weg vast te stellen, zonder motiveringsplicht, waarbij de Klant geïnformeerd blijft. Vanwege de aanzienlijke tijds- en middeleninzet geldt een extra succesfee van 20 % van de compensatie, alleen verschuldigd bij succes, zodat de totale vergoeding bij een procedure 50 % van de compensatie bedraagt, plus btw en, waar van toepassing, de administratiekosten uit de Prijslijst. De aanwezigheid van de Klant in rechte is niet vereist; verwacht wordt medewerking door stukken, informatie of bewijs. Tot de procedure behoort ook de invordering van onbetaalde vergoeding bij de Klant op grond van artikel 3.12.",
               },
             ],
             [
@@ -231,7 +238,7 @@ export const termsNl: LegalDocument = {
               { type: "strong", text: "1.9." },
               { type: "text", text: " De Klant stemt er verder mee in dat " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " hem bijstaat bij de uitoefening van zijn recht om zijn belangen bij de inning van de vluchtcompensatie te behartigen." },
+              { type: "text", text: " hem bijstaat bij de inning van de vluchtcompensatie." },
             ],
             [
               { type: "strong", text: "1.10." },
@@ -242,16 +249,45 @@ export const termsNl: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " onverwijld te informeren. Zulke betalingen gelden als Compensatie en geven " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " het recht de servicefee en de gerechtelijke fee te vorderen, als " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " al een vordering heeft ingesteld voordat de Klant de betaling van de airline ontving." },
+              {
+                type: "text",
+                text: " het recht de servicevergoeding te vorderen, en de procesvergoeding als al een vordering was ingesteld voordat de Klant de betaling van de airline ontving, of als de vergoeding op grond van artikel 3.12 onbetaald blijft.",
+              },
+            ],
+            [
+              { type: "strong", text: "1.11." },
+              {
+                type: "text",
+                text: " De Klant bevestigt dat hij vóór ondertekening van het Opdrachtformulier geen ander bedrijf, geen tussenpersoon en geen advocaat heeft ingeschakeld en de claim niet aan een derde heeft overgedragen, voor dezelfde claim, en verbindt zich ertoe dit ook na de ondertekening niet te doen.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Schakelt de Klant na ondertekening van het Opdrachtformulier een ander bedrijf, een tussenpersoon of een advocaat in, of vervolgt hij de claim rechtstreeks bij de airline, voor dezelfde claim, dan blijft hij verplicht Compensall de in de Prijslijst vermelde servicevergoeding te betalen over elke verkregen compensatie, plus btw, alsook de procesvergoeding als al een vordering was ingesteld. Deelt de Klant het verkregen bedrag niet mee, dan wordt de vergoeding berekend over het compensatiebedrag dat Verordening 261/2004 voor de betreffende vlucht vaststelt. De vergoeding wordt betaald binnen 10 (tien) dagen nadat de Klant de compensatie heeft ontvangen.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Had de Klant vóór ondertekening van het Opdrachtformulier al een ander bedrijf, een tussenpersoon of een advocaat ingeschakeld, of de claim aan een derde overgedragen, voor dezelfde claim, en Compensall niet geïnformeerd, dan kan Compensall de Overeenkomst beëindigen en betaalt de Klant Compensall een vast bedrag van € 50 (vijftig euro) per passagier ter dekking van de kosten van behandeling van de claim, tenzij de Klant aantoont dat die kosten lager waren. Verkrijgt Compensall desondanks de compensatie, dan geldt de in de Prijslijst vermelde servicevergoeding in plaats van dat bedrag.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " In de gevallen beschreven in (a) en (b) vergoedt de Klant, als al een gerechtelijke procedure via een onafhankelijke advocaat was ingeleid, ook alle daardoor werkelijk gemaakte kosten, met inbegrip van griffierechten, kosten die aan de airline zijn toegewezen, advocaatkosten, rente en redelijke administratiekosten, zoals gedocumenteerd door Compensall of door de onafhankelijke advocaat. Deze kosten kunnen de Klant rechtstreeks door Compensall of door de onafhankelijke advocaat in rekening worden gebracht.",
+              },
             ],
           ],
         },
       ],
     },
     {
-      title: "Artikel 2. Beschrijving van de juridische dienst",
+      title: "Artikel 2. Beschrijving van het claimbeheer",
       blocks: [
         {
           type: "list",
@@ -294,7 +330,7 @@ export const termsNl: LegalDocument = {
                 text: " de inning langs deze weg doeltreffender of sneller, dan is ",
               },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " gerechtigd de gerechtelijke weg te bewandelen, waardoor het aandeel van de compensatie toeneemt dat " },
+              { type: "text", text: " gerechtigd de claim naar een onafhankelijke advocaat te verwijzen om de gerechtelijke weg te bewandelen, waardoor het aandeel van de compensatie toeneemt dat " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " toekomt, zoals aangegeven in de " },
               { type: "link", href: "/prices", label: "prijslijst" },
@@ -302,11 +338,11 @@ export const termsNl: LegalDocument = {
             ],
             [
               { type: "strong", text: "2.5." },
-              { type: "text", text: " Wordt een ingeschakelde juridisch vertegenwoordiger bij de procedure betrokken, dan stemt de Klant ermee in " },
+              { type: "text", text: " Wordt een onafhankelijke advocaat bij de procedure betrokken, dan stemt de Klant ermee in " },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " toe te staan de vertegenwoordiger toegang tot alle relevante dossierinformatie te geven en de vertegenwoordiger te machtigen ",
+                text: " toe te staan de advocaat toegang tot alle relevante dossierinformatie te geven en de advocaat te machtigen ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -320,18 +356,19 @@ export const termsNl: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " of de ingeschakelde vertegenwoordiger vast dat de claim onvoldoende kans van slagen heeft, dan wordt het dossier gesloten en de Klant geïnformeerd.",
+                text: " of de onafhankelijke advocaat van oordeel is dat de claim waarschijnlijk geen succes heeft, dan wordt het dossier gesloten en de Klant geïnformeerd.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Leiden " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " of de vertegenwoordiger een procedure in, dan draagt " },
+              {
+                type: "text",
+                text: " Wordt een procedure via een onafhankelijke advocaat ingeleid, dan draagt ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " de kosten bij verlies. Bij winst of schikking draagt ",
+                text: " de kosten bij verlies, behalve als de procedure wordt verloren of ingetrokken omdat de Klant artikel 1.6, 1.7 of 1.11 heeft geschonden; in dat geval geldt artikel 1.11(c). Bij winst of schikking draagt ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " de kosten die de airline niet vergoedt." },
@@ -368,7 +405,7 @@ export const termsNl: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " verleent juridische ondersteuning om niet, behalve als " },
+              { type: "text", text: " verleent het claimbeheer om niet, behalve als " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " de compensatie succesvol int. Bij succes maakt " },
               { type: "brand", field: "brandName" },
@@ -463,6 +500,13 @@ export const termsNl: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " vermelde rekening of op elke andere schriftelijk meegedeelde rekening." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Blijft de vergoeding die verschuldigd is op grond van artikel 3.11 of artikel 1.11 45 (vijfenveertig) dagen na het eerste schriftelijke betalingsverzoek van Compensall onbetaald, dan gaat de claim naar een procedure voor invordering van de onbetaalde vergoeding, en geldt de procesvergoeding. In dat geval bedraagt de totale aan Compensall verschuldigde vergoeding 50 % van de compensatie, plus btw.",
+              },
+            ],
           ],
         },
       ],
@@ -520,7 +564,7 @@ export const termsNl: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: " van de dossiers of openbare vluchtgegevens. Zulke berichten dienen alleen om de Klant te ondersteunen bij de uitoefening van zijn rechten en vallen onder het gerechtvaardigd belang van ",
+              text: " van de dossiers of openbare vluchtgegevens. Zulke berichten dienen alleen om de Klant te informeren over zijn rechten als luchtreiziger en vallen onder het gerechtvaardigd belang van ",
             },
             { type: "brand", field: "brandName" },
             { type: "text", text: " om verbonden diensten te verlenen." },
@@ -636,9 +680,10 @@ export const termsNl: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Beperken of verbieden nationale wetten de cessie van claims, dan handelt " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " met lokale juridisch vertegenwoordigers volgens de geldende lokale regels." },
+              {
+                type: "text",
+                text: " Beperken of verbieden nationale wetten de cessie van claims, dan wordt de claim behandeld in samenwerking met onafhankelijke lokale advocaten, volgens de geldende lokale regels.",
+              },
             ],
             [
               { type: "strong", text: "6.8." },
@@ -680,5 +725,5 @@ export const termsNl: LegalDocument = {
       ],
     },
   ],
-  footer: "Documentversie 4.0. Laatst bijgewerkt: september 2026",
+  footer: "Documentversie 2.0. Laatst bijgewerkt: november 2026",
 };

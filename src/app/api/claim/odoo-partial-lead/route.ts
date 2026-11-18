@@ -7,6 +7,7 @@ import { normalizeFlightData } from "@/lib/claim-types";
 import { isOdooConfigured } from "@/lib/odoo-client";
 import { safeSyncPartialClaimToOdoo } from "@/lib/odoo-crm-lead";
 import { isBlankOrValidClaimPhone, toE164Phone } from "@/lib/phone";
+import { matchAppLocale } from "@/i18n/routing";
 
 const flightSchema = z.object({
   passenger: z.string(),
@@ -54,7 +55,7 @@ const bodySchema = z.object({
   entryMode: z.enum(["upload", "manual"]),
   flight: flightSchema,
   additionalPassengers: z.array(passengerSchema).max(9).optional(),
-  locale: z.string().length(2).optional().nullable(),
+  locale: z.string().trim().min(2).max(12).optional().nullable(),
   attribution: z
     .object({
       source: z.string().optional(),
@@ -88,7 +89,7 @@ export async function POST(request: Request) {
     }
 
     const siteUrl = getSiteUrl(request);
-    const locale = parsed.data.locale?.toLowerCase() ?? null;
+    const locale = matchAppLocale(parsed.data.locale);
     const landingPage = locale ? `/${locale}/#claim` : "/#claim";
     const flight = normalizeFlightData(parsed.data.flight);
     const additionalPassengers = (parsed.data.additionalPassengers ?? []).map((passenger) => ({

@@ -19,6 +19,7 @@ import { withCompensationEstimate } from "@/lib/compensation-estimate";
 import { dataUrlToBase64, getClientIp, hasSignatureInk, hashSignature } from "@/lib/signature-utils";
 import { isValidClaimPhone, toE164Phone } from "@/lib/phone";
 import { verifyBoardingPassClaim } from "@/lib/verify-boarding-pass";
+import { matchAppLocale } from "@/i18n/routing";
 
 const MAX_FILE_SIZE = MAX_BOARDING_PASS_SIZE;
 
@@ -125,9 +126,8 @@ function getSiteUrl(request: Request): string {
 
 function getRequestLocale(request: Request, formData: FormData): string | null {
   const localeRaw = formData.get("locale");
-  if (typeof localeRaw === "string" && /^[a-z]{2}$/i.test(localeRaw.trim())) {
-    return localeRaw.trim().toLowerCase();
-  }
+  const fromForm = matchAppLocale(typeof localeRaw === "string" ? localeRaw : null);
+  if (fromForm) return fromForm;
 
   const referer = request.headers.get("referer");
   if (!referer) {
@@ -135,9 +135,8 @@ function getRequestLocale(request: Request, formData: FormData): string | null {
   }
 
   try {
-    const pathname = new URL(referer).pathname;
-    const match = pathname.match(/^\/([a-z]{2})(?:\/|$)/i);
-    return match?.[1]?.toLowerCase() ?? null;
+    const firstSegment = new URL(referer).pathname.split("/").filter(Boolean)[0];
+    return matchAppLocale(firstSegment);
   } catch {
     return null;
   }

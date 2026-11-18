@@ -9,7 +9,7 @@ export const termsSq: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". Punojmë No win, no fee: ndihma jonë ligjore nuk ju kushton asgjë, përveçse kur rikuperojmë me sukses kompensimin. Nëse kërkesa shkon në gjyq, zbatohet një tarifë shtesë suksesi prej 20%, e pagueshme vetëm nëse çështja fiton. Të gjitha tarifat janë në ",
+        text: ". Punojmë No win, no fee: shërbimi ynë nuk ju kushton asgjë, përveçse kur kompensimi rikuperohet. Kur e rikuperojmë kompensimin, tarifa jonë është 30% e kompensimit, plus TVSH dhe një tarifë përpunimi. Nëse kërkesa shkon në gjyq, zbatohet një tarifë shtesë suksesi prej 20%, kështu që tarifa është 50% e kompensimit, plus TVSH dhe tarifa e përpunimit. Nëse e merrni kompensimin drejtpërdrejt nga kompania ajrore dhe nuk e paguani tarifën brenda 45 ditëve nga kërkesa jonë e parë për pagesë, tarifa është 50% e kompensimit, plus TVSH. Të gjitha tarifat janë në ",
       },
       { type: "link", href: "/prices", label: "Listën e çmimeve" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsSq: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", që lidhet me pranimin e Kushteve nga Klienti. Për Shërbimet e Ndihmës Ligjore, Marrëveshja vlen kur Klienti ka nënshkruar edhe Formularin e Detyrës, përveç pranimit të Kushteve.",
+                text: ", që lidhet me pranimin e Kushteve nga Klienti. Për Shërbimin e Menaxhimit të Kërkesës, Marrëveshja vlen kur Klienti ka nënshkruar edhe Formularin e Detyrës, përveç pranimit të Kushteve.",
+              },
+            ],
+            [
+              { type: "strong", text: "«Shërbimi i Menaxhimit të Kërkesës»:" },
+              {
+                type: "text",
+                text: " shërbimi që ofron Compensall për paraqitjen dhe ndjekjen e Kërkesës së Klientit te kompania ajrore dhe, kur është e nevojshme, dërgimin e saj te një avokat i pavarur. Compensall nuk është zyrë avokatie dhe nuk ofron shërbime juridike, këshillim juridik apo përfaqësim juridik.",
               },
             ],
             [
@@ -101,7 +108,7 @@ export const termsSq: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " ruan të drejtën ekskluzive të përcaktojë rrugën më të përshtatshme pa detyrim justifikimi, ndërsa Klienti mbahet i informuar. Për shkak të kohës dhe burimeve të rëndësishme gjatë gjyqit, zbatohet një tarifë shtesë suksesi prej 20%, e pagueshme vetëm në rast suksesi. Prania e Klientit në gjykatë nuk kërkohet; pritet bashkëpunim me dokumente, informacion ose prova të nevojshme.",
+                text: " ruan të drejtën ekskluzive të përcaktojë rrugën më të përshtatshme pa detyrim justifikimi, ndërsa Klienti mbahet i informuar. Për shkak të kohës dhe burimeve të rëndësishme gjatë gjyqit, zbatohet një tarifë shtesë suksesi prej 20% të Kompensimit, e pagueshme vetëm në rast suksesi, kështu që shpërblimi total i detyrueshëm në rast gjyqi është 50% i Kompensimit, plus TVSH dhe, kur zbatohet, tarifa e përpunimit e përcaktuar në Listën e çmimeve. Prania e Klientit në gjykatë nuk kërkohet; pritet bashkëpunim me dokumente, informacion ose prova të nevojshme. Gjyqi përfshin edhe rikuperimin e shpërblimit të papaguar nga Klienti sipas nenit 3.12.",
               },
             ],
             [
@@ -231,7 +238,7 @@ export const termsSq: LegalDocument = {
               { type: "strong", text: "1.9." },
               { type: "text", text: " Klienti bie dakord gjithashtu që " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " ta ndihmojë në ushtrimin e së drejtës për të mbrojtur Klientin në mbledhjen e Kompensimit të Fluturimit." },
+              { type: "text", text: " ta ndihmojë në mbledhjen e Kompensimit të Fluturimit." },
             ],
             [
               { type: "strong", text: "1.10." },
@@ -242,16 +249,45 @@ export const termsSq: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " pa vonesë. Këto pagesa konsiderohen kompensim dhe i japin " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " të drejtën të kërkojë tarifën e shërbimit dhe tarifën e gjyqit nëse " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " ka ngritur padi para se Klienti të merrte pagesën nga kompania." },
+              {
+                type: "text",
+                text: " të drejtën të kërkojë tarifën e shërbimit, dhe tarifën e gjyqit nëse ishte ngritur padi para se Klienti të merrte pagesën nga kompania, ose nëse shpërblimi mbetet i papaguar sipas nenit 3.12.",
+              },
+            ],
+            [
+              { type: "strong", text: "1.11." },
+              {
+                type: "text",
+                text: " Klienti konfirmon se, para nënshkrimit të Formularit të Detyrës, nuk ka angazhuar asnjë kompani, agjent apo avokat tjetër dhe nuk ia ka caktuar Kërkesën asnjë pale të tretë, për të njëjtën Kërkesë, dhe merr përsipër të mos e bëjë këtë pas nënshkrimit.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Nëse, pas nënshkrimit të Formularit të Detyrës, Klienti angazhon një kompani, agjent apo avokat tjetër, ose e ndjek Kërkesën drejtpërdrejt me kompaninë ajrore, për të njëjtën Kërkesë, mbetet i detyruar t’i paguajë Compensall tarifën e shërbimit të përcaktuar në Listën e çmimeve mbi çdo Kompensim të fituar, plus TVSH, si dhe tarifën e gjyqit kur ishte ngritur tashmë një padi. Nëse Klienti nuk e tregon shumën e fituar, tarifa llogaritet mbi shumën e kompensimit të përcaktuar nga Rregullorja 261/2004 për fluturimin përkatës. Tarifa paguhet brenda 10 (dhjetë) ditëve nga marrja e Kompensimit nga Klienti.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Nëse, para nënshkrimit të Formularit të Detyrës, Klienti kishte angazhuar tashmë një kompani, agjent apo avokat tjetër, ose ia kishte caktuar Kërkesën një pale të tretë, për të njëjtën Kërkesë, dhe nuk e njoftoi Compensall, Compensall mund ta zgjidhë Marrëveshjen dhe Klienti i paguan Compensall një shumë fikse prej 50 € (pesëdhjetë euro) për pasagjer për të mbuluar kostot e trajtimit të Kërkesës, përveçse kur Klienti provon se ato kosto ishin më të ulëta. Nëse Compensall megjithatë e fiton Kompensimin, zbatohet tarifa e shërbimit e përcaktuar në Listën e çmimeve në vend të kësaj shume.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " Në rastet e përshkruara në (a) dhe (b), nëse ishte nisur tashmë një procedurë gjyqësore përmes një avokati të pavarur, Klienti rimburson edhe të gjitha kostot e shkaktuara faktikisht si pasojë, përfshirë tarifat gjyqësore, kostot e ngarkuara kompanisë ajrore, honoraret e avokatëve, interesin dhe kostot administrative të arsyeshme, siç dokumentohen nga Compensall ose nga avokati i pavarur. Këto kosto mund t’i faturohen Klientit drejtpërdrejt nga Compensall ose nga avokati i pavarur.",
+              },
             ],
           ],
         },
       ],
     },
     {
-      title: "Neni 2. Përshkrimi i Shërbimit të Ndihmës Ligjore",
+      title: "Neni 2. Përshkrimi i Shërbimit të Menaxhimit të Kërkesës",
       blocks: [
         {
           type: "list",
@@ -294,7 +330,7 @@ export const termsSq: LegalDocument = {
                 text: ", procesi i rikuperimit do të ishte më i efektshëm ose më i shpejtë, ",
               },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " ka të drejtë të ndjekë veprim ligjor, që rrit pjesën e Kompensimit që i takon " },
+              { type: "text", text: " ka të drejtë ta dërgojë Kërkesën te një avokat i pavarur për të ndjekur veprim ligjor, që rrit pjesën e Kompensimit që i takon " },
               { type: "brand", field: "brandName" },
               { type: "text", text: ", siç specifikohet në " },
               { type: "link", href: "/prices", label: "Listën e çmimeve" },
@@ -302,11 +338,11 @@ export const termsSq: LegalDocument = {
             ],
             [
               { type: "strong", text: "2.5." },
-              { type: "text", text: " Nëse një përfaqësues ligjor i kontraktuar përfshihet në gjyq, Klienti pranon t’i japë " },
+              { type: "text", text: " Nëse një avokat i pavarur përfshihet në gjyq, Klienti pranon t’i japë " },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " lejen t’i japë përfaqësuesit akses në të gjithë informacionin e rëndësishëm të dosjes, dhe ta lejojë përfaqësuesin t’i njoftojë ",
+                text: " lejen t’i japë avokatit akses në të gjithë informacionin e rëndësishëm të dosjes, dhe ta lejojë avokatin t’i njoftojë ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -320,18 +356,19 @@ export const termsSq: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " ose përfaqësuesi i kontraktuar përcakton se kërkesa nuk ka meritë të mjaftueshme, dosja mbyllet dhe Klienti njoftohet.",
+                text: " ose avokati i pavarur vlerëson se kërkesa ka pak gjasa të ketë sukses, dosja mbyllet dhe Klienti njoftohet.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Nëse " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " ose përfaqësuesi nisin procedime, " },
+              {
+                type: "text",
+                text: " Nëse niset një procedurë përmes një avokati të pavarur, ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " i mbulon kostot nëse padia humbet. Nëse padia fiton ose arrihet shlyerje, ",
+                text: " i mbulon kostot nëse padia humbet, përveçse kur padia humbet ose tërhiqet sepse Klienti ka shkelur nenin 1.6, 1.7 ose 1.11, rast në të cilin zbatohet neni 1.11(c). Nëse padia fiton ose arrihet shlyerje, ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " i mbulon kostot që nuk i rimburson kompania." },
@@ -368,7 +405,7 @@ export const termsSq: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " ofron ndihmë ligjore pa pagesë, përveçse kur " },
+              { type: "text", text: " ofron Shërbimin e Menaxhimit të Kërkesës pa pagesë, përveçse kur " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " mbledh me sukses kompensimin. Nëse kërkesa del me sukses, " },
               { type: "brand", field: "brandName" },
@@ -463,6 +500,13 @@ export const termsSq: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " ose në çdo llogari tjetër të dhënë me shkrim." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Nëse shpërblimi i detyrueshëm sipas nenit 3.11 ose nenit 1.11 mbetet i papaguar 45 (dyzet e pesë) ditë pas kërkesës së parë me shkrim për pagesë të Compensall, Kërkesa shkon në gjyq për rikuperimin e shpërblimit të papaguar dhe zbatohet tarifa e gjyqit. Në atë rast, shpërblimi total i detyrueshëm ndaj Compensall është 50% i Kompensimit, plus TVSH.",
+              },
+            ],
           ],
         },
       ],
@@ -520,7 +564,7 @@ export const termsSq: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: " të të dhënave të dosjeve ose informacionit publik të fluturimeve. Mesazhe të tilla kanë për qëllim vetëm ta ndihmojnë Klientin të ushtrojë të drejtat e veta dhe bien brenda interesit të ligjshëm të ",
+              text: " të të dhënave të dosjeve ose informacionit publik të fluturimeve. Mesazhe të tilla kanë për qëllim vetëm ta informojnë Klientin për të drejtat e tij si pasagjer ajror dhe bien brenda interesit të ligjshëm të ",
             },
             { type: "brand", field: "brandName" },
             { type: "text", text: " për të ofruar shërbime të lidhura." },
@@ -636,9 +680,10 @@ export const termsSq: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Kur ligjet kombëtare kufizojnë ose ndalojnë cesionin e kërkesave, " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " vepron në bashkëpunim me përfaqësues ligjorë lokalë sipas rregullave lokale të zbatueshme." },
+              {
+                type: "text",
+                text: " Kur ligjet kombëtare kufizojnë ose ndalojnë cesionin e kërkesave, Kërkesa trajtohet në bashkëpunim me avokatë lokalë të pavarur, sipas rregullave lokale të zbatueshme.",
+              },
             ],
             [
               { type: "strong", text: "6.8." },
@@ -680,5 +725,5 @@ export const termsSq: LegalDocument = {
       ],
     },
   ],
-  footer: "Versioni i dokumentit 4.0. Përditësimi i fundit: shtator 2026",
+  footer: "Versioni i dokumentit 2.0. Përditësimi i fundit: nëntor 2026",
 };

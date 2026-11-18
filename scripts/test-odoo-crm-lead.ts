@@ -1,6 +1,10 @@
 import { buildActiveCrmLeadArchiveDomain, type OdooCrmLeadArchiveCandidate } from "../src/lib/odoo-client";
+import { matchAppLocale } from "../src/i18n/routing";
+import type { ClaimFlightData } from "../src/lib/claim-types";
 import {
   claimLeadMatchesSubmitIdentity,
+  claimTagNames,
+  helpdeskClaimValue,
   normalizeClaimLeadEmail,
   type ClaimLeadArchiveIdentity,
 } from "../src/lib/odoo-crm-lead";
@@ -172,6 +176,37 @@ const emptyDomain = buildActiveCrmLeadArchiveDomain({});
 const emptyOk = emptyDomain === null;
 console.log(`${emptyOk ? "PASS" : "FAIL"} empty identity builds no archive domain`);
 if (!emptyOk) failed += 1;
+
+const flight = {
+  passenger: "Ana",
+  flight: "TP123",
+  routeFrom: "LIS",
+  routeTo: "OPO",
+  date: "2026-01-01",
+  status: "Delayed",
+  delay: "4h",
+} as ClaimFlightData;
+
+const brazilValue = helpdeskClaimValue("pt-BR", flight, 3);
+const brazilOk = brazilValue?.amount === 9000 && brazilValue.currencyCode === "BRL";
+console.log(`${brazilOk ? "PASS" : "FAIL"} Brazilian claim value is R$ 9,000, not per passenger`);
+if (!brazilOk) failed += 1;
+
+const europeValue = helpdeskClaimValue("pt", flight, 2);
+const europeOk = europeValue?.amount === 500 && europeValue.currencyCode === "EUR";
+console.log(`${europeOk ? "PASS" : "FAIL"} Portuguese claim value stays €250 per passenger`);
+if (!europeOk) failed += 1;
+
+const tags = claimTagNames("pt-br", ["Claim Submitted"]);
+const tagsOk = tags.includes("BR") && tags.includes("Claim Submitted");
+const portugalTags = claimTagNames("pt", ["Claim Submitted"]);
+const portugalTagsOk = !portugalTags.includes("BR");
+console.log(`${tagsOk && portugalTagsOk ? "PASS" : "FAIL"} BR tag is only added for the Brazilian form`);
+if (!tagsOk || !portugalTagsOk) failed += 1;
+
+const localeOk = matchAppLocale("pt-br") === "pt-BR" && matchAppLocale("pt") === "pt";
+console.log(`${localeOk ? "PASS" : "FAIL"} pt-BR stays a distinct locale`);
+if (!localeOk) failed += 1;
 
 if (failed > 0) {
   process.exit(1);

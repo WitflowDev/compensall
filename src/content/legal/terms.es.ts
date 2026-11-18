@@ -9,7 +9,7 @@ export const termsEs: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". Trabajamos con No win, no fee: nuestra asistencia jurídica no le cuesta nada salvo que recuperemos con éxito su compensación. Si la reclamación tiene que ir a litigio, se aplica una comisión adicional de éxito del 20 %, pagadera solo si el caso prospera. Todas las comisiones figuran en la ",
+        text: ". Trabajamos con No win, no fee: nuestro servicio no le cuesta nada salvo que se recupere su compensación. Cuando recuperamos su compensación, nuestros honorarios son el 30 % de la compensación, más el IVA y una comisión de gestión. Si la reclamación tiene que ir a litigio, se aplica una comisión adicional de éxito del 20 %, de modo que los honorarios son el 50 % de la compensación, más el IVA y la comisión de gestión. Si recibe la compensación directamente de la aerolínea y no paga nuestros honorarios en un plazo de 45 días desde nuestro primer requerimiento de pago, los honorarios son el 50 % de la compensación, más el IVA. Todas las comisiones figuran en la ",
       },
       { type: "link", href: "/prices", label: "Lista de precios" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsEs: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", formado cuando el Cliente acepta las CG. Para la prestación de los Servicios de Asistencia Jurídica, el Contrato se considera válido cuando el Cliente ha firmado el Formulario de Encargo, además de aceptar estas CG.",
+                text: ", formado cuando el Cliente acepta las CG. Para la prestación del Servicio de Gestión de Reclamaciones, el Contrato se considera válido cuando el Cliente ha firmado el Formulario de Encargo, además de aceptar estas CG.",
+              },
+            ],
+            [
+              { type: "strong", text: "«Servicio de Gestión de Reclamaciones»:" },
+              {
+                type: "text",
+                text: " el servicio prestado por Compensall consistente en presentar y seguir la Reclamación del Cliente ante la aerolínea y, cuando sea necesario, remitirla a un abogado independiente. Compensall no es un despacho de abogados y no presta servicios jurídicos, asesoramiento jurídico ni representación legal.",
               },
             ],
             [
@@ -104,7 +111,7 @@ export const termsEs: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " se reserva el derecho exclusivo de determinar el curso de actuación más adecuado, sin obligación de justificar sus decisiones, aunque el Cliente será informado durante el proceso. Dado el tiempo y los recursos que exige el litigio, se aplicará una comisión adicional de éxito del 20 %, pagadera solo si el resultado es favorable. No se exigirá la presencia del Cliente en el juzgado; sí se esperará su colaboración con los documentos, la información o las pruebas necesarias para sostener el procedimiento.",
+                text: " se reserva el derecho exclusivo de determinar el curso de actuación más adecuado, sin obligación de justificar sus decisiones, aunque el Cliente será informado durante el proceso. Dado el tiempo y los recursos que exige el litigio, se aplicará una comisión adicional de éxito del 20 % de la Compensación, pagadera solo si el resultado es favorable, de modo que la remuneración total debida en caso de litigio es el 50 % de la Compensación, más el IVA y, cuando proceda, la comisión de gestión indicada en la Lista de precios. No se exigirá la presencia del Cliente en el juzgado; sí se esperará su colaboración con los documentos, la información o las pruebas necesarias para sostener el procedimiento. El litigio incluye también el cobro de la remuneración impagada al Cliente conforme a la cláusula 3.12.",
               },
             ],
             [
@@ -245,7 +252,7 @@ export const termsEs: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " le asista en el ejercicio del derecho a defender al Cliente en el cobro de la Compensación de Vuelo.",
+                text: " le asista en el cobro de la Compensación de Vuelo.",
               },
             ],
             [
@@ -259,12 +266,35 @@ export const termsEs: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " derecho a reclamar la comisión del servicio y la comisión de litigio si ",
+                text: " derecho a reclamar la comisión del servicio y la comisión de litigio si se había presentado una demanda antes de que el Cliente recibiera el pago de la aerolínea respectiva, o si la remuneración permanece impagada conforme a la cláusula 3.12.",
               },
-              { type: "brand", field: "brandName" },
+            ],
+            [
+              { type: "strong", text: "1.11." },
               {
                 type: "text",
-                text: " ha presentado demanda antes de que el Cliente recibiera el pago de la aerolínea.",
+                text: " El Cliente confirma que, antes de firmar el Formulario de Encargo, no ha contratado a ninguna otra empresa, agente o abogado, ni ha cedido la Reclamación a ningún tercero, en relación con la misma Reclamación, y se compromete a no hacerlo después de firmarlo.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Si, después de firmar el Formulario de Encargo, el Cliente contrata a otra empresa, agente o abogado, o persigue la Reclamación directamente ante la aerolínea, en relación con la misma Reclamación, sigue obligado a pagar a Compensall los honorarios de servicio indicados en la Lista de precios sobre cualquier Compensación obtenida, más el IVA, así como los honorarios de litigio cuando ya se hubiera presentado una demanda. Si el Cliente no comunica el importe obtenido, los honorarios se calculan sobre el importe de la compensación establecido por el Reglamento 261/2004 para el vuelo de que se trate. Los honorarios se pagan en un plazo de 10 (diez) días desde que el Cliente reciba la Compensación.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Si, antes de firmar el Formulario de Encargo, el Cliente ya había contratado a otra empresa, agente o abogado, o había cedido la Reclamación a un tercero, en relación con la misma Reclamación, y no informó a Compensall, Compensall puede resolver el Contrato y el Cliente pagará a Compensall un importe fijo de 50 € (cincuenta euros) por pasajero para cubrir los costes de tramitación de la Reclamación, salvo que el Cliente pruebe que esos costes fueron inferiores. Si Compensall obtiene no obstante la Compensación, se aplican los honorarios de servicio indicados en la Lista de precios en lugar de ese importe.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " En los casos descritos en (a) y (b), si ya se había iniciado un procedimiento judicial a través de un abogado independiente, el Cliente reembolsará también todos los costes efectivamente soportados como consecuencia, incluidas las tasas judiciales, las costas impuestas a la aerolínea, los honorarios de abogados, los intereses y los costes administrativos razonables, según los documente Compensall o el abogado independiente. Estos costes pueden facturarse al Cliente directamente por Compensall o por el abogado independiente.",
               },
             ],
           ],
@@ -272,7 +302,7 @@ export const termsEs: LegalDocument = {
       ],
     },
     {
-      title: "Artículo 2. Descripción del Servicio de Asistencia Jurídica",
+      title: "Artículo 2. Descripción del Servicio de Gestión de Reclamaciones",
       blocks: [
         {
           type: "list",
@@ -320,7 +350,7 @@ export const termsEs: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " estará legitimada para emprender acciones legales, lo que aumentará la parte de la Compensación de Vuelo que corresponde a ",
+                text: " estará legitimada para remitir la Reclamación a un abogado independiente para emprender acciones legales, lo que aumentará la parte de la Compensación de Vuelo que corresponde a ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: ", según la " },
@@ -331,12 +361,12 @@ export const termsEs: LegalDocument = {
               { type: "strong", text: "2.5." },
               {
                 type: "text",
-                text: " Si interviene un representante legal contratado en el litigio, el Cliente acepta otorgar a ",
+                text: " Si interviene un abogado independiente en el litigio, el Cliente acepta otorgar a ",
               },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " permiso para facilitar al representante legal el acceso a toda la información relevante del caso, y para que el representante legal informe a ",
+                text: " permiso para facilitar al abogado el acceso a toda la información relevante del caso, y para que el abogado informe a ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -350,18 +380,19 @@ export const termsEs: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " o su representante legal contratado determina que la reclamación no tiene mérito suficiente, el caso se cerrará y se informará al Cliente.",
+                text: " o el abogado independiente considera que es poco probable que la reclamación prospere, el caso se cerrará y se informará al Cliente.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Si " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " o el representante legal contratado inicia un procedimiento judicial, " },
+              {
+                type: "text",
+                text: " Si se inicia un procedimiento judicial a través de un abogado independiente, ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " cubrirá las costas si se pierde la demanda. Si la demanda prospera o se alcanza una transacción, ",
+                text: " cubrirá las costas si se pierde la demanda, salvo si la demanda se pierde o se retira porque el Cliente incumplió las cláusulas 1.6, 1.7 o 1.11, en cuyo caso se aplica la cláusula 1.11(c). Si la demanda prospera o se alcanza una transacción, ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " cubrirá las costas que no reembolse la aerolínea." },
@@ -398,7 +429,7 @@ export const termsEs: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " ofrece asistencia jurídica gratuita, salvo cuando " },
+              { type: "text", text: " ofrece el Servicio de Gestión de Reclamaciones de forma gratuita, salvo cuando " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " cobra con éxito la compensación. Si la reclamación tiene éxito, " },
               { type: "brand", field: "brandName" },
@@ -547,6 +578,13 @@ export const termsEs: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " facilite por escrito." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Si la remuneración debida en virtud de la cláusula 3.11 o de la cláusula 1.11 permanece impagada 45 (cuarenta y cinco) días después del primer requerimiento de pago por escrito de Compensall, la Reclamación pasará a litigio para el cobro de la remuneración impagada, y se aplicarán los honorarios de litigio. En ese caso, la remuneración total debida a Compensall será el 50 % de la Compensación, más el IVA.",
+              },
+            ],
           ],
         },
       ],
@@ -607,7 +645,7 @@ export const termsEs: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: " de datos de casos anteriores o de información de vuelos de acceso público. Esos mensajes pretenden únicamente ayudar al Cliente a ejercer sus derechos y se consideran dentro del interés legítimo de ",
+              text: " de datos de casos anteriores o de información de vuelos de acceso público. Esos mensajes pretenden únicamente informar al Cliente de sus derechos como pasajero aéreo y se consideran dentro del interés legítimo de ",
             },
             { type: "brand", field: "brandName" },
             {
@@ -753,11 +791,9 @@ export const termsEs: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Cuando las leyes nacionales restrinjan o prohíban la cesión de reclamaciones, " },
-              { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " actuará en cooperación con representantes legales locales conforme a la normativa local aplicable.",
+                text: " Cuando las leyes nacionales restrinjan o prohíban la cesión de reclamaciones, la Reclamación se tramitará en cooperación con abogados locales independientes, conforme a la normativa local aplicable.",
               },
             ],
             [
@@ -806,5 +842,5 @@ export const termsEs: LegalDocument = {
       ],
     },
   ],
-  footer: "Versión del documento 4.0. Última actualización: septiembre de 2026",
+  footer: "Versión del documento 2.0. Última actualización: noviembre de 2026",
 };

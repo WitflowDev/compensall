@@ -9,7 +9,7 @@ export const termsHu: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: " közötti jogviszonyt. No win, no fee alapon dolgozunk: a jogi segítségnyújtás Önnek semmibe sem kerül, hacsak sikeresen meg nem szerezzük a kártérítést. Ha a kárigény peres eljárásra kerül, további 20%-os, sikerhez kötött díj érvényesül, amely csak akkor fizetendő, ha az ügy sikerrel zárul. Minden díjat az ",
+        text: " közötti jogviszonyt. No win, no fee alapon dolgozunk: a szolgáltatásunk Önnek semmibe sem kerül, hacsak a kártérítést meg nem szerezzük. Ha a kártérítést megszerezzük, díjunk a kártérítés 30%-a, plusz áfa és kezelési díj. Ha a kárigény peres eljárásra kerül, további 20%-os, sikerhez kötött díj érvényesül, így a díj a kártérítés 50%-a, plusz áfa és a kezelési díj. Ha a kártérítést közvetlenül a légitársaságtól kapja meg, és díjunkat az első fizetési felszólításunktól számított 45 napon belül nem fizeti meg, a díj a kártérítés 50%-a, plusz áfa. Minden díjat az ",
       },
       { type: "link", href: "/prices", label: "Árlista" },
       { type: "text", text: " tartalmaz." },
@@ -37,7 +37,14 @@ export const termsHu: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " között létrejött megállapodás, amely az ÁSZF Ügyfél általi elfogadásával jön létre. A jogi segítségnyújtási szolgáltatásokra a Szerződés akkor tekinthető érvényesnek, ha az Ügyfél az ÁSZF elfogadásán túl a Megbízási űrlapot is aláírta.",
+                text: " között létrejött megállapodás, amely az ÁSZF Ügyfél általi elfogadásával jön létre. A kárigénykezelési szolgáltatásra a Szerződés akkor tekinthető érvényesnek, ha az Ügyfél az ÁSZF elfogadásán túl a Megbízási űrlapot is aláírta.",
+              },
+            ],
+            [
+              { type: "strong", text: "„Kárigénykezelési szolgáltatás”:" },
+              {
+                type: "text",
+                text: " a Compensall által nyújtott szolgáltatás, amely az Ügyfél kárigényének a légitársaságnál történő benyújtásából és nyomon követéséből, valamint szükség esetén független ügyvédhez utalásából áll. A Compensall nem ügyvédi iroda, és nem nyújt jogi szolgáltatást, jogi tanácsot vagy jogi képviseletet.",
               },
             ],
             [
@@ -104,7 +111,7 @@ export const termsHu: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " kizárólagos jogot tart fenn a legmegfelelőbb eljárás megválasztására, anélkül, hogy döntéseit indokolnia kellene; az Ügyfelet azonban a folyamat során folyamatosan tájékoztatjuk. A peres eljárás jelentős idő- és erőforrásigénye miatt további 20%-os, sikerhez kötött díj érvényesül, amely csak sikeres kimenetel esetén fizetendő. Az Ügyfél személyes megjelenése a bíróságon nem szükséges; együttműködés azonban elvárt a szükséges iratok, információk és bizonyítékok átadásában.",
+                text: " kizárólagos jogot tart fenn a legmegfelelőbb eljárás megválasztására, anélkül, hogy döntéseit indokolnia kellene; az Ügyfelet azonban a folyamat során folyamatosan tájékoztatjuk. A peres eljárás jelentős idő- és erőforrásigénye miatt további 20%-os, a Kártérítésre vetített, sikerhez kötött díj érvényesül, amely csak sikeres kimenetel esetén fizetendő, így peres eljárás esetén a teljes díjazás a Kártérítés 50%-a, plusz áfa és adott esetben az Árlistában meghatározott kezelési díj. Az Ügyfél személyes megjelenése a bíróságon nem szükséges; együttműködés azonban elvárt a szükséges iratok, információk és bizonyítékok átadásában. A peres eljárás magában foglalja a rendezetlen díjazás Ügyféltől történő behajtását is a 3.12. pont szerint.",
               },
             ],
             [
@@ -245,7 +252,7 @@ export const termsHu: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " segíti az Ügyfelet a járatkártérítés beszedéséhez fűződő jogainak érvényesítésében.",
+                text: " segíti az Ügyfelet a járatkártérítés beszedésében.",
               },
             ],
             [
@@ -259,12 +266,35 @@ export const termsHu: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " jogosult a szolgáltatási díjat, valamint — ha a ",
+                text: " jogosult a szolgáltatási díjat, valamint a peres díjat is érvényesíteni, ha a kifizetés Ügyfélhez érkezése előtt pert indítottak, vagy ha a díjazás a 3.12. pont szerint rendezetlen marad.",
               },
-              { type: "brand", field: "brandName" },
+            ],
+            [
+              { type: "strong", text: "1.11." },
               {
                 type: "text",
-                text: " a kifizetés Ügyfélhez érkezése előtt pert indított — a peres díjat is érvényesíteni.",
+                text: " Az Ügyfél megerősíti, hogy a Megbízási űrlap aláírása előtt nem bízott meg más céget, ügynököt vagy ügyvédet, és a Kárigényt nem ruházta át harmadik személyre ugyanazon Kárigény tekintetében, és vállalja, hogy ezt az aláírás után sem teszi.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Ha a Megbízási űrlap aláírása után az Ügyfél más céget, ügynököt vagy ügyvédet bíz meg, vagy a Kárigényt közvetlenül a légitársaságnál érvényesíti ugyanazon Kárigény tekintetében, továbbra is köteles megfizetni a Compensallnak az Árlistában meghatározott szolgáltatási díjat minden megszerzett kártérítés után, plusz áfát, valamint a peres díjat, ha már pert indítottak. Ha az Ügyfél nem közli a megszerzett összeget, a díjat a 261/2004. rendelet által az érintett járatra megállapított kártérítési összeg alapján kell kiszámítani. A díjat az Ügyfél általi kézhezvételtől számított 10 (tíz) napon belül kell megfizetni.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Ha a Megbízási űrlap aláírása előtt az Ügyfél már megbízott más céget, ügynököt vagy ügyvédet, vagy a Kárigényt harmadik személyre ruházta ugyanazon Kárigény tekintetében, és erről a Compensallt nem tájékoztatta, a Compensall felmondhatja a Szerződést, és az Ügyfél utasonként 50 € (ötven euró) fix összeget fizet a Compensallnak a Kárigény kezelésének költségeire, kivéve, ha az Ügyfél bizonyítja, hogy ezek a költségek alacsonyabbak voltak. Ha a Compensall ennek ellenére megszerzi a kártérítést, ehelyett az Árlistában meghatározott szolgáltatási díj alkalmazandó.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " Az (a) és (b) pontban leírt esetekben, ha független ügyvéd útján már jogi eljárást indítottak, az Ügyfél megtéríti az ennek következtében ténylegesen felmerült valamennyi költséget is, ideértve az illetékeket, a légitársaságra terhelt költségeket, az ügyvédi díjakat, a kamatot és az ésszerű adminisztratív költségeket, a Compensall vagy a független ügyvéd dokumentációja szerint. Ezeket a költségeket a Compensall vagy a független ügyvéd közvetlenül az Ügyfélnek számlázhatja.",
               },
             ],
           ],
@@ -272,7 +302,7 @@ export const termsHu: LegalDocument = {
       ],
     },
     {
-      title: "2. cikk. A jogi segítségnyújtási szolgáltatás leírása",
+      title: "2. cikk. A kárigénykezelési szolgáltatás leírása",
       blocks: [
         {
           type: "list",
@@ -320,7 +350,7 @@ export const termsHu: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " jogosult jogi eljárást indítani, amely a járatkártérítés ",
+                text: " jogosult a Kárigényt független ügyvédhez utalni jogi eljárás indítása érdekében, amely a járatkártérítés ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: "-t megillető részének növekedését eredményezi, az " },
@@ -331,12 +361,12 @@ export const termsHu: LegalDocument = {
               { type: "strong", text: "2.5." },
               {
                 type: "text",
-                text: " Ha peres eljárásban szerződéses jogi képviselő vesz részt, az Ügyfél hozzájárul, hogy a ",
+                text: " Ha peres eljárásban független ügyvéd vesz részt, az Ügyfél hozzájárul, hogy a ",
               },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " a jogi képviselőnek hozzáférést adjon az ügy valamennyi releváns adatához, és a jogi képviselő tájékoztassa a ",
+                text: " az ügyvédnek hozzáférést adjon az ügy valamennyi releváns adatához, és az ügyvéd tájékoztassa a ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -350,18 +380,19 @@ export const termsHu: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " vagy a szerződéses jogi képviselője úgy ítéli meg, hogy a kárigénynek nincs kellő megalapozottsága, az ügyet lezárjuk, és az Ügyfelet erről tájékoztatjuk.",
+                text: " vagy a független ügyvéd úgy ítéli meg, hogy a kárigénynek kevés esélye van a sikerre, az ügyet lezárjuk, és az Ügyfelet erről tájékoztatjuk.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Ha a " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " vagy a szerződéses jogi képviselő jogi eljárást indít, a " },
+              {
+                type: "text",
+                text: " Ha független ügyvéd útján jogi eljárást indítanak, a ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " viseli a költségeket, ha a pert elveszítjük. Ha a per sikeres, vagy egyezség jön létre, a ",
+                text: " viseli a költségeket, ha a pert elveszítjük, kivéve, ha a per azért veszik el vagy kerül visszavonásra, mert az Ügyfél megsértette az 1.6., az 1.7. vagy az 1.11. pontot; ebben az esetben az 1.11(c) pont alkalmazandó. Ha a per sikeres, vagy egyezség jön létre, a ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " viseli azokat a költségeket, amelyeket a légitársaság nem térít meg." },
@@ -398,7 +429,7 @@ export const termsHu: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " A " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " díjmentesen nyújt jogi segítséget, kivéve, ha a " },
+              { type: "text", text: " díjmentesen nyújtja a kárigénykezelési szolgáltatást, kivéve, ha a " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " sikeresen beszedte a kártérítést. Sikeres kárigény esetén a " },
               { type: "brand", field: "brandName" },
@@ -542,6 +573,13 @@ export const termsHu: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " által írásban közölt bankszámlára." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Ha a 3.11. vagy az 1.11. pont szerinti díjazás a Compensall első írásbeli fizetési felszólításától számított 45 (negyvenöt) nap elteltével is rendezetlen, a Kárigény a rendezetlen díjazás behajtása miatt peres útra terelődik, és a peres díj alkalmazandó. Ebben az esetben a Compensallnak járó teljes díjazás a Kártérítés 50%-a, plusz áfa.",
+              },
+            ],
           ],
         },
       ],
@@ -602,7 +640,7 @@ export const termsHu: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: " korábbi ügyadatai vagy nyilvánosan elérhető járatinformációk elemzése alapján. Az ilyen üzenetek kizárólag azt a célt szolgálják, hogy segítsék az Ügyfelet jogai gyakorlásában, és a ",
+              text: " korábbi ügyadatai vagy nyilvánosan elérhető járatinformációk elemzése alapján. Az ilyen üzenetek kizárólag azt a célt szolgálják, hogy tájékoztassák az Ügyfelet légi utasként fennálló jogairól, és a ",
             },
             { type: "brand", field: "brandName" },
             {
@@ -748,11 +786,9 @@ export const termsHu: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Ha a nemzeti jog korlátozza vagy megtiltja a kárigények átruházását, a " },
-              { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " a helyi jogi képviselőkkel együttműködve, a helyi szabályoknak megfelelően jár el.",
+                text: " Ha a nemzeti jog korlátozza vagy megtiltja a kárigények átruházását, a Kárigényt független helyi ügyvédekkel együttműködve, a helyi szabályoknak megfelelően kezeljük.",
               },
             ],
             [
@@ -801,5 +837,5 @@ export const termsHu: LegalDocument = {
       ],
     },
   ],
-  footer: "Dokumentumverzió 4.0. Utolsó frissítés: 2026. szeptember",
+  footer: "Dokumentumverzió 2.0. Utolsó frissítés: 2026. november",
 };

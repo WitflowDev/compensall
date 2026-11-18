@@ -9,7 +9,7 @@ export const termsRo: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". Lucrăm cu No win, no fee: asistența noastră juridică nu vă costă nimic decât dacă recuperăm cu succes despăgubirea. Dacă cererea trebuie să ajungă în litigiu, se aplică un comision suplimentar de succes de 20 %, plătibil doar dacă dosarul reușește. Toate comisioanele figurează în ",
+        text: ". Lucrăm cu No win, no fee: serviciul nostru nu vă costă nimic decât dacă despăgubirea este recuperată. Când recuperăm despăgubirea, taxa noastră este de 30 % din despăgubire, plus TVA și o taxă de procesare. Dacă cererea trebuie să ajungă în litigiu, se aplică un comision suplimentar de succes de 20 %, astfel încât taxa este de 50 % din despăgubire, plus TVA și taxa de procesare. Dacă primiți despăgubirea direct de la compania aeriană și nu plătiți taxa în termen de 45 de zile de la prima noastră cerere de plată, taxa este de 50 % din despăgubire, plus TVA. Toate comisioanele figurează în ",
       },
       { type: "link", href: "/prices", label: "Lista de prețuri" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsRo: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", format când Clientul acceptă CG. Pentru prestarea Serviciilor de asistență juridică, Contractul se consideră valabil când Clientul a semnat Formularul de mandat, pe lângă acceptarea acestor CG.",
+                text: ", format când Clientul acceptă CG. Pentru prestarea Serviciului de gestionare a cererilor, Contractul se consideră valabil când Clientul a semnat Formularul de mandat, pe lângă acceptarea acestor CG.",
+              },
+            ],
+            [
+              { type: "strong", text: "«Serviciul de gestionare a cererilor»:" },
+              {
+                type: "text",
+                text: " serviciul prestat de Compensall constând în depunerea și urmărirea Cererii Clientului la compania aeriană și, atunci când este necesar, trimiterea acesteia către un avocat independent. Compensall nu este o societate de avocatură și nu prestează servicii juridice, consultanță juridică sau reprezentare juridică.",
               },
             ],
             [
@@ -104,7 +111,7 @@ export const termsRo: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " își rezervă dreptul exclusiv de a determina calea de acțiune cea mai potrivită, fără obligația de a-și justifica deciziile, deși Clientul va fi informat pe parcurs. Având în vedere timpul și resursele pe care le cere litigiul, se aplică un comision suplimentar de succes de 20 %, plătibil doar dacă rezultatul este favorabil. Nu se cere prezența Clientului în instanță; se așteaptă însă colaborarea sa cu documentele, informațiile sau probele necesare pentru a susține procedura.",
+                text: " își rezervă dreptul exclusiv de a determina calea de acțiune cea mai potrivită, fără obligația de a-și justifica deciziile, deși Clientul va fi informat pe parcurs. Având în vedere timpul și resursele pe care le cere litigiul, se aplică un comision suplimentar de succes de 20 % din Despăgubire, plătibil doar dacă rezultatul este favorabil, astfel încât remunerația totală datorată în caz de litigiu este de 50 % din Despăgubire, plus TVA și, după caz, taxa de procesare indicată în Lista de prețuri. Nu se cere prezența Clientului în instanță; se așteaptă însă colaborarea sa cu documentele, informațiile sau probele necesare pentru a susține procedura. Litigiul include și recuperarea remunerației neplătite de la Client conform clauzei 3.12.",
               },
             ],
             [
@@ -245,7 +252,7 @@ export const termsRo: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " să îl asiste în exercitarea dreptului de a-l apăra la încasarea Despăgubirii de zbor.",
+                text: " să îl asiste la încasarea Despăgubirii de zbor.",
               },
             ],
             [
@@ -259,12 +266,35 @@ export const termsRo: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " dreptul de a cere comisionul serviciului și comisionul de litigiu dacă ",
+                text: " dreptul de a cere taxa de serviciu și taxa de litigiu dacă se depusese o acțiune înainte ca Clientul să primească plata de la companie sau dacă remunerația rămâne neplătită conform clauzei 3.12.",
               },
-              { type: "brand", field: "brandName" },
+            ],
+            [
+              { type: "strong", text: "1.11." },
               {
                 type: "text",
-                text: " a depus acțiune înainte ca Clientul să primească plata de la companie.",
+                text: " Clientul confirmă că, înainte de a semna Formularul de mandat, nu a angajat nicio altă societate, niciun agent sau avocat și nu a cesionat Cererea niciunui terț, în legătură cu aceeași Cerere, și se obligă să nu o facă după semnare.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Dacă, după semnarea Formularului de mandat, Clientul angajează o altă societate, un agent sau un avocat, sau urmărește Cererea direct la compania aeriană, în legătură cu aceeași Cerere, rămâne obligat să plătească Compensall taxa de serviciu indicată în Lista de prețuri asupra oricărei Despăgubiri obținute, plus TVA, precum și taxa de litigiu dacă se depusese deja o acțiune. Dacă Clientul nu comunică suma obținută, taxa se calculează pe suma despăgubirii stabilită de Regulamentul 261/2004 pentru zborul în cauză. Taxa se plătește în termen de 10 (zece) zile de la primirea Despăgubirii de către Client.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Dacă, înainte de semnarea Formularului de mandat, Clientul angajase deja o altă societate, un agent sau un avocat, sau cesionase Cererea unui terț, în legătură cu aceeași Cerere, și nu a informat Compensall, Compensall poate rezilia Contractul, iar Clientul plătește Compensall o sumă fixă de 50 € (cincizeci de euro) de pasager pentru a acoperi costurile de gestionare a Cererii, cu excepția cazului în care Clientul dovedește că acele costuri au fost mai mici. Dacă Compensall obține totuși Despăgubirea, se aplică taxa de serviciu indicată în Lista de prețuri în locul acestei sume.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " În cazurile descrise la (a) și (b), dacă se inițiase deja o procedură judiciară printr-un avocat independent, Clientul rambursează și toate costurile efectiv suportate ca urmare, inclusiv taxele judiciare, cheltuielile puse în sarcina companiei aeriene, onorariile avocaților, dobânzile și costurile administrative rezonabile, astfel cum sunt documentate de Compensall sau de avocatul independent. Aceste costuri pot fi facturate Clientului direct de Compensall sau de avocatul independent.",
               },
             ],
           ],
@@ -272,7 +302,7 @@ export const termsRo: LegalDocument = {
       ],
     },
     {
-      title: "Articolul 2. Descrierea Serviciului de asistență juridică",
+      title: "Articolul 2. Descrierea Serviciului de gestionare a cererilor",
       blocks: [
         {
           type: "list",
@@ -320,7 +350,7 @@ export const termsRo: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " va fi îndreptățită să inițieze acțiuni legale, ceea ce va crește partea din Despăgubirea de zbor care revine ",
+                text: " va fi îndreptățită să trimită Cererea unui avocat independent pentru a iniția acțiuni legale, ceea ce va crește partea din Despăgubirea de zbor care revine ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: ", conform ", },
@@ -331,12 +361,12 @@ export const termsRo: LegalDocument = {
               { type: "strong", text: "2.5." },
               {
                 type: "text",
-                text: " Dacă intervine un reprezentant legal contractat în litigiu, Clientul acceptă să acorde ",
+                text: " Dacă intervine un avocat independent în litigiu, Clientul acceptă să acorde ",
               },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " permisiunea de a facilita reprezentantului legal accesul la toate informațiile relevante ale dosarului și ca reprezentantul legal să informeze ",
+                text: " permisiunea de a facilita avocatului accesul la toate informațiile relevante ale dosarului și ca avocatul să informeze ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -350,18 +380,19 @@ export const termsRo: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " sau reprezentantul său legal contractat determină că cererea nu are temei suficient, dosarul se închide și Clientul este informat.",
+                text: " sau avocatul independent consideră că cererea are puține șanse de reușită, dosarul se închide și Clientul este informat.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Dacă " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " sau reprezentantul legal contractat inițiază o procedură judiciară, " },
+              {
+                type: "text",
+                text: " Dacă se inițiază o procedură judiciară printr-un avocat independent, ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " va acoperi cheltuielile dacă acțiunea se pierde. Dacă acțiunea reușește sau se ajunge la o tranzacție, ",
+                text: " va acoperi cheltuielile dacă acțiunea se pierde, cu excepția cazului în care acțiunea se pierde sau se retrage pentru că Clientul a încălcat clauzele 1.6, 1.7 sau 1.11, situație în care se aplică clauza 1.11(c). Dacă acțiunea reușește sau se ajunge la o tranzacție, ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " va acoperi cheltuielile pe care respectiva companie nu le rambursează." },
@@ -398,7 +429,7 @@ export const termsRo: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " oferă asistență juridică gratuită, cu excepția cazului în care " },
+              { type: "text", text: " oferă Serviciul de gestionare a cererilor gratuit, cu excepția cazului în care " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " încasează cu succes despăgubirea. Dacă cererea reușește, " },
               { type: "brand", field: "brandName" },
@@ -547,6 +578,13 @@ export const termsRo: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " îl comunică în scris." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Dacă remunerația datorată conform clauzei 3.11 sau clauzei 1.11 rămâne neplătită 45 (patruzeci și cinci) de zile după prima cerere scrisă de plată a Compensall, Cererea trece în litigiu pentru recuperarea remunerației neplătite, iar taxa de litigiu se aplică. În acest caz, remunerația totală datorată Compensall este de 50 % din Despăgubire, plus TVA.",
+              },
+            ],
           ],
         },
       ],
@@ -607,7 +645,7 @@ export const termsRo: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: " a datelor din dosare anterioare sau a informațiilor de zbor de acces public. Aceste mesaje urmăresc doar să îl ajute pe Client să își exercite drepturile și se consideră în interesul legitim al ",
+              text: " a datelor din dosare anterioare sau a informațiilor de zbor de acces public. Aceste mesaje urmăresc doar să informeze Clientul despre drepturile sale de pasager aerian și se consideră în interesul legitim al ",
             },
             { type: "brand", field: "brandName" },
             {
@@ -753,11 +791,9 @@ export const termsRo: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Când legile naționale restricționează sau interzic cesiunea cererilor, " },
-              { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " va acționa în cooperare cu reprezentanți legali locali, conform normativei locale aplicabile.",
+                text: " Când legile naționale restricționează sau interzic cesiunea cererilor, Cererea va fi gestionată în cooperare cu avocați locali independenți, conform normativei locale aplicabile.",
               },
             ],
             [
@@ -806,5 +842,5 @@ export const termsRo: LegalDocument = {
       ],
     },
   ],
-  footer: "Versiunea documentului 4.0. Ultima actualizare: septembrie 2026",
+  footer: "Versiunea documentului 2.0. Ultima actualizare: noiembrie 2026",
 };

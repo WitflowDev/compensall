@@ -9,7 +9,7 @@ export const termsFr: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". Nous travaillons sur une base No win, no fee: notre assistance juridique ne vous coûte rien, sauf si nous obtenons avec succès votre indemnisation. Si la réclamation doit faire l'objet d'une procédure contentieuse, des honoraires de résultat supplémentaires de 20 % s'appliquent, dus uniquement en cas d'issue favorable. Tous les frais figurent dans la ",
+        text: ". Nous travaillons sur une base No win, no fee : notre service ne vous coûte rien, sauf si votre indemnisation est recouvrée. Lorsque nous recouvrons votre indemnisation, nos honoraires s'élèvent à 30 % de l'indemnisation, TVA et frais de traitement en sus. Si la réclamation doit faire l'objet d'une procédure contentieuse, des honoraires de résultat supplémentaires de 20 % s'appliquent, de sorte que les honoraires s'élèvent à 50 % de l'indemnisation, TVA et frais de traitement en sus. Si vous recevez l'indemnisation directement de la compagnie aérienne et ne payez pas nos honoraires dans les 45 jours suivant notre première demande de paiement, les honoraires s'élèvent à 50 % de l'indemnisation, TVA en sus. Tous les frais figurent dans la ",
       },
       { type: "link", href: "/prices", label: "Liste des Prix" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsFr: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", formé par l'acceptation des CG par le Client. Pour la fourniture des Services d'Assistance Juridique, le Contrat est considéré comme valable dès lors que le Client a signé le Formulaire de Cession, en plus d'avoir accepté les présentes CG.",
+                text: ", formé par l'acceptation des CG par le Client. Pour la fourniture du Service de Gestion des Réclamations, le Contrat est considéré comme valable dès lors que le Client a signé le Formulaire de Cession, en plus d'avoir accepté les présentes CG.",
+              },
+            ],
+            [
+              { type: "strong", text: '"Service de Gestion des Réclamations" :' },
+              {
+                type: "text",
+                text: " le service fourni par Compensall consistant à soumettre et à suivre la Réclamation du Client auprès de la compagnie aérienne et, le cas échéant, à la confier à un avocat indépendant. Compensall n'est pas un cabinet d'avocats et ne fournit pas de services juridiques, de conseils juridiques ni de représentation juridique.",
               },
             ],
             [
@@ -104,7 +111,7 @@ export const termsFr: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " se réserve le droit exclusif de déterminer la voie la plus appropriée, sans obligation de justifier ses décisions, le Client étant toutefois tenu informé tout au long de la procédure. Compte tenu du temps et des ressources considérables qu'exige le contentieux, des honoraires de résultat supplémentaires de 20 % s'appliquent, dus uniquement en cas d'issue favorable. La présence du Client au tribunal ne sera pas requise ; sa coopération est toutefois attendue par la fourniture des documents, informations ou preuves nécessaires à la procédure.",
+                text: " se réserve le droit exclusif de déterminer la voie la plus appropriée, sans obligation de justifier ses décisions, le Client étant toutefois tenu informé tout au long de la procédure. Compte tenu du temps et des ressources considérables qu'exige le contentieux, des honoraires de résultat supplémentaires de 20 % de l'Indemnisation s'appliquent, dus uniquement en cas d'issue favorable, de sorte que la rémunération totale due en cas de contentieux s'élève à 50 % de l'Indemnisation, TVA en sus et, le cas échéant, les frais de traitement indiqués dans la Liste des Prix. La présence du Client au tribunal ne sera pas requise ; sa coopération est toutefois attendue par la fourniture des documents, informations ou preuves nécessaires à la procédure. Le contentieux comprend également le recouvrement de la rémunération impayée auprès du Client au titre de la clause 3.12.",
               },
             ],
             [
@@ -248,7 +255,7 @@ export const termsFr: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " l'assiste dans l'exercice de son droit à faire valoir ses intérêts lors du recouvrement de l'Indemnisation.",
+                text: " l'assiste dans le recouvrement de l'Indemnisation.",
               },
             ],
             [
@@ -260,11 +267,37 @@ export const termsFr: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: ". Ces paiements sont considérés comme une indemnisation et donnent à " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " le droit de réclamer les honoraires de service et les honoraires de contentieux si " },
-              { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " a introduit une action en justice avant que le Client n'ait reçu le paiement de la compagnie aérienne concernée.",
+                text: " le droit de réclamer les honoraires de service, ainsi que les honoraires de contentieux si une action en justice avait été introduite avant que le Client n'ait reçu le paiement de la compagnie aérienne concernée ou si la rémunération demeure impayée au titre de la clause 3.12.",
+              },
+            ],
+            [
+              { type: "strong", text: "1.11." },
+              {
+                type: "text",
+                text: " Le Client confirme que, avant de signer le Formulaire de Cession, il n'a chargé aucune autre société, aucun agent ni aucun avocat, et n'a cédé la Réclamation à aucun tiers, pour la même Réclamation, et s'engage à ne pas le faire après l'avoir signé.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " Si, après avoir signé le Formulaire de Cession, le Client charge une autre société, un agent ou un avocat, ou poursuit la Réclamation directement auprès de la compagnie aérienne, pour la même Réclamation, il reste tenu de payer à Compensall les honoraires de service indiqués dans la Liste des Prix sur toute Indemnisation obtenue, TVA en sus, ainsi que les honoraires de contentieux lorsqu'une action en justice avait déjà été introduite. Si le Client ne communique pas le montant obtenu, les honoraires sont calculés sur le montant de l'indemnisation fixé par le Règlement 261/2004 pour le vol concerné. Les honoraires sont payés dans les 10 (dix) jours suivant la réception de l'Indemnisation par le Client.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " Si, avant de signer le Formulaire de Cession, le Client avait déjà chargé une autre société, un agent ou un avocat, ou cédé la Réclamation à un tiers, pour la même Réclamation, sans en informer Compensall, Compensall peut résilier le Contrat et le Client verse à Compensall un montant forfaitaire de 50 € (cinquante euros) par passager pour couvrir les frais de traitement de la Réclamation, sauf si le Client prouve que ces frais ont été inférieurs. Si Compensall obtient néanmoins l'Indemnisation, les honoraires de service indiqués dans la Liste des Prix s'appliquent à la place de ce montant.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " Dans les cas décrits en (a) et (b), si une procédure judiciaire avait déjà été engagée par l'intermédiaire d'un avocat indépendant, le Client rembourse également tous les frais effectivement supportés de ce fait, y compris les frais de justice, les dépens mis à la charge de la compagnie aérienne, les honoraires d'avocat, les intérêts et les frais administratifs raisonnables, tels que documentés par Compensall ou par l'avocat indépendant. Ces frais peuvent être facturés au Client directement par Compensall ou par l'avocat indépendant.",
               },
             ],
           ],
@@ -272,7 +305,7 @@ export const termsFr: LegalDocument = {
       ],
     },
     {
-      title: "Article 2. Description du Service d'Assistance Juridique",
+      title: "Article 2. Description du Service de Gestion des Réclamations",
       blocks: [
         {
           type: "list",
@@ -320,7 +353,7 @@ export const termsFr: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " est en droit d'engager une action en justice, ce qui entraînera une augmentation de la part de l'Indemnisation lui revenant, telle que précisée dans la ",
+                text: " est en droit de confier la Réclamation à un avocat indépendant afin d'engager une action en justice, ce qui entraînera une augmentation de la part de l'Indemnisation lui revenant, telle que précisée dans la ",
               },
               { type: "link", href: "/prices", label: "Liste des Prix" },
               { type: "text", text: "." },
@@ -329,12 +362,12 @@ export const termsFr: LegalDocument = {
               { type: "strong", text: "2.5." },
               {
                 type: "text",
-                text: " Si un représentant légal mandaté intervient dans la procédure contentieuse, le Client accepte d'autoriser ",
+                text: " Si un avocat indépendant intervient dans la procédure contentieuse, le Client accepte d'autoriser ",
               },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " à lui donner accès à toutes les informations pertinentes du dossier et à permettre à ce représentant d'informer ",
+                text: " à donner à l'avocat accès à toutes les informations pertinentes du dossier et à permettre à l'avocat d'informer ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -348,18 +381,19 @@ export const termsFr: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " ou son représentant légal mandaté estime que la réclamation n'est pas suffisamment fondée, le dossier sera clôturé et le Client en sera informé.",
+                text: " ou l'avocat indépendant estime que la réclamation a peu de chances d'aboutir, le dossier sera clôturé et le Client en sera informé.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " Si " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " ou le représentant légal mandaté engage une action en justice, " },
+              {
+                type: "text",
+                text: " Si une action en justice est engagée par l'intermédiaire d'un avocat indépendant, ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " prendra en charge les frais engagés en cas de perte du procès. En cas de succès du procès ou de règlement amiable, ",
+                text: " prendra en charge les frais engagés en cas de perte du procès, sauf si le procès est perdu ou retiré parce que le Client a manqué aux clauses 1.6, 1.7 ou 1.11, auquel cas la clause 1.11(c) s'applique. En cas de succès du procès ou de règlement amiable, ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " prendra en charge les frais non remboursés par la compagnie aérienne." },
@@ -396,7 +430,7 @@ export const termsFr: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " fournit une assistance juridique gratuite, sauf lorsque " },
+              { type: "text", text: " fournit le Service de Gestion des Réclamations à titre gratuit, sauf lorsque " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " obtient effectivement une indemnisation. En cas de succès, " },
               { type: "brand", field: "brandName" },
@@ -539,6 +573,13 @@ export const termsFr: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: "." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " Si la rémunération due au titre de la clause 3.11 ou de la clause 1.11 demeure impayée 45 (quarante-cinq) jours après la première demande de paiement écrite de Compensall, la Réclamation fait l'objet d'une procédure contentieuse pour le recouvrement de la rémunération impayée, et les honoraires de contentieux s'appliquent. Dans ce cas, la rémunération totale due à Compensall s'élève à 50 % de l'Indemnisation, TVA en sus.",
+              },
+            ],
           ],
         },
       ],
@@ -599,7 +640,7 @@ export const termsFr: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: " de données de dossiers antérieurs ou d'informations de vol publiquement disponibles. Ces messages visent uniquement à aider le Client à exercer ses droits et sont considérés comme relevant de l'intérêt légitime de ",
+              text: " de données de dossiers antérieurs ou d'informations de vol publiquement disponibles. Ces messages visent uniquement à informer le Client de ses droits en tant que passager aérien et sont considérés comme relevant de l'intérêt légitime de ",
             },
             { type: "brand", field: "brandName" },
             { type: "text", text: " à fournir des services pertinents et connexes." },
@@ -742,11 +783,9 @@ export const termsFr: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Lorsque le droit national restreint ou interdit la cession de créances, " },
-              { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " agira en coopération avec des représentants légaux locaux, conformément à la réglementation locale applicable.",
+                text: " Lorsque le droit national restreint ou interdit la cession de créances, la Réclamation sera traitée en coopération avec des avocats locaux indépendants, conformément à la réglementation locale applicable.",
               },
             ],
             [
@@ -798,5 +837,5 @@ export const termsFr: LegalDocument = {
       ],
     },
   ],
-  footer: "Version 4.0 du document. Dernière mise à jour: septembre 2026",
+  footer: "Version 2.0 du document. Dernière mise à jour : novembre 2026",
 };

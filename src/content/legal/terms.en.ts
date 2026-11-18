@@ -9,7 +9,7 @@ export const termsEn: LegalDocument = {
       { type: "brand", field: "brandName" },
       {
         type: "text",
-        text: ". We work on a No win, no fee basis: our legal assistance costs you nothing unless we successfully recover your compensation. If the claim has to go to litigation, an additional success-based fee of 20% applies, payable only if the case succeeds. All fees are set out in the ",
+        text: ". We work on a No win, no fee basis: our service costs you nothing unless your compensation is recovered. When we recover your compensation, our fee is 30% of the compensation, plus VAT and a handling fee. If the claim has to go to litigation, an additional success-based fee of 20% applies, so that the fee is 50% of the compensation, plus VAT and the handling fee. If you receive the compensation directly from the airline and do not pay our fee within 45 days of our first payment request, the fee is 50% of the compensation, plus VAT. All fees are set out in the ",
       },
       { type: "link", href: "/prices", label: "Price List" },
       { type: "text", text: "." },
@@ -37,7 +37,14 @@ export const termsEn: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: ", formed upon the Client's acceptance of the T&C. For the provision of Legal Assistance Services, the Agreement is considered valid once the Client has signed the Assignment Form, in addition to accepting these T&C.",
+                text: ", formed upon the Client's acceptance of the T&C. For the provision of the Claim Management Service, the Agreement is considered valid once the Client has signed the Assignment Form, in addition to accepting these T&C.",
+              },
+            ],
+            [
+              { type: "strong", text: '"Claim Management Service":' },
+              {
+                type: "text",
+                text: " the service provided by Compensall of submitting and following up the Client's Claim with the airline and, where necessary, referring it to an independent lawyer. Compensall is not a law firm and does not provide legal services, legal advice or legal representation.",
               },
             ],
             [
@@ -104,7 +111,7 @@ export const termsEn: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " reserves the exclusive right to determine the most suitable course of action without obligation to justify its decisions, though the Client will be kept informed throughout the process. Due to the significant time and resources required during litigation, an additional success-based fee of 20% shall apply, payable only in the event of a successful outcome. The Client's presence in court will not be required; however, cooperation shall be expected in the form of any documents, information or evidence necessary to support the proceedings.",
+                text: " reserves the exclusive right to determine the most suitable course of action without obligation to justify its decisions, though the Client will be kept informed throughout the process. Due to the significant time and resources required during litigation, an additional success-based fee of 20% of the Compensation shall apply, payable only in the event of a successful outcome, so that the total remuneration due in case of litigation is 50% of the Compensation, plus VAT and, where applicable, the handling fee set out in the Price List. The Client's presence in court will not be required; however, cooperation shall be expected in the form of any documents, information or evidence necessary to support the proceedings. Litigation also includes the recovery of unpaid remuneration from the Client under clause 3.12.",
               },
             ],
             [
@@ -245,7 +252,7 @@ export const termsEn: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " will assist the Client in the exercise of the right to defend the Client in the collection of the Flight Compensation.",
+                text: " will assist the Client in the collection of the Flight Compensation.",
               },
             ],
             [
@@ -259,12 +266,35 @@ export const termsEn: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " the right to claim the service fee and the litigation fee if ",
+                text: " the right to claim the service fee, and the litigation fee if a lawsuit had been filed before the Client received payment from the respective airline or if the remuneration remains unpaid under clause 3.12.",
               },
-              { type: "brand", field: "brandName" },
+            ],
+            [
+              { type: "strong", text: "1.11." },
               {
                 type: "text",
-                text: " has filed a lawsuit before the Client received payment from the respective airline.",
+                text: " The Client confirms that, before signing the Assignment Form, they have not engaged any other company, agent or lawyer, nor assigned the Claim to any third party, in relation to the same Claim, and undertakes not to do so after signing it.",
+              },
+            ],
+            [
+              { type: "strong", text: "(a)" },
+              {
+                type: "text",
+                text: " If, after signing the Assignment Form, the Client engages another company, agent or lawyer, or pursues the Claim directly with the airline, in relation to the same Claim, the Client remains liable to pay Compensall the service fee set out in the Price List on any Compensation obtained, plus VAT, as well as the litigation fee where a lawsuit had already been filed. If the Client does not disclose the amount obtained, the fee shall be calculated on the amount of compensation established by Regulation 261/2004 for the flight concerned. The fee shall be paid within 10 (ten) days of the Client receiving the Compensation.",
+              },
+            ],
+            [
+              { type: "strong", text: "(b)" },
+              {
+                type: "text",
+                text: " If, before signing the Assignment Form, the Client had already engaged another company, agent or lawyer, or assigned the Claim to a third party, in relation to the same Claim, and did not inform Compensall, Compensall may terminate the Agreement and the Client shall pay Compensall a fixed amount of €50 (fifty euros) per passenger to cover the costs of handling the Claim, unless the Client proves that those costs were lower. If Compensall nevertheless obtains the Compensation, the service fee set out in the Price List shall apply instead of this amount.",
+              },
+            ],
+            [
+              { type: "strong", text: "(c)" },
+              {
+                type: "text",
+                text: " In the cases described in (a) and (b), if legal proceedings had already been initiated through an independent lawyer, the Client shall also reimburse all costs actually incurred as a result, including court fees, costs awarded to the airline, lawyers' fees, interest and reasonable administrative costs, as documented by Compensall or by the independent lawyer. These costs may be invoiced to the Client directly by Compensall or by the independent lawyer.",
               },
             ],
           ],
@@ -272,7 +302,7 @@ export const termsEn: LegalDocument = {
       ],
     },
     {
-      title: "Article 2. Description of the Legal Assistance Service",
+      title: "Article 2. Description of the Claim Management Service",
       blocks: [
         {
           type: "list",
@@ -320,7 +350,7 @@ export const termsEn: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " is entitled to pursue legal action, which will result in an increase of the part of the Flight Compensation belonging to ",
+                text: " is entitled to refer the Claim to an independent lawyer to pursue legal action, which will result in an increase of the part of the Flight Compensation belonging to ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: ", as specified in the " },
@@ -331,12 +361,12 @@ export const termsEn: LegalDocument = {
               { type: "strong", text: "2.5." },
               {
                 type: "text",
-                text: " If a contracted legal representative is involved in litigation, the Client agrees to grant ",
+                text: " If an independent lawyer is involved in litigation, the Client agrees to grant ",
               },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " permission to provide the legal representative with access to all relevant case information, and to allow the legal representative to inform ",
+                text: " permission to provide the lawyer with access to all relevant case information, and to allow the lawyer to inform ",
               },
               { type: "brand", field: "brandName" },
               {
@@ -350,18 +380,19 @@ export const termsEn: LegalDocument = {
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " or its contracted legal representative determines that the claim does not have sufficient merit, the case will be closed and the Client will be informed accordingly.",
+                text: " or the independent lawyer considers that the claim is unlikely to succeed, the case will be closed and the Client will be informed accordingly.",
               },
             ],
             [
               { type: "strong", text: "2.7." },
-              { type: "text", text: " If " },
-              { type: "brand", field: "brandName" },
-              { type: "text", text: " or the contracted legal representative initiates legal proceedings, " },
+              {
+                type: "text",
+                text: " If legal proceedings are initiated through an independent lawyer, ",
+              },
               { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " will cover the costs incurred if the lawsuit is lost. If the lawsuit is successful or a settlement is reached, ",
+                text: " will cover the costs incurred if the lawsuit is lost, except where the lawsuit is lost or withdrawn because the Client breached clause 1.6, 1.7 or 1.11, in which case clause 1.11(c) applies. If the lawsuit is successful or a settlement is reached, ",
               },
               { type: "brand", field: "brandName" },
               { type: "text", text: " will cover any costs not reimbursed by the airline." },
@@ -398,7 +429,7 @@ export const termsEn: LegalDocument = {
               { type: "strong", text: "3.1." },
               { type: "text", text: " " },
               { type: "brand", field: "brandName" },
-              { type: "text", text: " offers legal assistance free of charge, except when " },
+              { type: "text", text: "'s Claim Management Service is free of charge, except when " },
               { type: "brand", field: "brandName" },
               { type: "text", text: " successfully collects compensation. If the claim is successful, " },
               { type: "brand", field: "brandName" },
@@ -547,6 +578,13 @@ export const termsEn: LegalDocument = {
               { type: "brand", field: "brandName" },
               { type: "text", text: " in writing." },
             ],
+            [
+              { type: "strong", text: "3.12." },
+              {
+                type: "text",
+                text: " If the remuneration due under clause 3.11 or clause 1.11 remains unpaid 45 (forty-five) days after Compensall's first written payment request, the Claim shall proceed to litigation for the recovery of the unpaid remuneration, and the litigation fee shall apply. In that case, the total remuneration due to Compensall shall be 50% of the Compensation, plus VAT.",
+              },
+            ],
           ],
         },
       ],
@@ -607,7 +645,7 @@ export const termsEn: LegalDocument = {
             { type: "brand", field: "brandName" },
             {
               type: "text",
-              text: "'s analysis of past case data or publicly available flight information. Such messages are intended solely to assist the Client in exercising their legal rights and are considered to fall within the scope of ",
+              text: "'s analysis of past case data or publicly available flight information. Such messages are intended solely to inform the Client about their rights as an air passenger and are considered to fall within the scope of ",
             },
             { type: "brand", field: "brandName" },
             {
@@ -753,11 +791,9 @@ export const termsEn: LegalDocument = {
             ],
             [
               { type: "strong", text: "6.7." },
-              { type: "text", text: " Where national laws restrict or prohibit the assignment of claims, " },
-              { type: "brand", field: "brandName" },
               {
                 type: "text",
-                text: " will act in cooperation with local legal representatives in accordance with applicable local regulations.",
+                text: " Where national laws restrict or prohibit the assignment of claims, the Claim will be handled in cooperation with independent local lawyers, in accordance with applicable local regulations.",
               },
             ],
             [
@@ -806,5 +842,5 @@ export const termsEn: LegalDocument = {
       ],
     },
   ],
-  footer: "Document version 4.0. Last updated September 2026",
+  footer: "Document version 2.0. Last updated November 2026",
 };

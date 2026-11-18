@@ -17,6 +17,10 @@ const PHRASES: Array<[string, string]> = [
     "com base no Regulamento 261/2004 ou noutra regulamentação de direitos dos passageiros aéreos aplicável ao voo em causa.",
     "com base na Resolução ANAC nº 400 ou noutra regulamentação de direitos dos passageiros aéreos aplicável ao voo em causa.",
   ],
+  [
+    "montante de indemnização estabelecido pelo Regulamento 261/2004 para o voo em causa",
+    "valor de indenização aplicável ao voo em causa, segundo a Resolução ANAC nº 400 e a legislação brasileira aplicável",
+  ],
   ['"Regulamento 261/04":', '"Resolução ANAC nº 400":'],
   [
     "Ler informação do cartão de embarque e avaliar elegibilidade ao abrigo do UK261, do CE 261/2004 e regras relacionadas.",
