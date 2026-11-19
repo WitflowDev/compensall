@@ -182,6 +182,10 @@
           "title": "Een echte verstoring",
           "body": "3 uur vertraging of meer, annulering of instapweigering."
         },
+        "notice": {
+          "title": "14 dagen kennisgeving",
+          "body": "Een annulering telt mee wanneer de luchtvaartmaatschappij u minder dan 14 dagen voor vertrek heeft geïnformeerd."
+        },
         "airline": {
           "title": "Verantwoordelijkheid van de airline",
           "body": "De oorzaak lag bij de airline."

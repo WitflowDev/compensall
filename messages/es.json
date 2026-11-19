@@ -182,6 +182,10 @@
           "title": "Una incidencia real",
           "body": "3 horas de retraso o más, cancelación o denegación de embarque."
         },
+        "notice": {
+          "title": "14 días de aviso",
+          "body": "Una cancelación cuenta cuando la aerolínea te avisó con menos de 14 días antes de la salida."
+        },
         "airline": {
           "title": "Responsabilidad de la aerolínea",
           "body": "La causa fue de la aerolínea."

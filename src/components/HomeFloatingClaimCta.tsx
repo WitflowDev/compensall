@@ -37,7 +37,7 @@ export default function HomeFloatingClaimCta() {
     }
 
     const apply = () => {
-      document.documentElement.style.setProperty("--floating-claim-offset", `${bar.offsetHeight + 12}px`);
+      document.documentElement.style.setProperty("--floating-claim-offset", `${bar.offsetHeight + 28}px`);
     };
     apply();
     const observer = new ResizeObserver(apply);

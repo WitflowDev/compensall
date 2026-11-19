@@ -72,7 +72,7 @@ body.has-cookie-banner footer {
 }
 
 html.has-floating-claim footer {
-  padding-bottom: calc(var(--floating-claim-offset, 5rem) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(var(--floating-claim-offset, 6.5rem) + env(safe-area-inset-bottom, 0px));
 }
 
 html.needs-cookie-banner.has-floating-claim footer,

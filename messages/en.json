@@ -182,6 +182,10 @@
           "title": "A real disruption",
           "body": "3 hours late or more, cancelled, or denied boarding."
         },
+        "notice": {
+          "title": "14 days' notice",
+          "body": "A cancellation counts when the airline told you less than 14 days before departure."
+        },
         "airline": {
           "title": "The airline's responsibility",
           "body": "The cause was within the airline's control."

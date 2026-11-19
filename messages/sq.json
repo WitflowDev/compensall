@@ -182,6 +182,10 @@
           "title": "Një ndërprerje e vërtetë",
           "body": "3 orë vonesë ose më shumë, anulim ose refuzim imbarkimi."
         },
+        "notice": {
+          "title": "Njoftim 14-ditor",
+          "body": "Një anulim vlen kur kompania të ka njoftuar më pak se 14 ditë para nisjes."
+        },
         "airline": {
           "title": "Përgjegjësia e kompanisë",
           "body": "Shkaku ishte i kompanisë ajrore."

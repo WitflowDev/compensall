@@ -182,6 +182,10 @@
           "title": "Une vraie perturbation",
           "body": "3 heures de retard ou plus, annulation ou refus d'embarquement."
         },
+        "notice": {
+          "title": "Préavis de 14 jours",
+          "body": "Une annulation compte lorsque la compagnie vous a prévenu moins de 14 jours avant le départ."
+        },
         "airline": {
           "title": "Responsabilité de la compagnie",
           "body": "La cause relevait de la compagnie aérienne."

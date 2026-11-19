@@ -52,11 +52,11 @@ function ContactDetails({ className = "", contactUsLabel }: { className?: string
   const tFooter = useTranslations("footer");
 
   return (
-    <div className={`flex flex-col gap-4 xl:gap-6 ${className}`}>
-      <p className="font-medium text-[19px] xl:text-[21px] tracking-[-0.21px] leading-[1.5]">
+    <div className={`flex flex-col gap-1.5 xl:gap-5 ${className}`}>
+      <p className="font-medium text-[19px] xl:text-[21px] tracking-[-0.21px] leading-snug">
         {contactUsLabel}
       </p>
-      <p className="text-[rgba(255,255,255,0.63)] text-base leading-[30px]">
+      <p className="text-[rgba(255,255,255,0.63)] text-base leading-6 xl:leading-7">
         <a
           href="mailto:help@compensall.com"
           className="hover:text-white transition-colors break-all"
@@ -65,7 +65,7 @@ function ContactDetails({ className = "", contactUsLabel }: { className?: string
           {tFooter("email")}
         </a>
       </p>
-      <p className="text-[rgba(255,255,255,0.63)] text-base leading-[30px]">
+      <p className="text-[rgba(255,255,255,0.63)] text-base leading-6 xl:leading-7">
         <a href="tel:+351923391980" className="hover:text-white transition-colors" {...gtmId("footer_contact_phone")}>
           {tFooter("phone")}
         </a>
@@ -74,7 +74,7 @@ function ContactDetails({ className = "", contactUsLabel }: { className?: string
   );
 }
 
-function LegalLinks({ className = "" }: { className?: string }) {
+function LegalLinks({ className = "", columns = false }: { className?: string; columns?: boolean }) {
   const tFooter = useTranslations("footer");
   const legalLinks = [
     { href: "/privacy-policy", label: tFooter("privacyPolicy") },
@@ -85,7 +85,13 @@ function LegalLinks({ className = "" }: { className?: string }) {
   ];
 
   return (
-    <div className={`flex flex-wrap items-center justify-center gap-4 sm:gap-5 xl:gap-8 ${className}`}>
+    <div
+      className={
+        columns
+          ? `grid grid-cols-2 gap-x-6 gap-y-2 text-left ${className}`
+          : `flex flex-wrap items-center justify-center gap-4 sm:gap-5 xl:gap-8 ${className}`
+      }
+    >
       {legalLinks.map((link) => (
         <Link
           key={link.href}
@@ -100,11 +106,13 @@ function LegalLinks({ className = "" }: { className?: string }) {
   );
 }
 
-function SocialLinks({ className = "" }: { className?: string }) {
+function SocialLinks({ className = "", align = "center" }: { className?: string; align?: "center" | "start" }) {
   const tFooter = useTranslations("footer");
 
   return (
-    <div className={`flex items-center justify-center lg:justify-start gap-5 lg:gap-6 xl:gap-8 ${className}`}>
+    <div
+      className={`flex items-center gap-5 lg:gap-6 xl:gap-8 ${align === "start" ? "justify-start" : "justify-center lg:justify-start"} ${className}`}
+    >
       {SOCIAL_LINKS.map((social) => (
         <a
           key={social.labelKey}
@@ -137,24 +145,24 @@ export default function Footer() {
   return (
     <footer className="mt-auto bg-[#1f3664] text-white px-4 md:px-8 lg:px-8 xl:px-12 overflow-x-clip">
       <div className="max-w-[960px] lg:max-w-[960px] xl:max-w-[1550px] mx-auto pt-12 pb-8 md:pb-10 lg:pt-12 xl:pt-[83px] xl:pb-12">
-        <div className="flex flex-col items-center text-center gap-8 md:gap-10 lg:hidden">
+        <div className="mx-auto flex w-full max-w-[22rem] flex-col gap-7 lg:hidden">
           <img
             src="/assets/logo-white.png?v=3"
             alt="Compensall"
             width={157}
             height={32}
-            className="h-8 w-auto"
+            className="mx-auto h-8 w-auto"
             loading="lazy"
             decoding="async"
             fetchPriority="low"
           />
 
-          <nav className="grid grid-cols-2 gap-x-6 gap-y-4 w-full max-w-[320px] sm:max-w-[360px]">
+          <nav className="grid grid-cols-2 gap-x-8 gap-y-3">
             {primaryNavLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-white text-base sm:text-[17px] leading-[23px] hover:text-white/70 transition-colors text-center"
+                className="text-left text-[15px] leading-5 text-white transition-colors hover:text-white/70"
                 {...gtmId(FOOTER_NAV_GTM[link.href] ?? "footer_nav")}
               >
                 {link.label}
@@ -162,17 +170,12 @@ export default function Footer() {
             ))}
           </nav>
 
-          <ContactDetails
-            className="w-full max-w-[320px] sm:max-w-[360px] mx-auto items-start text-left"
-            contactUsLabel={tFooter("contactUs")}
-          />
+          <ContactDetails className="items-start text-left" contactUsLabel={tFooter("contactUs")} />
 
-          <div className="w-full max-w-[340px] pt-6 border-t border-white/15 flex flex-col items-center gap-5">
-            <LegalLinks />
-            <SocialLinks />
-            <p className="text-sm sm:text-base tracking-[-0.16px] leading-[1.5] text-white/90">
-              {tFooter("copyright")}
-            </p>
+          <div className="flex flex-col items-stretch gap-5 border-t border-white/15 pt-6">
+            <LegalLinks columns />
+            <SocialLinks align="start" />
+            <p className="text-sm leading-5 text-white/90">{tFooter("copyright")}</p>
           </div>
         </div>
 

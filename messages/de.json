@@ -182,6 +182,10 @@
           "title": "Eine echte Störung",
           "body": "3 Stunden Verspätung oder mehr, Annullierung oder Nichtbeförderung."
         },
+        "notice": {
+          "title": "14 Tage Vorankündigung",
+          "body": "Eine Annullierung zählt, wenn die Fluggesellschaft Sie weniger als 14 Tage vor Abflug informiert hat."
+        },
         "airline": {
           "title": "Verantwortung der Airline",
           "body": "Die Ursache lag bei der Airline."

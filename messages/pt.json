@@ -182,6 +182,10 @@
           "title": "Uma perturbação real",
           "body": "Atraso de 3 horas ou mais, cancelamento ou recusa de embarque."
         },
+        "notice": {
+          "title": "14 dias de aviso",
+          "body": "Um cancelamento conta quando a companhia avisou com menos de 14 dias antes da partida."
+        },
         "airline": {
           "title": "Responsabilidade da companhia",
           "body": "A causa foi da companhia aérea."

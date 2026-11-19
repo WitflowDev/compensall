@@ -182,6 +182,10 @@
           "title": "O întrerupere reală",
           "body": "Întârziere de 3 ore sau mai mult, anulare sau refuz la îmbarcare."
         },
+        "notice": {
+          "title": "Preaviz de 14 zile",
+          "body": "O anulare contează când compania te-a anunțat cu mai puțin de 14 zile înainte de plecare."
+        },
         "airline": {
           "title": "Răspunderea companiei",
           "body": "Cauza a fost a companiei aeriene."

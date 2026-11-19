@@ -185,6 +185,10 @@
         "airline": {
           "title": "Direto para tribunal",
           "body": "Esse atraso não fica na assistência do aeroporto. O pedido segue direto para tribunal."
+        },
+        "notice": {
+          "title": "Aviso de 14 dias",
+          "body": "No cancelamento, a companhia avisou com menos de 14 dias antes da partida."
         }
       }
     },

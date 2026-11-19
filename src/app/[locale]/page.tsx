@@ -15,14 +15,12 @@ import JsonLd from "@/components/seo/JsonLd";
 import { Link, type AppLocale } from "@/i18n/routing";
 import { getLocalizedFaqs } from "@/lib/i18n-faqs";
 import { buildLocalizedPageMetadata } from "@/lib/i18n-metadata";
-import { localizeEuroAmountLabel } from "@/lib/public-copy";
-import { EC261_TIERS, UK261_TIERS } from "@/lib/passenger-rights";
 import { buildFaqPageSchema, buildHowToSchema } from "@/lib/structured-data";
-import { gtmClaimCta, gtmId } from "@/lib/gtm";
+import { gtmId } from "@/lib/gtm";
 
 const HOME_TITLE = "font-bold text-2xl sm:text-[28px] xl:text-4xl text-[#1f3664] text-center leading-[1.15] text-balance";
 const HOME_INTRO = "mx-auto mt-2 max-w-[38rem] text-balance text-sm leading-relaxed text-[#5c6780] sm:text-base";
-const ENTITLED_KEYS = ["route", "disruption", "airline"] as const;
+const ENTITLED_KEYS = ["route", "disruption", "notice", "airline"] as const;
 
 type HomePageProps = {
   params: Promise<{ locale: string }>;
@@ -33,10 +31,6 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
   return buildLocalizedPageMetadata(locale as AppLocale, "/", "home");
 }
 
-function tierTranslationKey(amount: string): string {
-  return amount.replace(/[£€]/g, "");
-}
-
 export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -44,24 +38,13 @@ export default async function HomePage({ params }: HomePageProps) {
   const t = await getTranslations("home");
   const tAbout = await getTranslations("about");
   const tCommon = await getTranslations("common");
-  const tTiers = await getTranslations("passengerRights");
-
   const trustItems = [
     { icon: "/assets/icons/trust-star.svg", title: t("trustBar.noWinNoFee") },
     { icon: "/assets/icons/trust-gdpr.svg", title: t("trustBar.gdprFirst") },
     { icon: "/assets/icons/trust-lock.svg", title: t("trustBar.deleteYourData") },
   ];
   const showTrustpilot = isTrustpilotTrustBoxConfigured();
-
-  const showUkTiers = locale === "en";
-  const compensationRows = EC261_TIERS.map((tier, index) => {
-    const key = tierTranslationKey(tier.amount);
-    return {
-      distance: tTiers(`tiers.ec261.${key}.label`),
-      euro: localizeEuroAmountLabel(tier.amount, locale),
-      pound: UK261_TIERS[index]?.amount ?? "",
-    };
-  });
+  const entitledKeys = locale === "pt-BR" ? ENTITLED_KEYS.filter((key) => key !== "notice") : ENTITLED_KEYS;
 
   const localizedFaqs = await getLocalizedFaqs(locale);
   const howToSchema = buildHowToSchema(
@@ -209,39 +192,6 @@ export default async function HomePage({ params }: HomePageProps) {
           <div className="text-left">
             <CompensationCalculator />
           </div>
-          <div className="mt-4 overflow-hidden rounded-2xl border border-[#d5e0f9] text-left">
-            <div
-              className={`grid items-center gap-4 bg-[#f4f7ff] px-5 py-3 text-xs font-bold uppercase tracking-wide text-[#7b8094] sm:px-6 ${
-                showUkTiers ? "grid-cols-[minmax(0,1fr)_5.5rem_5.5rem]" : "grid-cols-[minmax(0,1fr)_6.5rem]"
-              }`}
-            >
-              <span>{t("compensation.tableDistance")}</span>
-              {showUkTiers ? <span className="text-right">{t("compensation.tableUk")}</span> : null}
-              <span className="text-right">
-                {showUkTiers ? t("compensation.tableEu") : t("compensation.tableAmount")}
-              </span>
-            </div>
-            {compensationRows.map((row) => (
-              <Link
-                key={row.distance}
-                href="/#claim"
-                className={`grid items-center gap-4 border-t border-[#e6edf8] bg-white px-5 py-3.5 text-[#1f3664] no-underline hover:bg-[#f8faff] sm:px-6 ${
-                  showUkTiers ? "grid-cols-[minmax(0,1fr)_5.5rem_5.5rem]" : "grid-cols-[minmax(0,1fr)_6.5rem]"
-                }`}
-                {...gtmClaimCta("home_compensation")}
-              >
-                <span className="font-semibold text-sm sm:text-base">{row.distance}</span>
-                {showUkTiers ? (
-                  <span className="text-right font-bold text-[#2669f3] text-base sm:text-lg whitespace-nowrap">
-                    {row.pound}
-                  </span>
-                ) : null}
-                <span className="text-right font-bold text-[#2669f3] text-base sm:text-lg whitespace-nowrap">
-                  {row.euro}
-                </span>
-              </Link>
-            ))}
-          </div>
             </>
           )}
         </div>
@@ -253,11 +203,21 @@ export default async function HomePage({ params }: HomePageProps) {
             {t("entitled.title")}{" "}
             <span className="text-[#005ffe]">{t("entitled.titleAccent")}</span>
           </h2>
-          <div className="mt-6 overflow-hidden rounded-[24px] border border-[#d5e0f9] bg-white text-left sm:grid sm:grid-cols-3">
-            {ENTITLED_KEYS.map((key, index) => (
+          <div
+            className={`mt-6 overflow-hidden rounded-[24px] border border-[#d5e0f9] bg-white text-left sm:grid ${
+              entitledKeys.length > 3 ? "sm:grid-cols-2" : "sm:grid-cols-3"
+            }`}
+          >
+            {entitledKeys.map((key, index) => (
               <div
                 key={key}
-                className={`flex gap-3 px-5 py-5 ${index > 0 ? "border-t border-[#e6edf8] sm:border-l sm:border-t-0" : ""}`}
+                className={`flex gap-3 border-[#e6edf8] px-5 py-5 ${
+                  entitledKeys.length > 3
+                    ? `${index > 0 ? "border-t" : ""} ${index % 2 === 1 ? "sm:border-l" : ""} ${index < 2 ? "sm:border-t-0" : ""}`
+                    : index > 0
+                      ? "border-t sm:border-l sm:border-t-0"
+                      : ""
+                }`}
               >
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#e8efff] text-sm font-bold text-[#2669f3]">
                   {index + 1}

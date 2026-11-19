@@ -182,6 +182,10 @@
           "title": "Valódi fennakadás",
           "body": "Legalább 3 óra késés, törlés vagy megtagadott beszállás."
         },
+        "notice": {
+          "title": "14 napos értesítés",
+          "body": "A törlés akkor számít, ha a légitársaság 14 napnál rövidebb idővel az indulás előtt szólt."
+        },
         "airline": {
           "title": "A légitársaság felelőssége",
           "body": "Az ok a légitársaságon múlott."
