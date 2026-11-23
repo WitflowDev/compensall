@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Pagina als Markdown downloaden",
     "floatingClaim": "Claim tot 600 € voor een vertraagde of geannuleerde vlucht",
     "floatingClaimShort": "Claim tot 600 €",
+    "floatingAllAirlines": "Alle luchtvaartmaatschappijen",
+    "floatingAllCountries": "Alle landen",
+    "claimReminderBadge": "Herinnering",
+    "claimReminderBody": "Welkom terug. Uw claim is bijna af. We hebben alleen nog een paar gegevens nodig.",
+    "claimReminderContinue": "Doorgaan",
+    "claimReminderDismiss": "Herinnering sluiten",
     "lastUpdate": "Laatst bijgewerkt: {date}",
     "onThisPage": "Op deze pagina"
   },

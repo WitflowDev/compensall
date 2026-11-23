@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import AttributionCapture from "@/components/AttributionCapture";
+import ClaimProgressBanner from "@/components/ClaimProgressBanner";
 import DeferredAnchorScroll from "@/components/DeferredAnchorScroll";
 import DeferredCookieBanner from "@/components/DeferredCookieBanner";
 import EarlyDocumentScripts from "@/components/EarlyDocumentScripts";
@@ -73,6 +74,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
             <GoogleTagManager />
             <DeferredAnchorScroll />
             <DeferredCookieBanner />
+            <ClaimProgressBanner />
             {children}
           </div>
         </NextIntlClientProvider>

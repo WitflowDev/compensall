@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Oldal letöltése Markdownban",
     "floatingClaim": "Igényelj akár 600 €-t egy késő vagy törölt járatért",
     "floatingClaimShort": "Igényelj akár 600 €-t",
+    "floatingAllAirlines": "Minden légitársaság",
+    "floatingAllCountries": "Minden ország",
+    "claimReminderBadge": "Emlékeztető",
+    "claimReminderBody": "Üdv újra. A kártérítésed majdnem kész. Már csak néhány adatra van szükségünk.",
+    "claimReminderContinue": "Folytatás",
+    "claimReminderDismiss": "Emlékeztető bezárása",
     "lastUpdate": "Utolsó frissítés: {date}",
     "onThisPage": "Ezen az oldalon"
   },

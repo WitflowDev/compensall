@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Baixar página em Markdown",
     "floatingClaim": "Reclame a assistência e os direitos do seu voo",
     "floatingClaimShort": "Reclame seus direitos",
+    "floatingAllAirlines": "Todas as companhias",
+    "floatingAllCountries": "Todos os países",
+    "claimReminderBadge": "Lembrete",
+    "claimReminderBody": "Olá de novo. Sua reclamação está quase concluída. Só precisamos de mais alguns dados.",
+    "claimReminderContinue": "Continuar",
+    "claimReminderDismiss": "Fechar lembrete",
     "lastUpdate": "Última atualização: {date}",
     "onThisPage": "Nesta página"
   },

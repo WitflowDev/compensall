@@ -26,6 +26,16 @@ import { buildUploadMeta } from "@/lib/boarding-pass-file";
 import { readClaimAttribution } from "@/lib/claim-attribution-client";
 import { readClaimResumeTokenFromLocation } from "@/lib/claim-draft-token";
 import {
+  CLAIM_PROGRESS_OPEN_EVENT,
+  CLAIM_PROGRESS_QUERY,
+  claimProgressStarted,
+  clearClaimProgress,
+  peekClaimProgress,
+  saveClaimProgress,
+  stripClaimReminderQuery,
+  type ClaimProgress,
+} from "@/lib/claim-progress";
+import {
   CLAIM_CONTINUE_PENDING_CLASS,
   clearClaimReturn,
   releaseClaimContinueHandoff,
@@ -242,6 +252,7 @@ export default function HeroClaimForm() {
 
   const resetClaim = useCallback(() => {
     clearClaimReturn();
+    clearClaimProgress();
     if (upload?.previewUrl) {
       URL.revokeObjectURL(upload.previewUrl);
     }
@@ -346,6 +357,45 @@ export default function HeroClaimForm() {
     const handoffTimer = window.setTimeout(releaseClaimContinueHandoff, 0);
     return () => window.clearTimeout(handoffTimer);
   }, []);
+
+  const restoreProgress = useCallback((progress: ClaimProgress | null) => {
+    if (!progress || readClaimResumeTokenFromLocation()) return;
+    setFlight(normalizeFlightData(progress.flight));
+    setEntryMode(progress.entryMode ?? "manual");
+    if (progress.step === 3) {
+      setKeepStep3(true);
+      void loadStep3Panel();
+    } else if (progress.step === 2) {
+      void loadStep2Panel();
+    }
+    setStep(progress.step);
+    document.getElementById("claim")?.scrollIntoView({ behavior: "auto", block: "start" });
+  }, []);
+
+  useLayoutEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get(CLAIM_PROGRESS_QUERY) !== "1") return;
+    restoreProgress(peekClaimProgress());
+  }, [restoreProgress]);
+
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get(CLAIM_PROGRESS_QUERY) !== "1") return;
+    stripClaimReminderQuery();
+  }, []);
+
+  useEffect(() => {
+    const openSavedClaim = () => restoreProgress(peekClaimProgress());
+    window.addEventListener(CLAIM_PROGRESS_OPEN_EVENT, openSavedClaim);
+    return () => window.removeEventListener(CLAIM_PROGRESS_OPEN_EVENT, openSavedClaim);
+  }, [restoreProgress]);
+
+  useEffect(() => {
+    if (!claimProgressStarted(step, flight)) return;
+    const timer = window.setTimeout(() => {
+      saveClaimProgress({ step, entryMode, flight });
+    }, 400);
+    return () => window.clearTimeout(timer);
+  }, [step, entryMode, flight]);
 
   const handleExtract = async (file: File) => {
     void loadStep2Panel();
@@ -634,6 +684,7 @@ export default function HeroClaimForm() {
     }
 
     clearClaimReturn();
+    clearClaimProgress();
     return {
       trackingNumber,
       status: claimStatus,

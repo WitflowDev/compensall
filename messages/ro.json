@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Descarcă pagina în Markdown",
     "floatingClaim": "Cere până la 600 € pentru un zbor întârziat sau anulat",
     "floatingClaimShort": "Cere până la 600 €",
+    "floatingAllAirlines": "Toate companiile",
+    "floatingAllCountries": "Toate țările",
+    "claimReminderBadge": "Memento",
+    "claimReminderBody": "Bun venit înapoi. Cererea ta este aproape gata. Mai avem nevoie doar de câteva date.",
+    "claimReminderContinue": "Continuă",
+    "claimReminderDismiss": "Închide mementoul",
     "lastUpdate": "Ultima actualizare: {date}",
     "onThisPage": "Pe această pagină"
   },

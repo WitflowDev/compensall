@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Descarregar página em Markdown",
     "floatingClaim": "Reclame até 600€ por um voo atrasado ou cancelado",
     "floatingClaimShort": "Reclame até 600€",
+    "floatingAllAirlines": "Todas as companhias",
+    "floatingAllCountries": "Todos os países",
+    "claimReminderBadge": "Lembrete",
+    "claimReminderBody": "Olá novamente. A sua reclamação está quase concluída. Só precisamos de mais alguns dados.",
+    "claimReminderContinue": "Continuar",
+    "claimReminderDismiss": "Fechar lembrete",
     "lastUpdate": "Última atualização: {date}",
     "onThisPage": "Nesta página"
   },

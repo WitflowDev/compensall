@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Télécharger la page en Markdown",
     "floatingClaim": "Réclamez jusqu'à €600 pour un vol retardé ou annulé",
     "floatingClaimShort": "Réclamez jusqu'à €600",
+    "floatingAllAirlines": "Toutes les compagnies",
+    "floatingAllCountries": "Tous les pays",
+    "claimReminderBadge": "Rappel",
+    "claimReminderBody": "Bonjour. Votre demande est presque terminée. Il nous manque seulement quelques informations.",
+    "claimReminderContinue": "Continuer",
+    "claimReminderDismiss": "Fermer le rappel",
     "lastUpdate": "Dernière mise à jour : {date}",
     "onThisPage": "Sur cette page"
   },

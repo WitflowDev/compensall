@@ -7,9 +7,7 @@ import { gtmClaimCta } from "@/lib/gtm";
 
 export default function HomeFloatingClaimCta() {
   const t = useTranslations("common");
-  const tHero = useTranslations("home.hero");
   const tTrust = useTranslations("home.trustBar");
-  const tAirline = useTranslations("home.howItWorks.steps.airline");
   const barRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -37,7 +35,7 @@ export default function HomeFloatingClaimCta() {
     }
 
     const apply = () => {
-      document.documentElement.style.setProperty("--floating-claim-offset", `${bar.offsetHeight + 28}px`);
+      document.documentElement.style.setProperty("--floating-claim-offset", `${bar.offsetHeight + 56}px`);
     };
     apply();
     const observer = new ResizeObserver(apply);
@@ -50,27 +48,25 @@ export default function HomeFloatingClaimCta() {
 
   if (!visible) return null;
 
-  const benefits = [tTrust("noWinNoFee"), tHero("fastRiskFree"), tAirline("title")];
+  const benefits = [t("floatingAllAirlines"), t("floatingAllCountries"), tTrust("noWinNoFee")];
 
   return (
     <div
       ref={barRef}
-      className="fixed inset-x-0 z-40"
+      className="fixed inset-x-0 z-40 px-4 sm:px-6 lg:px-10"
       style={{
-        bottom: "calc(var(--cookie-banner-offset, 0px) + env(safe-area-inset-bottom, 0px))",
+        bottom: "calc(var(--cookie-banner-offset, 0px) + 1.75rem + env(safe-area-inset-bottom, 0px))",
       }}
     >
-      <div className="border-t border-white/10 bg-[#1f3664] text-white shadow-[0_-12px_40px_rgba(31,54,100,0.28)]">
-        <div className="mx-auto flex max-w-[1550px] flex-col gap-3 px-4 py-3 md:flex-row md:items-center md:gap-8 md:px-8 md:py-4">
+      <div className="mx-auto max-w-[1080px] rounded-[1.75rem] bg-[#2669f3] text-white shadow-[0_18px_46px_rgba(38,105,243,0.42)]">
+        <div className="flex flex-col gap-4 px-5 py-4 sm:px-8 sm:py-5 lg:flex-row lg:items-center lg:gap-8">
           <div className="min-w-0 flex-1">
-            <p className="hidden font-bold text-lg leading-snug md:block lg:text-xl">{t("floatingClaim")}</p>
-            <ul className="mt-2 hidden flex-wrap gap-x-5 gap-y-1 text-sm text-white/80 md:flex">
+            <p className="text-base font-bold leading-snug sm:text-xl">{t("floatingClaim")}</p>
+            <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1.5 text-sm text-white sm:text-[15px]">
               {benefits.map((benefit) => (
-                <li key={benefit} className="flex items-center gap-2">
-                  <span aria-hidden="true" className="text-[#8eb4ff]">
-                    ✓
-                  </span>
-                  {benefit}
+                <li key={benefit} className="flex items-center gap-1.5">
+                  <span aria-hidden="true">✓</span>
+                  {benefit.replace(/\.$/, "")}
                 </li>
               ))}
             </ul>
@@ -78,14 +74,7 @@ export default function HomeFloatingClaimCta() {
 
           <Link
             href="/#claim"
-            className="inline-flex min-h-11 w-full max-w-sm items-center justify-center self-center rounded-full bg-[#2669f3] px-5 py-2 text-center text-sm font-bold leading-tight text-white hover:bg-[#1a55d4] md:hidden"
-            {...gtmClaimCta("home_floating")}
-          >
-            {t("floatingClaimShort")}
-          </Link>
-          <Link
-            href="/#claim"
-            className="hidden h-12 shrink-0 items-center justify-center rounded-[11px] bg-white px-6 text-base font-bold text-[#1f3664] hover:bg-[#f4f7ff] md:inline-flex"
+            className="inline-flex h-12 shrink-0 items-center justify-center rounded-full bg-white px-6 text-base font-bold text-[#2669f3] shadow-sm hover:bg-[#f4f7ff] sm:h-14 sm:px-8"
             {...gtmClaimCta("home_floating")}
           >
             {t("checkCompensation")}

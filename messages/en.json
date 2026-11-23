@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Download page as Markdown",
     "floatingClaim": "Claim up to £520 or €600 for your delayed or cancelled flight",
     "floatingClaimShort": "Claim up to £520 or €600",
+    "floatingAllAirlines": "All airlines",
+    "floatingAllCountries": "All countries",
+    "claimReminderBadge": "Reminder",
+    "claimReminderBody": "Welcome back. Your claim is almost finished. We just need a few more details.",
+    "claimReminderContinue": "Continue",
+    "claimReminderDismiss": "Dismiss reminder",
     "lastUpdate": "Last update: {date}",
     "onThisPage": "On this page"
   },

@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Shkarko faqen si Markdown",
     "floatingClaim": "Kërko deri në 600 € për një fluturim të vonuar ose të anuluar",
     "floatingClaimShort": "Kërko deri në 600 €",
+    "floatingAllAirlines": "Të gjitha kompanitë",
+    "floatingAllCountries": "Të gjitha vendet",
+    "claimReminderBadge": "Kujtesë",
+    "claimReminderBody": "Mirë se u ktheve. Kërkesa jote është pothuajse gati. Na duhen vetëm edhe disa të dhëna.",
+    "claimReminderContinue": "Vazhdo",
+    "claimReminderDismiss": "Mbyll kujtesën",
     "lastUpdate": "Përditësimi i fundit: {date}",
     "onThisPage": "Në këtë faqe"
   },

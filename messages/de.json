@@ -21,6 +21,12 @@
     "downloadPageMarkdown": "Seite als Markdown herunterladen",
     "floatingClaim": "Fordern Sie bis zu 600 € für einen verspäteten oder annullierten Flug",
     "floatingClaimShort": "Bis zu 600 € fordern",
+    "floatingAllAirlines": "Alle Fluggesellschaften",
+    "floatingAllCountries": "Alle Länder",
+    "claimReminderBadge": "Erinnerung",
+    "claimReminderBody": "Willkommen zurück. Ihr Antrag ist fast fertig. Wir brauchen nur noch ein paar Angaben.",
+    "claimReminderContinue": "Weiter",
+    "claimReminderDismiss": "Erinnerung schließen",
     "lastUpdate": "Letzte Aktualisierung: {date}",
     "onThisPage": "Auf dieser Seite"
   },
