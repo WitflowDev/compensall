@@ -321,6 +321,10 @@ export default function Step3Panel({
       ["flight", flight.flight.trim()],
       ["from", flight.routeFrom.trim()],
       ["to", flight.routeTo.trim()],
+      ["cf1", flight.connectingFlights?.[0]?.flightNumber.trim() ?? ""],
+      ["ca1", flight.connectingFlights?.[0]?.airport.trim() ?? ""],
+      ["cf2", flight.connectingFlights?.[1]?.flightNumber.trim() ?? ""],
+      ["ca2", flight.connectingFlights?.[1]?.airport.trim() ?? ""],
       ["flightDate", flight.date.trim()],
       ["signed", signingDate],
     ];
@@ -333,6 +337,7 @@ export default function Step3Panel({
     activePassengerName,
     currentDoc.href,
     flight.date,
+    flight.connectingFlights,
     flight.flight,
     flight.routeFrom,
     flight.routeTo,
@@ -1262,6 +1267,8 @@ export default function Step3Panel({
                 flight={flight.flight}
                 routeFrom={flight.routeFrom}
                 routeTo={flight.routeTo}
+                connectingFlights={flight.connectingFlights}
+                hadConnectingFlight={flight.hadConnectingFlight}
                 flightDate={formatPoaDate(flight.date, locale)}
                 signingDate={signingDate}
                 onSigningDateChange={setSigningDate}

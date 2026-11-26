@@ -7,6 +7,7 @@ import PowerOfAttorneyDocument from "@/components/claim/PowerOfAttorneyDocument"
 import { Link } from "@/i18n/routing";
 import type { AppLocale } from "@/i18n/routing";
 import { buildLocalizedPageMetadata } from "@/lib/i18n-metadata";
+import type { ConnectingFlightLeg } from "@/lib/claim-types";
 import { formatPoaDate } from "@/lib/poa-content";
 
 type AuthorityToActPageProps = {
@@ -16,6 +17,10 @@ type AuthorityToActPageProps = {
     flight?: string | string[];
     from?: string | string[];
     to?: string | string[];
+    cf1?: string | string[];
+    ca1?: string | string[];
+    cf2?: string | string[];
+    ca2?: string | string[];
     flightDate?: string | string[];
     signed?: string | string[];
   }>;
@@ -24,6 +29,11 @@ type AuthorityToActPageProps = {
 function clipQuery(value: string | string[] | undefined, max = 160): string {
   const raw = Array.isArray(value) ? value[0] : value;
   return (raw ?? "").replace(/[\u0000-\u001F\u007F]/g, "").trim().slice(0, max);
+}
+
+function connectionLeg(flightNumber: string, airport: string): ConnectingFlightLeg | null {
+  if (!flightNumber && !airport) return null;
+  return { flightNumber, airport };
 }
 
 export async function generateMetadata({ params }: AuthorityToActPageProps): Promise<Metadata> {
@@ -39,6 +49,10 @@ export default async function AuthorityToActPage({ params, searchParams }: Autho
   setRequestLocale(locale);
   const t = await getTranslations("documentPage");
   const flightDate = clipQuery(query.flightDate);
+  const connectingFlights = [
+    connectionLeg(clipQuery(query.cf1, 20), clipQuery(query.ca1)),
+    connectionLeg(clipQuery(query.cf2, 20), clipQuery(query.ca2)),
+  ].filter((leg): leg is ConnectingFlightLeg => leg !== null);
 
   return (
     <div className="min-h-screen bg-[#f8faff] flex flex-col">
@@ -65,6 +79,7 @@ export default async function AuthorityToActPage({ params, searchParams }: Autho
               flight={clipQuery(query.flight, 40)}
               routeFrom={clipQuery(query.from)}
               routeTo={clipQuery(query.to)}
+              connectingFlights={connectingFlights}
               flightDate={flightDate ? formatPoaDate(flightDate, locale) : ""}
               signingDate={clipQuery(query.signed, 40)}
             />

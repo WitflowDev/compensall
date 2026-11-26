@@ -1,7 +1,10 @@
 import type { ReactNode } from "react";
 import { FIELD_INPUT } from "@/components/claim/claim-ui";
+import type { ConnectingFlightLeg } from "@/lib/claim-types";
 import {
   formatPoaDate,
+  formatPoaFlightNumbers,
+  formatPoaRoute,
   getPoaCopy,
   POA_CONTACT_EMAIL,
   POA_CONTACT_PHONE,
@@ -22,6 +25,8 @@ type PowerOfAttorneyDocumentProps = {
   flight?: string;
   routeFrom?: string;
   routeTo?: string;
+  connectingFlights?: ConnectingFlightLeg[];
+  hadConnectingFlight?: boolean | null;
   flightDate?: string;
   signingDate?: string;
   onSigningDateChange?: (date: string) => void;
@@ -88,6 +93,8 @@ export default function PowerOfAttorneyDocument({
   flight,
   routeFrom,
   routeTo,
+  connectingFlights,
+  hadConnectingFlight,
   flightDate,
   signingDate = "",
   onSigningDateChange,
@@ -99,6 +106,9 @@ export default function PowerOfAttorneyDocument({
 }: PowerOfAttorneyDocumentProps) {
   const copy = getPoaCopy(locale);
   const showEuMark = showVerificationBlock && copy.europeanUnion.trim().length > 0;
+  const itinerary = { flight, routeFrom, routeTo, connectingFlights, hadConnectingFlight };
+  const flightNumbers = formatPoaFlightNumbers(itinerary);
+  const route = formatPoaRoute(itinerary);
 
   return (
     <article className="@container bg-white text-[#1f3664]">
@@ -114,11 +124,8 @@ export default function PowerOfAttorneyDocument({
 
       <div className="space-y-6 mb-10">
         <FieldLine label={copy.name} value={name} />
-        <div className="grid grid-cols-1 items-baseline gap-6 @min-[640px]:grid-cols-3 @min-[640px]:gap-x-8">
-          <FieldLine label={copy.flights} value={flight} />
-          <FieldLine label={copy.from} value={routeFrom} />
-          <FieldLine label={copy.to} value={routeTo} />
-        </div>
+        <FieldLine label={copy.flights} value={flightNumbers} />
+        <FieldLine label={copy.route} value={route} />
 
         {flightDateInput ? (
           <div className="flex items-baseline gap-x-3">

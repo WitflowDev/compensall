@@ -4,6 +4,8 @@ import { parseAppLocale } from "@/i18n/routing";
 import type { ClaimFlightData } from "@/lib/claim-types";
 import {
   formatPoaDate,
+  formatPoaFlightNumbers,
+  formatPoaRoute,
   getPoaCopy,
   POA_CONTACT_EMAIL,
   POA_CONTACT_PHONE_DISPLAY,
@@ -34,19 +36,6 @@ function toSignatureDataUrl(signatureBase64OrDataUrl: string): string {
     return signatureBase64OrDataUrl;
   }
   return `data:image/png;base64,${signatureBase64OrDataUrl}`;
-}
-
-function fieldCell(label: string, value: string): string {
-  return `
-    <td style="width:33.33%;padding:0 18px 0 0;vertical-align:bottom;font-size:14px;color:#1f3664;">
-      <div style="display:flex;align-items:flex-end;gap:10px;">
-        <span style="font-weight:700;white-space:nowrap;">${escapeHtml(label)}</span>
-        <span style="flex:1;border-bottom:1px solid rgba(31,54,100,0.45);min-height:28px;padding-bottom:4px;font-weight:500;">
-          ${escapeHtml(value || " ")}
-        </span>
-      </div>
-    </td>
-  `;
 }
 
 function fieldRow(label: string, value: string): string {
@@ -102,15 +91,8 @@ export function buildSignedPowerOfAttorneyHtml(input: SignedPoaInput): string {
     </p>
 
     ${fieldRow(copy.name, input.signedName)}
-
-    <table style="width:100%;border-collapse:collapse;margin:0 0 22px 0;">
-      <tr>
-        ${fieldCell(copy.flights, input.flight.flight)}
-        ${fieldCell(copy.from, input.flight.routeFrom)}
-        ${fieldCell(copy.to, input.flight.routeTo)}
-      </tr>
-    </table>
-
+    ${fieldRow(copy.flights, formatPoaFlightNumbers(input.flight))}
+    ${fieldRow(copy.route, formatPoaRoute(input.flight))}
     ${fieldRow(copy.flightsDate, flightDate)}
 
     <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:32px;margin:36px 0;">

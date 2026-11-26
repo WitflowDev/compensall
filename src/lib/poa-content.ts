@@ -1,4 +1,5 @@
 import { parseAppLocale, type AppLocale } from "@/i18n/routing";
+import type { ConnectingFlightLeg } from "@/lib/claim-types";
 
 /** Exact English PoA wording from the Compensall Power of Attorney (client PDF). */
 export const POWER_OF_ATTORNEY_BODY =
@@ -9,8 +10,7 @@ export type PoaCopy = {
   body: string;
   name: string;
   flights: string;
-  from: string;
-  to: string;
+  route: string;
   flightsDate: string;
   date: string;
   thePassenger: string;
@@ -29,9 +29,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Power of Attorney",
     body: POWER_OF_ATTORNEY_BODY,
     name: "Name:",
-    flights: "Flight(s):",
-    from: "from",
-    to: "to",
+    flights: "Flight number:",
+    route: "Route:",
     flightsDate: "Flight(s) Date:",
     date: "Date:",
     thePassenger: "The passenger:",
@@ -48,9 +47,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Procuração",
     body: "Na qualidade de passageiro aéreo do(s) voo(s) abaixo indicado(s), concedo por este meio à Albuquerque & Araújo, Lda., também conhecida como Compensall, autorização para iniciar e prosseguir um pedido com base nos meus direitos previstos no Regulamento (CE) n.º 261/2004 do Parlamento Europeu e do Conselho e nas decisões conexas, e para praticar todos os atos necessários, incluindo o tratamento de pagamentos e a detenção, o pedido ou o fornecimento de dados pessoais exclusivamente junto das entidades competentes e para este fim, em conformidade com os Termos e Condições do sítio da Compensall, que declaro aceitar. Esta autorização inclui expressamente o direito de nomear, substituir, delegar ou transmitir esta procuração, no todo ou em parte, a terceiros, incluindo advogados e representantes legais, para efeitos de execução dos meus direitos. Esta procuração é exclusiva, irrevogável e substitui quaisquer procurações anteriormente emitidas, se as houver. Solicito ainda que todas as comunicações sejam dirigidas exclusivamente à empresa acima referida.",
     name: "Nome:",
-    flights: "Voo(s):",
-    from: "de",
-    to: "para",
+    flights: "Número do voo:",
+    route: "Rota:",
     flightsDate: "Data do(s) voo(s):",
     date: "Data:",
     thePassenger: "O passageiro:",
@@ -67,9 +65,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Procuration",
     body: "En qualité de passager aérien du ou des vols mentionnés ci-dessous, je donne par la présente à Albuquerque & Araújo, Lda., également connue sous le nom de Compensall, le pouvoir d'engager et de poursuivre une réclamation fondée sur mes droits tels que prévus par le règlement (CE) n° 261/2004 du Parlement européen et du Conseil et les décisions connexes, et d'accomplir toutes les démarches nécessaires, y compris le traitement des paiements et la détention, la demande ou la communication de données personnelles exclusivement auprès des entités concernées et à cette fin, conformément aux Conditions générales du site de Compensall, que je déclare accepter. Ce pouvoir comprend expressément le droit de nommer, substituer, déléguer ou transférer la présente procuration, en tout ou en partie, à des tiers, notamment des avocats et représentants légaux, aux fins de faire valoir mes droits. Cette procuration est exclusive, irrévocable et remplace toute procuration antérieure, le cas échéant. Je demande en outre que toutes les communications soient adressées exclusivement à la société susmentionnée.",
     name: "Nom :",
-    flights: "Vol(s) :",
-    from: "de",
-    to: "à",
+    flights: "Numéro de vol :",
+    route: "Itinéraire :",
     flightsDate: "Date du/des vol(s) :",
     date: "Date :",
     thePassenger: "Le passager :",
@@ -86,9 +83,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Poder de representación",
     body: "Como pasajero aéreo del vuelo o vuelos indicados a continuación, otorgo por la presente a Albuquerque & Araújo, Lda., también conocida como Compensall, autorización para iniciar y tramitar una reclamación basada en mis derechos recogidos en el Reglamento (CE) n.º 261/2004 del Parlamento Europeo y del Consejo y en las resoluciones conexas, y para realizar todas las gestiones necesarias, incluido el tratamiento de pagos y la conservación, solicitud o cesión de datos personales exclusivamente con las entidades pertinentes y para este fin, de conformidad con los Términos y Condiciones del sitio de Compensall, que declaro aceptar. Esta autorización incluye expresamente el derecho a nombrar, sustituir, delegar o transmitir el presente poder, total o parcialmente, a terceros, incluidos abogados y representantes legales, para hacer valer mis pretensiones. Este poder es exclusivo, irrevocable y sustituye cualquier poder emitido con anterioridad, si lo hubiera. Solicito además que todas las comunicaciones se dirijan exclusivamente a la empresa mencionada.",
     name: "Nombre:",
-    flights: "Vuelo(s):",
-    from: "de",
-    to: "a",
+    flights: "Número de vuelo:",
+    route: "Ruta:",
     flightsDate: "Fecha del/de los vuelo(s):",
     date: "Fecha:",
     thePassenger: "El pasajero:",
@@ -105,9 +101,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Împuternicire",
     body: "În calitate de pasager al zborului sau zborurilor menționate mai jos, acord prin prezenta societății Albuquerque & Araújo, Lda., cunoscută și ca Compensall, împuternicirea de a iniția și de a urmări o cerere de despăgubire întemeiată pe drepturile mele prevăzute în Regulamentul (CE) nr. 261/2004 al Parlamentului European și al Consiliului și în jurisprudența conexă, precum și de a întreprinde toate demersurile necesare, inclusiv procesarea plăților și deținerea, solicitarea sau furnizarea de date cu caracter personal exclusiv către entitățile relevante și în acest scop, în conformitate cu Termenii și Condițiile site-ului Compensall, pe care declar că îi accept. Această împuternicire include expres dreptul de a numi, substitui, delega sau transfera prezenta procură, în tot sau în parte, către terți, inclusiv avocați și reprezentanți legali, pentru valorificarea pretențiilor mele. Împuternicirea este exclusivă, irevocabilă și înlocuiește orice împuternicire emisă anterior, dacă există. Solicit, de asemenea, ca toate comunicările să fie adresate exclusiv societății menționate mai sus.",
     name: "Nume:",
-    flights: "Zbor(uri):",
-    from: "de la",
-    to: "spre",
+    flights: "Numărul zborului:",
+    route: "Rută:",
     flightsDate: "Data zborului/zborurilor:",
     date: "Data:",
     thePassenger: "Pasagerul:",
@@ -124,9 +119,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Meghatalmazás",
     body: "A lent megjelölt járat(ok) utasaként ezennel meghatalmazom az Albuquerque & Araújo, Lda. társaságot, amely Compensall néven is ismert, hogy az Európai Parlament és a Tanács 261/2004/EK rendelete és a kapcsolódó döntések szerinti jogaim alapján kárigényt indítson és érvényesítsen, valamint minden szükséges kapcsolódó intézkedést megtegyen — ideértve a kifizetések kezelését, továbbá a személyes adatok kizárólag az érintett szervezetekkel és e célból történő tárolását, kérését vagy átadását —, a Compensall honlapjának Általános Szerződési Feltételeivel összhangban, amelyeket ezennel elfogadok. Ez a meghatalmazás kifejezetten magában foglalja a jogot, hogy a meghatalmazást egészben vagy részben harmadik személyekre, így különösen ügyvédekre és jogi képviselőkre átruházzam, helyettesítsem vagy delegáljam a követeléseim érvényesítése érdekében. A meghatalmazás kizárólagos, visszavonhatatlan, és minden korábban kiadott meghatalmazást felvált, ha volt ilyen. Kérem továbbá, hogy minden kommunikációt kizárólag a fent megjelölt társasághoz címezzenek.",
     name: "Név:",
-    flights: "Járat(ok):",
-    from: "honnan",
-    to: "hova",
+    flights: "Járatszám:",
+    route: "Útvonal:",
     flightsDate: "Járat(ok) dátuma:",
     date: "Dátum:",
     thePassenger: "Az utas:",
@@ -143,9 +137,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Prokurë",
     body: "Si pasagjer ajror i fluturimit ose fluturimeve të përmendura më poshtë, i jap këtu Albuquerque & Araújo, Lda., e njohur edhe si Compensall, autorizimin për të nisur dhe ndjekur një kërkesë bazuar në të drejtat e mia sipas Rregullores (KE) nr. 261/2004 të Parlamentit Evropian dhe të Këshillit dhe vendimeve të lidhura, si dhe për të ndërmarrë të gjitha veprimet e nevojshme, përfshirë përpunimin e pagesave dhe mbajtjen, kërkimin ose dhënien e të dhënave personale vetëm te subjektet përkatëse dhe për këtë qëllim, në përputhje me Termat dhe Kushtet e faqes së Compensall, të cilat i pranoj. Ky autorizim përfshin shprehimisht të drejtën për të emëruar, zëvendësuar, deleguar ose transferuar këtë prokurë, tërësisht ose pjesërisht, te palë të treta, përfshirë avokatë dhe përfaqësues ligjorë, për të zbatuar pretendimet e mia. Kjo prokurë është ekskluzive, e parevokueshme dhe zëvendëson çdo prokurë të lëshuar më parë, nëse ka. Kërkoj gjithashtu që të gjitha komunikimet t'i drejtohen ekskluzivisht shoqërisë së sipërpërmendur.",
     name: "Emri:",
-    flights: "Fluturimi/fluturimet:",
-    from: "nga",
-    to: "në",
+    flights: "Numri i fluturimit:",
+    route: "Itinerari:",
     flightsDate: "Data e fluturimit/fluturimeve:",
     date: "Data:",
     thePassenger: "Pasagjeri:",
@@ -162,9 +155,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Vollmacht",
     body: "Als Fluggast des/der nachstehend genannten Fluges/Flüge erteile ich hiermit der Albuquerque & Araújo, Lda., auch bekannt als Compensall, die Vollmacht, einen Anspruch auf Grundlage meiner Rechte gemäß der Verordnung (EG) Nr. 261/2004 des Europäischen Parlaments und des Rates sowie damit zusammenhängender Entscheidungen einzuleiten und zu verfolgen und alle erforderlichen damit verbundenen Handlungen vorzunehmen, einschließlich der Verarbeitung von Zahlungen sowie des Speicherns, Anforderns oder Übermittelns personenbezogener Daten ausschließlich gegenüber den zuständigen Stellen und zu diesem Zweck, gemäß den Allgemeinen Geschäftsbedingungen der Website von Compensall, die ich hiermit akzeptiere. Diese Vollmacht umfasst ausdrücklich das Recht, sie ganz oder teilweise auf Dritte — insbesondere Rechtsanwälte und gesetzliche Vertreter — zu übertragen, zu substituieren oder zu delegieren, um meine Ansprüche durchzusetzen. Die Vollmacht ist ausschließlich, unwiderruflich und ersetzt etwaige zuvor erteilte Vollmachten. Ich bitte außerdem, dass sämtliche Kommunikation ausschließlich an das oben genannte Unternehmen gerichtet wird.",
     name: "Name:",
-    flights: "Flug/Flüge:",
-    from: "von",
-    to: "nach",
+    flights: "Flugnummer:",
+    route: "Strecke:",
     flightsDate: "Flugdatum:",
     date: "Datum:",
     thePassenger: "Der Fluggast:",
@@ -181,9 +173,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Volmacht",
     body: "Als luchtpassagier van de hieronder vermelde vlucht(en) verleen ik hierbij aan Albuquerque & Araújo, Lda., ook bekend als Compensall, de bevoegdheid om een claim in te dienen en te vervolgen op grond van mijn rechten zoals vastgelegd in Verordening (EG) nr. 261/2004 van het Europees Parlement en de Raad en daarmee samenhangende uitspraken, en om alle noodzakelijke daarmee verband houdende handelingen te verrichten, waaronder het verwerken van betalingen en het bewaren, opvragen of verstrekken van persoonsgegevens uitsluitend aan de betrokken instanties en voor dit doel, overeenkomstig de Algemene Voorwaarden van de website van Compensall, die ik hierbij aanvaard. Deze bevoegdheid omvat uitdrukkelijk het recht om deze volmacht geheel of gedeeltelijk te benoemen, te substitueren, te delegeren of over te dragen aan derden, waaronder advocaten en wettelijke vertegenwoordigers, om mijn vorderingen te innen. Deze volmacht is exclusief, onherroepelijk en vervangt eventuele eerder afgegeven volmachten. Ik verzoek tevens dat alle communicatie uitsluitend aan bovengenoemde vennootschap wordt gericht.",
     name: "Naam:",
-    flights: "Vlucht(en):",
-    from: "van",
-    to: "naar",
+    flights: "Vluchtnummer:",
+    route: "Route:",
     flightsDate: "Datum van de vlucht(en):",
     date: "Datum:",
     thePassenger: "De passagier:",
@@ -200,9 +191,8 @@ const POA_COPY: Record<AppLocale, PoaCopy> = {
     title: "Procuração",
     body: "Na qualidade de passageiro do(s) voo(s) abaixo, autorizo a Albuquerque & Araújo, Lda., também conhecida como Compensall, a apresentar e acompanhar o meu pedido com base nos direitos previstos na Resolução ANAC nº 400, de 13 de dezembro de 2016, e no Código de Defesa do Consumidor, e a praticar os atos necessários, inclusive receber valores e tratar dados pessoais apenas junto dos organismos envolvidos e para esta finalidade, de acordo com os Termos e Condições do site da Compensall, que aceito. Esta autorização inclui o direito de substabelecer, no todo ou em parte, a advogados e representantes. Esta procuração é exclusiva e irrevogável e substitui procurações anteriores. Peço que toda a comunicação seja dirigida apenas à empresa indicada.",
     name: "Nome:",
-    flights: "Voo(s):",
-    from: "de",
-    to: "para",
+    flights: "Número do voo:",
+    route: "Rota:",
     flightsDate: "Data do(s) voo(s):",
     date: "Data:",
     thePassenger: "O passageiro:",
@@ -293,6 +283,44 @@ export function formatPoaDate(date: string, locale: string | null | undefined): 
     return new Date(parsed).toLocaleDateString(dateLocale, options);
   }
   return date;
+}
+
+function filledPoaValue(value: string | null | undefined): string {
+  return value?.trim() ?? "";
+}
+
+type PoaItinerary = {
+  flight?: string | null;
+  routeFrom?: string | null;
+  routeTo?: string | null;
+  connectingFlights?: ConnectingFlightLeg[] | null;
+  hadConnectingFlight?: boolean | null;
+};
+
+/** Connecting legs that have a flight number or an airport. A false flag drops leftover legs. */
+export function poaConnectingLegs(flight: PoaItinerary): ConnectingFlightLeg[] {
+  if (flight.hadConnectingFlight === false) return [];
+  return (flight.connectingFlights ?? []).filter(
+    (leg) => filledPoaValue(leg.flightNumber) || filledPoaValue(leg.airport),
+  );
+}
+
+/** Main flight number, then each connecting flight number. */
+export function formatPoaFlightNumbers(flight: PoaItinerary): string {
+  return [filledPoaValue(flight.flight), ...poaConnectingLegs(flight).map((leg) => filledPoaValue(leg.flightNumber))]
+    .filter(Boolean)
+    .join(" / ");
+}
+
+/** Origin, each connecting airport, then the destination. */
+export function formatPoaRoute(flight: PoaItinerary): string {
+  return [
+    filledPoaValue(flight.routeFrom),
+    ...poaConnectingLegs(flight).map((leg) => filledPoaValue(leg.airport)),
+    filledPoaValue(flight.routeTo),
+  ]
+    .filter(Boolean)
+    .join(" — ");
 }
 
 export const POA_CONTACT_EMAIL = "help@compensall.com";
